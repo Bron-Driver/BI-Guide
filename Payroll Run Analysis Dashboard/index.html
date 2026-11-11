@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Payroll Run Analysis Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Payroll Run Analysis Dashboard";
+        var mkdocs_page_input_path = "Payroll Run Analysis Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Payroll Run Analysis Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#summary-tab">Summary Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gross-pay-summary-analysis">Gross Pay Summary Analysis</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#organisation-and-staff-group-tab">Organisation and Staff Group Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#organisation-tab">Organisation Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assignment-tab">Assignment Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#employee-pay-element-analysis-tab">Employee Pay Element Analysis Tab</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Payroll Run Analysis Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="payroll-run-analysis-dashboard">Payroll Run Analysis Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to provide analysis of Payroll Run Results at
+a range of levels within the organisation. Navigation is available
+across the dashboard using hyperlinks provided.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administration</p>
+<p>XXX Finance Reporting</p>
+<p>XXX Finance Reporting and Hub Mapping</p>
+<p>XXX Payroll Audit</p>
+<p>XXX Payroll Administration</p>
+<p>XXX Payroll Super Adminisitration</p>
+<p>Prompts</p>
+<p>* Payment Year (required)</p>
+<p>Month</p>
+<p>Payroll Name</p>
+<p>Paypoint</p>
+<p>Organisation Name</p>
+<p>Element Name</p>
+<p>Employee Number</p>
+<p>Employee Name</p>
+<h2 id="summary-tab">Summary Tab</h2>
+<p>Description</p>
+<p>The summary tab provides payroll run results grouped by Payroll Name and
+broken down by Month.</p>
+<p>Please note that users are required to select a Payment Year and click
+the ‘Apply’ button within the tab. Payment Month and a range of other
+parameters can also be selected using the available prompts.</p>
+<h3 id="gross-pay-summary-analysis">Gross Pay Summary Analysis</h3>
+<p>Description</p>
+<p>This analysis is designed to show users the total Number of People Paid
+and how much (Gross Pay) they were paid within a period (Payment
+Year/Month) selected by the user. Results are grouped by Payroll Name
+and broken down by month.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trust ID</th>
+<th>Number of People Paid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Payroll Name</td>
+<td>Gross Pay</td>
+</tr>
+<tr class="even">
+<td>Year</td>
+<td>Month</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../31/media/image2.png"
+style="width:6.26806in;height:2.35172in" /></p>
+<p>Actions</p>
+<p>Users can click on a Payroll Name and navigate to the Pay Analysis by
+Assignment or Pay Analysis by Organisation and Staff Group tabs
+available within the same dasboard.</p>
+<h2 id="organisation-and-staff-group-tab">Organisation and Staff Group Tab</h2>
+<p>Description</p>
+<p>This tab of the dashboard is designed to show Payroll Run Results
+grouped by Staff Group and broken down by month.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Name</th>
+<th>Employers Charges</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Gross Pay</td>
+</tr>
+<tr class="even">
+<td>Year</td>
+<td>Month</td>
+</tr>
+<tr class="odd">
+<td>Payroll Name</td>
+<td>Paypoint</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../31/media/image3.png"
+style="width:6.26806in;height:3.70257in" /></p>
+<p>Actions</p>
+<p>Users can click Organisation Name to navigate to the Pay Analysis by
+Assignment or Organisation Pay Element Analysis tabs available within
+the same dasboard.</p>
+<h2 id="organisation-tab">Organisation Tab</h2>
+<p>Description</p>
+<p>This tab is designed to provide payroll run results grouped by
+Organisation, Element Name and broken down by month.</p>
+<p>Table Prompts</p>
+<p>Staff Group</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Name</th>
+<th>Element Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td>Staff Group</td>
+</tr>
+<tr class="even">
+<td>Year</td>
+<td>Payroll Name</td>
+</tr>
+<tr class="odd">
+<td>Amount</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../31/media/image4.png"
+style="width:6.26806in;height:1.71166in" /></p>
+<p>Actions</p>
+<p>Users can click on an Organisation Name and navigate to the Pay Analysis
+by Assignment page available within the same dasboard.</p>
+<h2 id="assignment-tab">Assignment Tab</h2>
+<p>Description</p>
+<p>This tab is designed to provide payroll run results grouped by
+individual assignments. Users can click on an employee number to view
+results grouped by individual element names.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Name</th>
+<th>Staff Group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Employee Number</td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td>Earnings</td>
+</tr>
+<tr class="odd">
+<td>Net Pay</td>
+<td>Deductions</td>
+</tr>
+<tr class="even">
+<td>Employer Charges</td>
+<td>Year</td>
+</tr>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../31/media/image5.png"
+style="width:6.26806in;height:2.4349in" /></p>
+<p>Actions</p>
+<p>Users can click Employee Number to navigate to Employee Pay Element
+Analysis page.</p>
+<h2 id="employee-pay-element-analysis-tab">Employee Pay Element Analysis Tab</h2>
+<p>Description</p>
+<p>The Employee Pay Element Analysis is hidden from the dashboard and can
+be accessed through the Assignment Detail page by clicking an employee
+number. Payroll run result details are shown for the specific employee
+and by Element Name.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Deductions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Net Pay</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td>Amount</td>
+</tr>
+<tr class="odd">
+<td>Organisation Name</td>
+<td>Paypoint</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Year</td>
+</tr>
+<tr class="odd">
+<td>Month</td>
+<td>Earnings</td>
+</tr>
+<tr class="even">
+<td>Allowance Type</td>
+<td>Employer Charges</td>
+</tr>
+<tr class="odd">
+<td>Payroll Name</td>
+<td>Element Name</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../31/media/image6.png"
+style="width:6.26806in;height:2.4282in" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Payroll%20Dashboard/index.html" class="btn btn-neutral float-left" title="Payroll Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Pensions%20Dashboard/index.html" class="btn btn-neutral float-right" title="Pensions Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Payroll%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Pensions%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

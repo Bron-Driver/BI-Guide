@@ -1,0 +1,3154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Absence Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Absence Dashboard";
+        var mkdocs_page_input_path = "Absence Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Absence Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#index">Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary-tab">Summary Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-timeline">Absence Timeline</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fte-lost">FTE Lost</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#number-of-absence-occurrences">Number of Absence Occurrences</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-occurrences-by-length">Absence Occurrences by Length</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#monthly-estimated-cost">Monthly Estimated Cost</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-occurrences-by-interface">Absence Occurrences by Interface</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-long-term-short-term">Absence Long Term / Short Term</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary-ii-tab">Summary II Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#top-10-absence-reasons-by-absence-days">Top 10 Absence Reasons by Absence Days</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#top-10-absence-reasons-by-fte-lost">Top 10 Absence Reasons by FTE Lost</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absences-by-first-day-of-absence">Absences by First Day of Absence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#return-to-work-discussions">Return to Work Discussions %</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#average-time-to-enter-absence">Average Time to Enter Absence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#average-days-lost-per-fte">Average # Days Lost per FTE</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary-iii-tab">Summary III Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rolling-absence-timeline">Rolling Absence Timeline</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-rate">Absence Rate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-rate-by-occupation-code">Absence Rate by Occupation Code</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#detail-tab">Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-triggers-tab">Absence Triggers Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-triggers-detail-tab">Absence Triggers Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#employee-absence-tab">Employee Absence Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-timeline-detail-tab">Absence Timeline Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#organisation-absence-tab">Organisation Absence Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#organisation-absence-timeline">Organisation Absence Timeline</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-long-term-short-term-detail">Absence Long Term / Short Term Detail</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#days-lost-in-period">Days Lost in Period</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#individual-absence-record">Individual Absence Record</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#annual-leave-balances">Annual Leave Balances</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#study-leave">Study Leave</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-calendar">Absence Calendar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#staff-list">Staff List</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#future-booked-leave">Future Booked Leave</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#percentage-of-absent-staff-by-monthweek">Percentage of Absent Staff by Month/Week</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#percentage-of-absent-staff">Percentage of Absent Staff</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#benchmarking">Benchmarking</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#benchmarking-detail">Benchmarking Detail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#non-benchmarking-detail">Non-Benchmarking Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#absence-set-up">Absence Set Up</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#osp-scheme-is-not-nhs-osp-bank-nil-scheme">OSP Scheme is not NHS OSP BANK NIL SCHEME</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accrual-plan-analyses">Accrual Plan Analyses</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#vsm-accrual-plan-is-not-accrual-n-nhs">VSM Accrual Plan is not Accrual n NHS</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#md-accrual-plan-is-not-accrual-n-nhs">M&amp;D Accrual Plan is not Accrual n NHS</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#afc-accrual-plan-is-not-annual-leave-hours-n-nhs">AfC Accrual Plan is not Annual Leave Hours n NHS</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#bank-accrual-plan-is-not-bank-al-hours-n-nhs">Bank Accrual Plan is not Bank AL Hours n NHS</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Absence Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="absence-dashboard">Absence Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to contain analyses relating to all types of
+absence. Please note that on this dashboard organisation prompts will
+return all organisations that existed within the period to enable users
+to select organisations that were used in the past to enable
+retrospective reporting.</p>
+<p>Prompt Guidance</p>
+<p>A number of key prompts are available which are relevant to all the
+analyses shown in the Absence Dashboard. Absence Type, Absence Category
+and Absence Reason allow the user to specifiy exactly the type of
+absence to report on. The Date Between prompt allows the user to include
+only absence occurrances that fall between the two specified dates and
+again, is relevant to all analyses available on the Dashboard. The
+Absence Target prompt is only relevant to the Absence Timeline / Rolling
+Absence Timeline analyses and it allows the user to set a target line
+across each analysis depending on the figure entered into the prompt.
+The Long Term Absence &gt; (days) prompt is only relevant to the Absence
+Long Term / Short Term analysis and allows the user to define a Long
+Term Absence.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX Absence Administration</p>
+<p>XXX Absence Management (Read Only)</p>
+<p>XXX Administrator Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Administrator Self Service (Payroll Approvals Required)</p>
+<p>XXX BI Administration</p>
+<p>XXX Finance Reporting</p>
+<p>XXX Finance Reporting and Hub Mapping</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Manager Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Manager Self Service (Payroll Approvals Required)</p>
+<p>XXX Payroll Administration</p>
+<p>XXX Payroll Audit</p>
+<p>XXX Payroll Super Administration</p>
+<p>XXX Supervisor Self Service</p>
+<p>XXX Supervisor Self Service (Limited Access)</p>
+<h2 id="index">Index</h2>
+<p>Description</p>
+<p>Absence reports are available in four different categories below:</p>
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Absence Listing</p>
+</li>
+<li>
+<p>Absence Analysis</p>
+</li>
+<li>
+<p>Leave Management</p>
+</li>
+</ul>
+<p>From this tab users can click on links provided to navigate to reports.</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image2.png"
+style="width:6.26806in;height:2.57419in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="summary-tab">Summary Tab</h2>
+<p>Description</p>
+<p>This tab of the absence dashboard is designed to display a number of
+absence-related overview analyses to support the user in identifying and
+managing potential issues.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Organisation</p>
+<p>Absence Category</p>
+<p>Absence Type (default value of ‘Sickness’)</p>
+<p>Absence Reason</p>
+<p>Date From (default value of first day of month from 12 months ago)</p>
+<p>Date To (default value of last day of Last Month)</p>
+<p>Person Type(s) (default values 'Employee', 'Employee and Applicant')</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Category</p>
+<p>Staff Group</p>
+<p>Primary Assignments Only</p>
+<p>Absence Target</p>
+<p>Long Term Absence &gt; (days)</p>
+<p>Job Role</p>
+<p>Organisation Level 1-13</p>
+<p>Occupation Code</p>
+<p>Long Term Period End Date (default: Period To Date)</p>
+<p>Location</p>
+<p>Pay Grade(s)</p>
+<p>Employee Number</p>
+<p>Assignment Status</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<h3 id="absence-timeline">Absence Timeline</h3>
+<p>Description</p>
+<p>This analysis provides a view of the absence rate for employees
+(restricted by Prompts) during the period selected. On the management
+overview dashboard, this is restricted to a rolling 12 month period,
+though this can be changed using the absence dashboard version. Overall
+Absence % (FTE), Absence Days, Absence (FTE), and Available (FTE)
+figures are also provided above the timeline to show an average Absence
+% (FTE), a total of Absence Days, the total Absence FTE and the total
+Available FTE for the period selected.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Days</td>
+<td>Total of calendar days for all absences for assignments
+included.</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td>(FTE * Calendar Absence Days Lost) / (FTE * Calendar Days in Period)
+* 100</td>
+</tr>
+<tr class="odd">
+<td>Cumulative Absence FTE %</td>
+<td>Running sum of (FTE * Calendar Absence Days Lost) / (FTE * Calendar
+Days in Period) * 100</td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td>Month / Year</td>
+</tr>
+<tr class="odd">
+<td>Quarter</td>
+<td>Quarter / Year</td>
+</tr>
+<tr class="even">
+<td>Absence Target</td>
+<td>Driven by parameter. This should display a flat line on the chart.
+Numeric value.</td>
+</tr>
+<tr class="odd">
+<td>Absence (FTE)</td>
+<td>Total Absence FTE for the period selected</td>
+</tr>
+<tr class="even">
+<td>Available (FTE)</td>
+<td>Total FTE available for the period selected</td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Show Absence Days, Absence % (FTE) or Cumulative Absence % (FTE),
+Absence (FTE) or Available (FTE). Default Absence % (FTE).</p>
+<p>View Selector</p>
+<p>Line Graph (Default)</p>
+<p>Line Graph (without Target)</p>
+<p>Table</p>
+<p>Gauge</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image3.png" style="width:4.625in;height:3.38616in"
+alt="A screenshot of a graph Description automatically generated" /></p>
+<p>Filters</p>
+<p>This analysis will be restricted by the date set in the prompts rather
+than for example, a fixed 12 month period.</p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab</p>
+<p>Absence Timeline Calculation Example</p>
+<p>The Absence Timeline Analysis allows the user to show absence data
+across a time period (as defined by the Date Between prompt) and either
+plot it on a timeline graph or show it as a table. By default the
+analysis will show Absence % (FTE) data as a snapshot of each month. By
+changing the measure option, a user is also able to show various Absence
+Measures including a Cumulative Abs %. This is calculated by adding up
+each month of the period selected cumulatively i.e. Month 1 for Month 1,
+Months 1+2 for Month 2, Months 1+2+3 for Month 3 etc.</p>
+<h3 id="fte-lost">FTE Lost</h3>
+<p>Description</p>
+<p>This analysis is designed to show the Full Time Equivalent (FTE) lost
+due to absence grouped by Staff Group or Org Level 1-4.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Staff group associated with Job Role from Position</td>
+</tr>
+<tr class="even">
+<td>FTE Days Lost</td>
+<td>Total of assignment calendar days lost * assignment FTE value</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image4.png" style="width:3.6935in;height:2.16046in"
+alt="A graph with blue bars Description automatically generated with medium confidence" /></p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab (Restricted to region selected)</p>
+<h3 id="number-of-absence-occurrences">Number of Absence Occurrences</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of absence occurrences
+during the time period selected in the Prompts, grouped by Staff Group
+or Org Level1-4.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number of Absences</td>
+<td>Each absence occurrence within/overlapping the date range.</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Staff Group associated with the Job Role in Position</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>LT Absence Occurrences</td>
+<td>End Date of Open Ended Occurrences can be defined using available
+prompt (End Date of Period/Current Date)</td>
+</tr>
+<tr class="even">
+<td>ST Absence Occurrences</td>
+<td>End Date of Open Ended Occurrences can be defined using available
+prompt (End Date of Period/Current Date)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image5.png"
+style="width:4.26085in;height:2.47024in"
+alt="C:\Users\james.haddon\Pictures\Screenpresso\2013-02-27_13h56_13.png" /></p>
+<p>View Selector</p>
+<p>View as column graph or table. Default column graph.</p>
+<p>Column Selector</p>
+<p>Group By (default: Staff Group)</p>
+<p>Actions</p>
+<p>Click -&gt; Absence Occurrences Tab (Restricted to Staff Group selected)</p>
+<h3 id="absence-occurrences-by-length">Absence Occurrences by Length</h3>
+<p>Description</p>
+<p>This analysis shows the number of absences grouped by the length of the
+absence. Absences with a period within the period selected in the
+prompts will be included, even if the start/end dates are outside of the
+period.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Length</td>
+<td>Number of calendar days between absence start date and absence end
+date. Grouped into bands.</td>
+</tr>
+<tr class="even">
+<td>Absence Occurrences</td>
+<td>Number of absences.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image6.png"
+style="width:4.92751in;height:3.29244in"
+alt="A graph with numbers and a bar Description automatically generated" /></p>
+<h3 id="monthly-estimated-cost">Monthly Estimated Cost</h3>
+<p>Description</p>
+<p>This analysis shows the Estimate Absence Costs grouped by Staff Group,
+Job Role, Pay Scale, Assignment Category, Employee Category or Org Level
+1-4.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Estimated Cost</td>
+<td>Calculation (see below)</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Category</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Category</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Absence Estimated Cost Calculation</p>
+<p>Salary Based Estimated Cost = {Salary * FTE * Absence Days}</p>
+<p>Employer’s Cost = {Salary Based Absence Cost * Employer Cost Factor}</p>
+<p>Both then need to be adjusted for OSP and OMP.</p>
+<p>Salary Based Absence Cost OSP OMP Adjusted = {Salary * FTE * Absence
+Days OSP OMP Adjusted}</p>
+<p>Employers Cost OSP OMP Adjusted = { Salary Based Absence Cost OSP OMP
+Adjusted * Employer Cost Factor}</p>
+<p>Finally the total estimated cost = Salary Based Absence Cost OSP OMP
+Adjusted + Employers Cost OSP OMP Adjusted.</p>
+<p>Please note, because ESR does not record shift patterns, this is only an
+estimate using the assignment FTE and calendar days.</p>
+<p>Example Screenshots</p>
+<p><img src="../1/media/image7.png"
+style="width:4.64854in;height:2.74542in" /></p>
+<h3 id="absence-occurrences-by-interface">Absence Occurrences by Interface</h3>
+<p>Description</p>
+<p>This analysis shows the number of Absence Occurrences by Interface
+grouped by Staff Group, Absence Type, Absence Category, Cost Centre or
+Org Level 1-13.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Type</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence Category</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occurrences (Interface)</td>
+<td>Number of Interface absence occurrences</td>
+</tr>
+<tr class="even">
+<td>Occurrences (non-Interface)</td>
+<td>Number of non-Interface absence occurrences</td>
+</tr>
+<tr class="odd">
+<td>Percentage</td>
+<td>Occurrences (Interface) / Occurrences (All) * 100</td>
+</tr>
+<tr class="even">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshots</p>
+<p><img src="../1/media/image8.png"
+style="width:6.06976in;height:3.11822in"
+alt="A screenshot of a computer screen Description automatically generated" /></p>
+<h3 id="absence-long-term-short-term">Absence Long Term / Short Term</h3>
+<p>Description</p>
+<p>This analysis shows the Long Term and Short Term Absence by Absence %
+(FTE), Absence (FTE), Absence Days or Number of Absence Occurrences. The
+criteria for Long Term / Short Absence can be defined using the
+available prompt. For Open-Ended Absences only, the end date used in
+defining Long Term and Short Term absences can be switched between
+Current Date and Period End Date using the available prompt.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Month</th>
+<th>Absence (FTE)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Long Term FTE Lost</td>
+<td>Absence % (FTE)</td>
+</tr>
+<tr class="even">
+<td>Short Term FTE Lost</td>
+<td>Long Term Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Total FTE Lost</td>
+<td>Short Term Days Lost</td>
+</tr>
+<tr class="even">
+<td>Long Term Absence %</td>
+<td>Long Term Absence Occurrences</td>
+</tr>
+<tr class="odd">
+<td>Short Term Absence %</td>
+<td>Short Term Absence Occurrences</td>
+</tr>
+<tr class="even">
+<td>Total Absence Occurrences (Long Term Absence</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occurrences + Short Term Absence Occurrences)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selector</p>
+<p>Timeline (default)</p>
+<p>Column Graph</p>
+<p>Table</p>
+<p>Example Screenshots</p>
+<p><img src="../1/media/image9.png"
+style="width:5.66721in;height:3.84942in"
+alt="A graph with a line and a red line Description automatically generated" /></p>
+<p>Actions</p>
+<p>None</p>
+<p>Absence Long Term / Short Term Calculation Example</p>
+<p>The Absence Long Term / Short Term analysis allows a user to define a
+long term and short term analysis (using the prompt) and plot the two
+sets of values on a timeline or show them in a table.</p>
+<p>The Abs FTE %, Abs (FTE) and Absence Days measures are based on the (FTE
+Lost / Total Available FTE) * 100, FTE Lost and Calendar Days lost
+during the period selected in the prompts, however the split between
+Long Term and Short Term is based on the total absence length. An
+example is provided below:</p>
+<p><strong>Parameters: Date Between 01-FEB-2014 and 28-FEB-2014</strong></p>
+<p><img src="../1/media/image10.png"
+style="width:3.02654in;height:0.48358in"
+alt="A close up of a sign Description automatically generated" /></p>
+<p>The above employee will be returned in the analysis because their
+absence crosses the period we are reporting on. Their FTE lost and
+calendar days lost will be calculated as 28 because there are 28 days in
+the period we are reporting on and they were absent for the entire
+period. However the absence will be classified as ‘Long Term’ because
+the total absence duration (i.e. the time between the start and end date
+of the absence) is 62 days. Users can also change the Absence End Date
+to use in the calculation as required using the Long Term Period End
+Date prompt. Current Date or Absence End Date can be selected.</p>
+<p>Abs FTE %, Abs (FTE), Absence Days and Number of Absence Occurrences are
+the available measures and can be show in either a Line Graph or Table
+using the prompt above the analysis.</p>
+<h2 id="summary-ii-tab">Summary II Tab</h2>
+<p>Description</p>
+<p>This tab of the absence dashboard is designed to display a number of
+absence-related overview analyses to support the user in identifying and
+managing potential issues.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Absence Category</p>
+<p>Absence Type (default value of ‘Sickness’)</p>
+<p>Absence Reason</p>
+<p>Date From (default value of first day of month from 12 months ago)</p>
+<p>Date To (default value of last day of Last Month)</p>
+<p>Person Type(s) (default values 'Employee', 'Employee and Applicant')</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Category</p>
+<p>Staff Group</p>
+<p>Primary Assignments Only</p>
+<p>Job Role</p>
+<p>Organisation Level 1-13</p>
+<p>Pay Grade(s)</p>
+<p>Employee Number</p>
+<p>Assignment Status</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<h3 id="top-10-absence-reasons-by-absence-days">Top 10 Absence Reasons by Absence Days</h3>
+<p>Description</p>
+<p>This analysis is designed to show the top ‘10’ absence reasons in the
+period selected by the dashboard prompts ordered by absence days.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Reason</td>
+<td>Reason associated with the absence</td>
+</tr>
+<tr class="even">
+<td>Absence Days</td>
+<td>Number of days associated with each absence</td>
+</tr>
+<tr class="odd">
+<td>%</td>
+<td>The percentage of days lost per reason compared to all days
+lost</td>
+</tr>
+<tr class="even">
+<td>Absence Occurrences</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Esitimated Cost</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image11.png"
+style="width:5.50833in;height:2.96364in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab (Restricted to reason selected).</p>
+<h3 id="top-10-absence-reasons-by-fte-lost">Top 10 Absence Reasons by FTE Lost</h3>
+<p>Description</p>
+<p>This analysis is designed to show the top ‘10’ absence reasons in the
+period selected by the dashboard prompts ordered by FTE lost.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Reason</td>
+<td>Reason associated with the absence</td>
+</tr>
+<tr class="even">
+<td>FTE Days Lost</td>
+<td>FTE Lost associated with each absence</td>
+</tr>
+<tr class="odd">
+<td>%</td>
+<td>The percentage of FTE lost per reason compared to all FTE lost</td>
+</tr>
+<tr class="even">
+<td>Absence Occurrences</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Esitimated Cost</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image12.png"
+style="width:5.73626in;height:3.0137in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab (Restricted to reason selected).</p>
+<h3 id="absences-by-first-day-of-absence">Absences by First Day of Absence</h3>
+<p>Description</p>
+<p>This analysis shows the number of absences grouped by the day of the
+week the absence started on.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Day of Week</td>
+<td>Day of the week the absence started on</td>
+</tr>
+<tr class="even">
+<td>Absence Occurrences</td>
+<td>Number of absences.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshots</p>
+<p><img src="../1/media/image13.png"
+style="width:4.2043in;height:2.85417in"
+alt="C:\Users\james.haddon\Pictures\Screenpresso\2013-07-16_09h28_59.png" /></p>
+<p><img src="../1/media/image14.png"
+style="width:4.21898in;height:2.58333in"
+alt="C:\Users\james.haddon\Pictures\Screenpresso\2013-07-16_09h29_27.png" /></p>
+<h3 id="return-to-work-discussions">Return to Work Discussions %</h3>
+<p>Description</p>
+<p>This analysis shows the percentage of absence occurrences where return
+to work discussions have taken place.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RTW %</td>
+<td>% of Absence Occurrences where RTW Flag = ‘Yes’</td>
+</tr>
+</tbody>
+</table>
+
+<p>Prompts</p>
+<p>RTW Gauge Low Value</p>
+<p>RTW Gauge High Value</p>
+<p>Remove Current Abs from RTW (default: Yes)</p>
+<p>Example Screenshots</p>
+<p><img src="../1/media/image15.png"
+style="width:3.7629in;height:2.82218in"
+alt="A screen shot of a computer Description automatically generated" /></p>
+<h3 id="average-time-to-enter-absence">Average Time to Enter Absence</h3>
+<p>Description</p>
+<p>This analysis is designed to show the average time taken from when an
+absence occurred to when the absence was entered.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Time to Enter Absence</td>
+<td>"Absence Attributes"."Absence Time to Enter"</td>
+</tr>
+<tr class="even">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image16.png"
+style="width:4.30978in;height:2.70328in"
+alt="A graph on a white background Description automatically generated" /></p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab.</p>
+<h3 id="average-days-lost-per-fte">Average # Days Lost per FTE</h3>
+<p>Description</p>
+<p>This analysis is designed to show the Average Number of Days Lost per
+FTE. The Average Number of Days Lost per FTE has been estimated by
+dividing the Number of FTE Days lost by the Average FTE. Analysis
+results can be grouped by Org Levels 1-13. Please note that within the
+FTE Days Lost calculation, users can define the number of working days
+to use using the prompt above the analysis. The calculation can be found
+below.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Average # Days Lost per FTE</th>
+<th>Month</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cost Centre</td>
+<td>Cost Centre Org Level 1-12</td>
+</tr>
+<tr class="even">
+<td>Org Levels 1-13</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Calculation</p>
+<p><strong>(Days Lost (FTE) * (Working Days / 365 <em>(User Defined)</em>)) / Average
+FTE Available</strong></p>
+<p>Prompts</p>
+<p>Working Days to use in Calculation (default: 365)</p>
+<p>View Selectors</p>
+<p>Line Graph (default)</p>
+<p>Table</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image17.png"
+style="width:4.50334in;height:3.35705in"
+alt="A screen shot of a graph Description automatically generated" /></p>
+<h2 id="summary-iii-tab">Summary III Tab</h2>
+<p>Description</p>
+<p>This tab of the absence dashboard is designed to display a number of
+absence-related overview analyses to support the user in identifying and
+managing potential issues.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Absence Type (default value of ‘Sickness’)</p>
+<p>Absence Category</p>
+<p>Absence Reason</p>
+<p>Date From (default value of first day of month from 12 months ago)</p>
+<p>Date To (default value of last day of Last Month)</p>
+<p>Person Type(s) (default values 'Employee', 'Employee and Applicant')</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Category</p>
+<p>Staff Group</p>
+<p>Occupation Code</p>
+<p>Job Role</p>
+<p>Employee Location</p>
+<p>Pay Grade(s)</p>
+<p>Primary Assignments Only</p>
+<p>Absence Target</p>
+<p>Organisation Level 1-13</p>
+<p>Employee Number</p>
+<p>Assignment Status</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<h3 id="rolling-absence-timeline">Rolling Absence Timeline</h3>
+<p>Description</p>
+<p>This analysis provides a view of the Absence Rate and Rolling Absence
+Rate for employees (restricted by Prompts) during the period selected.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence FTE %</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Rolling Absence FTE %</td>
+<td>A Moving Sum of (FTE * Calendar Absence Days Lost) / (FTE * Calendar
+Days in Period) * 100.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Prompts</p>
+<p>Months to use in Rolling Calculation (default: 12)</p>
+<p><em>This prompt defines the ‘Rolling’ period of the analysis. If 12 is
+selected, 12 previous months will be used to calculate the Rolling
+figure for each month shown on the timeline.</em></p>
+<p>View Selector</p>
+<p>Timeline (default)</p>
+<p>Column Graph</p>
+<p>Table</p>
+<p>Actions</p>
+<p>None</p>
+<p>Example Screenshots</p>
+<p><img src="../1/media/image18.png"
+style="width:5.50506in;height:3.71128in"
+alt="A graph on a computer screen Description automatically generated" /></p>
+<h3 id="absence-rate">Absence Rate</h3>
+<p>Description</p>
+<p>This analysis is designed to show the Absence % (FTE) grouped by Staff
+Group, Age Band (Core Users only) or Org Level 1-4.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Staff group associated with Job Role from Position</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Age Band</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="odd">
+<td>Length of Service</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="odd">
+<td>Ethnic Origin</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="even">
+<td>Ethnic Group</td>
+<td>Core Users Only</td>
+</tr>
+<tr class="odd">
+<td>Absence FTE</td>
+<td>Table view only</td>
+</tr>
+<tr class="even">
+<td>Available FTE</td>
+<td>Table view only</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph or Table (Default: Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image19.png"
+style="width:4.49801in;height:2.87756in"
+alt="A graph of blue bars Description automatically generated with medium confidence" /></p>
+<p>Actions</p>
+<p>Click -&gt; Detail Tab (Restricted to region selected)</p>
+<h3 id="absence-rate-by-occupation-code">Absence Rate by Occupation Code</h3>
+<p>Description</p>
+<p>This analysis is designed to show a range of Absence measures grouped by
+the first letter of the Occupation Code.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Occupation Code (First Letter)</th>
+<th>Absence FTE %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence FTE</td>
+<td>Absence Days</td>
+</tr>
+<tr class="even">
+<td>Available FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image20.png"
+style="width:6.26806in;height:2.23936in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="detail-tab">Detail Tab</h2>
+<p>Description</p>
+<p>This tab is designed to give the details of absences to the user who
+will be able to export to their preferred format from this page. Data is
+sorted by FTE Days lost - descending, followed by Last Name, First Name.
+For Open-Ended Absences only, the end date used in defining Long Term
+and Short Term absences can be switched between Current Date and Period
+End Date using the available prompt.</p>
+<p>Prompts</p>
+<p>Include Absences (All or Open-Ended Only. Default All)</p>
+<p>Long Term Period End Date (default: Period To Date)</p>
+<p>Assignment Number</p>
+<p>Employee Number</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<p>Column Selectors</p>
+<p>Org Level 1-13</p>
+<p>Cost Centre Org Level 1-12</p>
+<p>Actions</p>
+<p>Navigate to ESR Self Service (available to self-service users only)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 49%" />
+<col style="width: 1%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assignment Number</th>
+<th colspan="2">Work at Home Flag (Y/N)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td colspan="2">Actual Termination Date</td>
+</tr>
+<tr class="even">
+<td>Middle Name</td>
+<td colspan="2">Days to Nil Pay</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td colspan="2">Calendar Days Lost</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td colspan="2">Working Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td colspan="2">Hours Lost</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td colspan="2">FTE</td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td colspan="2">FTE Days Lost</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td colspan="2">No of Episodes</td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td colspan="2">Predicted Fitness Date</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td colspan="2">Work Related</td>
+</tr>
+<tr class="odd">
+<td>Assignment Status</td>
+<td colspan="2">Third Party</td>
+</tr>
+<tr class="even">
+<td>Absence Reason</td>
+<td colspan="2">Return to Work Discussion Date</td>
+</tr>
+<tr class="odd">
+<td>Level 2 Absence Reason</td>
+<td colspan="2">Occupational Health Referral Date</td>
+</tr>
+<tr class="even">
+<td>Surgery Related</td>
+<td colspan="2">DH Monitoring</td>
+</tr>
+<tr class="odd">
+<td>Absence Type</td>
+<td colspan="2">Classification</td>
+</tr>
+<tr class="even">
+<td>Absence Start Date</td>
+<td colspan="2">Absence Estimated Cost</td>
+</tr>
+<tr class="odd">
+<td>Absence End Date</td>
+<td colspan="2">Org Level 1-13</td>
+</tr>
+<tr class="even">
+<td>Total Duration (Days)</td>
+<td colspan="2">Cost Centre Org Level 1-12</td>
+</tr>
+<tr class="odd">
+<td>Total Absence Duration (Hours)</td>
+<td colspan="2">Sickness Absence Nil Pay Start Date</td>
+</tr>
+<tr class="even">
+<td>Total Absence Duration (Days)</td>
+<td colspan="2">Sickness Absence Half Pay Start Date</td>
+</tr>
+<tr class="odd">
+<td>Total FTE Calendar Days</td>
+<td colspan="2">Assessment Date</td>
+</tr>
+<tr class="even">
+<td>Days to Enter</td>
+<td colspan="2">Days to Half Pay</td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td colspan="2">Half Pay / Nil Pay</td>
+</tr>
+<tr class="even">
+<td>Supervisor</td>
+<td colspan="2">Notifiable Disease</td>
+</tr>
+<tr class="odd">
+<td>Certification Type</td>
+<td colspan="2">Violence Related</td>
+</tr>
+<tr class="even">
+<td>Disability Related</td>
+<td colspan="2">OSP Scheme Name</td>
+</tr>
+<tr class="odd">
+<td>Interface Flag</td>
+<td>Days to End</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Conditional Formatting</p>
+<p>Where absence is open-ended the cell is highlighted in red.</p>
+<h2 id="absence-triggers-tab">Absence Triggers Tab</h2>
+<p>Description</p>
+<p>This tab is designed to give the details of the number of absence
+occurrences per assignment to the user who will be able to export to
+their preferred format from this page. There are five triggers provided
+for the user to set as required (details below). Where the trigger
+criteria are met, the corresponding cell within the analysis turns red.
+A prompt is also included to allow the user to restrict the analysis to
+show employees with open absences only (by default the analysis is not
+restricted to employees with open absences).</p>
+<p>Prompts:</p>
+<p>Restrict to Records with Open Absences</p>
+<p>Restrict to Employees Only at Period End Date</p>
+<p>Restrict to Emps meeting at least one Trigger</p>
+<p>Employee Number</p>
+<p>Trigger Prompts:</p>
+<p>Trigger 1: Assignments with X or more absences</p>
+<p>Trigger 2: Assignments with X or more absences totalling Y days or more</p>
+<p>Trigger 3: Bradford Factor Cal Days &gt;= (default: 100)</p>
+<p>Trigger 4: Bradford Factor FTE &gt;= (default: 100)</p>
+<p>Trigger 5: Assignments with X or more absences within Y months from
+latest absence start date</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>FTE associated with the assignment</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>The organisation associated with the assignment</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Calendar Days Lost</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE Days Lost</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Latest Absence End Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>#Absence Occurrences</td>
+<td>COUNT (DISTINCT RANK("Absence Facts"."ABSENCE_EVENT_WID") BY
+"Assignment"."Assignment Number")</td>
+</tr>
+<tr class="even">
+<td>Bradford Factor (Calendar Days)</td>
+<td>Absence Occurrences<sup>2</sup> * Calendar Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Bradford Factor (FTE Days)</td>
+<td>Absence Occurrences<sup>2</sup> * FTE Days Lost</td>
+</tr>
+<tr class="even">
+<td>Trigger 1</td>
+<td>Cell colour is Red where trigger 1 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Trigger 2</td>
+<td>Cell colour is Red where trigger 2 prompt criteria is met</td>
+</tr>
+<tr class="even">
+<td>Trigger 3</td>
+<td>Cell colour is Red where trigger 3 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Trigger 4</td>
+<td>Cell colour is Red where trigger 4 prompt criteria is met</td>
+</tr>
+<tr class="even">
+<td>Trigger 5</td>
+<td>Cell colour is Red where trigger 5 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td># Occurrences with RTW Discussions</td>
+<td>Absences where the RTW discussion date has been entered.</td>
+</tr>
+<tr class="even">
+<td># Occurrences with OH Referral</td>
+<td>Absences where the Refer to OH field has been populated.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Calculations</p>
+<p>Bradford Factor (Calendar Days)</p>
+<p>POWER(COUNT (DISTINCT RANK("Absence Facts"."ABSENCE_EVENT_WID") BY
+"Assignment"."Assignment Number"), 2) * SUM("Absence Facts"."Absence
+Days" BY "Assignment"."Assignment Number")</p>
+<p>Bradford Factor (FTE Days)</p>
+<p>IFNULL(POWER(COUNT(DISTINCT RANK("Absence Facts"."ABSENCE_EVENT_WID")
+BY "Assignment"."Assignment Number"), 2) * SUM("Absence Facts"."Absence
+FTE" BY "Assignment"."Assignment Number"),0)</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image21.png"
+style="width:6.26806in;height:2.36659in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="absence-triggers-detail-tab">Absence Triggers Detail Tab</h2>
+<p>Description</p>
+<p>This analysis is similar to the Absence Triggers analysis above but
+includes the absence detail behind the summary figures provided. This
+version includes Absence Type, Category and Reason, Absence Start and
+End Date as extra fields.</p>
+<p>Prompts:</p>
+<p>Same as the Absence Triggers analysis above.</p>
+<p>Trigger Prompts:</p>
+<p>Same as the Absence Triggers analysis above.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>FTE associated with the assignment</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>The organisation associated with the assignment</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Calendar Days Lost</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE Days Lost</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Latest Absence End Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence Type</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Category</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence Reason</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Start Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence End Date</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Related Reason</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>#Absence Occurrences</td>
+<td>COUNT (DISTINCT RANK("Absence Facts"."ABSENCE_EVENT_WID") BY
+"Assignment"."Assignment Number")</td>
+</tr>
+<tr class="even">
+<td>Bradford Factor (Calendar Days)</td>
+<td>Absence Occurrences<sup>2</sup> * Calendar Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Bradford Factor (FTE Days)</td>
+<td>Absence Occurrences<sup>2</sup> * FTE Days Lost</td>
+</tr>
+<tr class="even">
+<td>Trigger 1</td>
+<td>Cell colour is Red where trigger 1 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Trigger 2</td>
+<td>Cell colour is Red where trigger 2 prompt criteria is met</td>
+</tr>
+<tr class="even">
+<td>Trigger 3</td>
+<td>Cell colour is Red where trigger 3 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Trigger 4</td>
+<td>Cell colour is Red where trigger 4 prompt criteria is met</td>
+</tr>
+<tr class="even">
+<td>Trigger 5</td>
+<td>Cell colour is Red where trigger 5 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td># Occurrences with RTW Discussions</td>
+<td>Absences where the RTW discussion date has been entered.</td>
+</tr>
+<tr class="even">
+<td># Occurrences with OH Referral</td>
+<td>Absences where the Refer to OH field has been populated.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Calculations</p>
+<p>Same as the Absence Triggers analysis above.</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image22.png"
+style="width:6.26806in;height:2.33378in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="employee-absence-tab">Employee Absence Tab</h2>
+<p>Description</p>
+<p>This tab is designed to give individual employee absence details.
+Absence % (FTE) and Absence (FTE) are shown at an individual level and
+the use of an effective date is also incorporated.</p>
+<p>Prompts:</p>
+<p>Effective Date (Default: Current Date)</p>
+<p>Only Include Absences (Yes/No)</p>
+<p>Employee Number</p>
+<p>Related Reason</p>
+<p>Column Selectors</p>
+<p>Org Level 1-13</p>
+<p>Cost Centre Org Level 1-12</p>
+<p>Trigger Prompts:</p>
+<p>Trigger 1: Assignments with greater than X Abs % (FTE)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>FTE associated with the assignment</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>The organisation associated with the assignment</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Number of Absence Occurences</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Absence Estimated Cost</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence FTE</td>
+<td>Absence FTE for the Period</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Available FTE</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bradford Factor (Calendar Days Lost)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bradford Factor (FTE Days Lost)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Trigger 1</td>
+<td>Cell colour is Red where trigger 1 prompt criteria is met</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image23.png"
+style="width:6.26806in;height:1.53554in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="absence-timeline-detail-tab">Absence Timeline Detail Tab</h2>
+<p>Description</p>
+<p>This analysis provides a view of the absence rate for employees
+(restricted by Prompts) during the period selected. Overall Absence %
+(FTE), Absence (FTE) and Available (FTE) figures are provided. Users are
+able to group the analysis by up to three Organisation Levels (Org
+Levels 1-13).</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence FTE</td>
+<td>Absence FTE for the Period</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td>(FTE * Calendar Absence Days Lost) / (FTE * Calendar Days in Period)
+* 100</td>
+</tr>
+<tr class="odd">
+<td>Available FTE</td>
+<td>Total FTE available for the period selected</td>
+</tr>
+<tr class="even">
+<td># Absence Occurrences</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Estimated Cost</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Quarter</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Job Role</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Area of Work</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Occupation Code</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Org Level 1-13</p>
+<p>Cost Centre Org L1-12</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image24.png"
+style="width:6.26806in;height:2.90511in" /><img src="../1/media/image25.png"
+style="width:6.26806in;height:2.90511in" /></p>
+<h2 id="organisation-absence-tab">Organisation Absence Tab</h2>
+<p>Description</p>
+<p>This tab is designed to give the details of Absence Estimated Cost and
+Absence % (FTE) by organisation. A prompt is provided to show data at
+organisation level 1-13.</p>
+<p>Prompts:</p>
+<p>Organisation Level</p>
+<p>Measure: Estimated Cost, Absence % (FTE)</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Count</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Estimated Cost</td>
+<td>Calculation (see below)</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Absence Occurrences</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Abs FTE Days Lost</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Abs FTE Lost</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Absence Estimated Cost Calculation</p>
+<p>Salary Based Estimated Cost = {Salary * FTE * Absence Days}</p>
+<p>Employer’s Cost = {Salary Based Absence Cost * Employer Cost Factor}</p>
+<p>Both then need to be adjusted for OSP and OMP.</p>
+<p>Salary Based Absence Cost OSP OMP Adjusted = {Salary * FTE * Absence
+Days OSP OMP Adjusted}</p>
+<p>Employers Cost OSP OMP Adjusted = { Salary Based Absence Cost OSP OMP
+Adjusted * Employer Cost Factor}</p>
+<p>Finally the total estimated cost = Salary Based Absence Cost OSP OMP
+Adjusted + Employers Cost OSP OMP Adjusted.</p>
+<p>Please note, because ESR does not record shift patterns, this is only an
+estimate using the assignment FTE.</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image28.png"
+style="width:6.26806in;height:1.98819in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h3 id="organisation-absence-timeline">Organisation Absence Timeline</h3>
+<p>Description</p>
+<p>This analysis is similar to the Absence Timeline analysis however, it
+allows users to compare the absence rate of different organisations or
+organisation levels. The default is Org L2</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Absence Days</td>
+<td>Total of calendar days for all absences for assignments
+included.</td>
+</tr>
+<tr class="even">
+<td>Absence FTE %</td>
+<td>(FTE * Calendar Absence Days Lost) / (FTE * Calendar Days in Period)
+* 100</td>
+</tr>
+<tr class="odd">
+<td>Estimated Cost</td>
+<td>See earlier in document for calculation</td>
+</tr>
+<tr class="even">
+<td>Organisation Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Organisation Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cost Centre Org Level 1-12</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p><strong>Measure:</strong> Show Absence Days, Absence FTE % or Absence Estimated Cost.</p>
+<p><strong>Display by:</strong> Organisation Name, Organisation 1-13, No Grouping.</p>
+<p>View As: Graph (default), Table.</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image29.png"
+style="width:5.83395in;height:2.43642in"
+alt="A graph on a computer screen Description automatically generated" /></p>
+<h2 id="absence-long-term-short-term-detail">Absence Long Term / Short Term Detail</h2>
+<p>Description</p>
+<p>This analysis shows the Long Term and Short Term Absence grouped by Org
+Levels 1-13, Organisation Name, Month and Staff Group. Measures
+available are: % Compared to Available FTE, % Compared to Total FTE
+Lost, # Absence Occurrences, FTE Days Lost and Calendar Days Lost.</p>
+<p>Prompts:</p>
+<p>Long Term Absence &gt;= (days) (default: 28)</p>
+<p>Long Term Period End Date (default: Period To Date)</p>
+<p>Group by*Measure (Default: % Compared to Available FTE)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Long Term</th>
+<th>Short Term</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td>Org Levels 1-13</td>
+</tr>
+<tr class="even">
+<td>Cost Centre</td>
+<td>Cost Centre Org Level 1-12</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Role</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image30.png"
+style="width:6.26806in;height:2.48713in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="days-lost-in-period">Days Lost in Period</h2>
+<p>Description</p>
+<p>This analysis is designed to enable users to report on employees as at a
+specific effective date, and then all absences within a user defined
+absence period.</p>
+<p>Prompts:</p>
+<p>Report Effective Date</p>
+<p>Absence Dates Between</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Assignment Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cost Centre</td>
+<td>Person Type</td>
+</tr>
+<tr class="even">
+<td>Absence Category</td>
+<td>Employee Person Type</td>
+</tr>
+<tr class="odd">
+<td>Absence Type</td>
+<td>Staff Group</td>
+</tr>
+<tr class="even">
+<td>Absence Reason</td>
+<td>Termination Date</td>
+</tr>
+<tr class="odd">
+<td>Level 2 Sickness Reason</td>
+<td>Absence Start Date</td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td>Absence End Date</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Calendar Days Lost</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td>FTE Days Lost</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>FTE</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image31.png"
+style="width:6.26806in;height:1.81077in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="individual-absence-record">Individual Absence Record</h2>
+<p>Description</p>
+<p>This analysis allows users to analyse at an individual level, the reason
+of absence and length of absence as at the Report Effective Date.</p>
+<p>Prompts:</p>
+<p>Report Effective Date</p>
+<p>Absence Date Between</p>
+<p>Employee Number</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<p>Actions</p>
+<p>Navigate to ESR Self Service (available to self-service users only)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Name</th>
+<th>Absence End Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Calendar Days Lost</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Working Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Absence Reason</td>
+<td>Sessions Lost</td>
+</tr>
+<tr class="even">
+<td>Level 2 Reason</td>
+<td>Hours Lost</td>
+</tr>
+<tr class="odd">
+<td>Surgery Related</td>
+<td>FTE</td>
+</tr>
+<tr class="even">
+<td>Absence Type</td>
+<td>FTE Days Lost</td>
+</tr>
+<tr class="odd">
+<td>Last Name</td>
+<td>No. of Episodes</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Predicted Fitness Date</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Work Related</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td>Third Party</td>
+</tr>
+<tr class="odd">
+<td>Primary Assignment Flag</td>
+<td>Leave Hours</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Leave Date</td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td>RTW Discussion Date</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td>Occ Health Referral Date</td>
+</tr>
+<tr class="odd">
+<td>Pay Grade</td>
+<td>Assessment Date</td>
+</tr>
+<tr class="even">
+<td>First Day Absent</td>
+<td>DH Monitoring</td>
+</tr>
+<tr class="odd">
+<td>Absence Start Date</td>
+<td>Prorated</td>
+</tr>
+<tr class="even">
+<td>Org Level 1-13</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image32.png"
+style="width:6.26806in;height:1.89917in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="annual-leave-balances">Annual Leave Balances</h2>
+<p>Description</p>
+<p>This analysis is designed to help managers review Annual Leave
+entitlements for assignments. The analysis displays a row for each
+employee assignment matching the selection criteria and also shows who
+has an Annual Leave Accrual Plan attached to their Assignment.</p>
+<p>Prompts:</p>
+<p>* Organisation Hierarchy</p>
+<p>* Organisation</p>
+<p>Staff Group</p>
+<p>Assignment Category</p>
+<p>Employee Name is LIKE (pattern match)</p>
+<p>Units (Default: Hours)</p>
+<p>Effective Date</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 49%" />
+<col style="width: 1%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th colspan="2">Add 2 Statutory Days</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td colspan="2">Previous Year Carryover</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td colspan="2">Entitlement</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td colspan="2">Leave Taken</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td colspan="2">% Leave Taken</td>
+</tr>
+<tr class="odd">
+<td>Assignment Number</td>
+<td colspan="2">Leave Booked</td>
+</tr>
+<tr class="even">
+<td>Supervisor Name</td>
+<td colspan="2">Total Leave</td>
+</tr>
+<tr class="odd">
+<td>Supervisor Email</td>
+<td colspan="2">Remaining Leave</td>
+</tr>
+<tr class="even">
+<td>Accrual Start Date</td>
+<td colspan="2">Future Projected Leave (Days)</td>
+</tr>
+<tr class="odd">
+<td>Start Date Overridden</td>
+<td colspan="2">Leave Crosses into Next Accrual Year</td>
+</tr>
+<tr class="even">
+<td>Include Bank Holidays</td>
+<td colspan="2">Organisation Level 1-13</td>
+</tr>
+<tr class="odd">
+<td>Accrual Plan Name</td>
+<td colspan="2">Employee Category</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image33.png"
+style="width:6.26806in;height:0.95226in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="study-leave">Study Leave</h2>
+<p>Description</p>
+<p>This analysis enables users to analyse employee study leave and provides
+details of absence due to study decreasing or increasing leave and
+associated training record history. Depending on the user prompt
+selection, either the decreasing or increasing analysis will display.</p>
+<p>Prompts:</p>
+<p>Organisation Name</p>
+<p>Staff Group(s)</p>
+<p>Employee Name(s)</p>
+<p>Employee Number(s)</p>
+<p>* Absence Date From</p>
+<p>* Absence Date To</p>
+<p>* Absence Type (Study Decreasing/Increasing Balance)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Employee Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Absence Type</td>
+</tr>
+<tr class="even">
+<td>Absence Reason</td>
+<td>Absence Start Date</td>
+</tr>
+<tr class="odd">
+<td>Absence End Date</td>
+<td>Calendar Days Lost</td>
+</tr>
+<tr class="even">
+<td>Study Leave Allocation</td>
+<td>Number of Days Taken</td>
+</tr>
+<tr class="odd">
+<td>Number of Days Remaining</td>
+<td>Course Name</td>
+</tr>
+<tr class="even">
+<td>Successfully Attended</td>
+<td>Failure Reason</td>
+</tr>
+<tr class="odd">
+<td>Competencies Gained</td>
+<td>Proficiency Level Name</td>
+</tr>
+<tr class="even">
+<td>Course Exam Fee Amount</td>
+<td>Course Exam Fee Amount Percentage</td>
+</tr>
+<tr class="odd">
+<td>Study Allocation Start Date</td>
+<td>Course Venue</td>
+</tr>
+<tr class="even">
+<td>Course Location</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image34.png"
+style="width:6.26806in;height:1.89515in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="absence-calendar">Absence Calendar</h2>
+<p>Description</p>
+<p>This analysis is a copy of the absence calendar for managers which
+allows users the ability to export to Excel which is not possible in EBS
+or the portal.</p>
+<p>Prompts:</p>
+<p>Supervisor Employee Number</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assignment Number</th>
+<th>Month Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Day</td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td>Day of Month</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image35.png"
+style="width:6.26806in;height:1.86033in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<p><img src="../1/media/image36.png"
+style="width:1.49546in;height:1.5591in"
+alt="A chart of different colors Description automatically generated" /></p>
+<h2 id="staff-list">Staff List</h2>
+<p>Description</p>
+<p>This analysis returns a staff list as at an effective date and includes
+all absences as at an effective date (current date by default).</p>
+<p>Prompts:</p>
+<p>Absence Type</p>
+<p>Absence Category</p>
+<p>Absence Reason</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<p>Employee Number</p>
+<p>Effective Date</p>
+<p>Absence Date</p>
+<p>Level 2 Reason</p>
+<p>Related Reason</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Last Name</th>
+<th>Occupation Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Name</td>
+<td>Incremental Date</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Primary</td>
+</tr>
+<tr class="odd">
+<td>Employee Number</td>
+<td>FTE</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td>Age 70+ (Yes / No)</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td>Disability Related</td>
+</tr>
+<tr class="even">
+<td>Organisation Level 1-13</td>
+<td>Absence Type</td>
+</tr>
+<tr class="odd">
+<td>Cost Centre</td>
+<td>Absence Category</td>
+</tr>
+<tr class="even">
+<td>Cost Centre Organisation Level 1-12</td>
+<td>Absence Reason</td>
+</tr>
+<tr class="odd">
+<td>Location</td>
+<td>Work at Home Flag</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Absence Start Date</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Absence End Date</td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td>Total Duration (Days)</td>
+</tr>
+<tr class="odd">
+<td>Assignment Category</td>
+<td>Total FTE Calendar Days</td>
+</tr>
+<tr class="even">
+<td>Assignment Status</td>
+<td>Days to Enter</td>
+</tr>
+<tr class="odd">
+<td>Supervisor Name</td>
+<td>Related Reason</td>
+</tr>
+<tr class="even">
+<td>Supervisor Asg. Number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image37.png"
+style="width:6.26806in;height:2.3003in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="future-booked-leave">Future Booked Leave</h2>
+<h3 id="percentage-of-absent-staff-by-monthweek">Percentage of Absent Staff by Month/Week</h3>
+<p>Description</p>
+<p>This analysis enables users to report the percentage of staff absent (by
+month / week) based on a specified threshold.</p>
+<p>Prompts:</p>
+<p>Highlight When Percentage of Absent Staff &gt;=</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Month Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Week of Year</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% Absence Occurrences</td>
+<td>Absence Occurrences / Assignment Count Distinct *100</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image38.png"
+style="width:6.26806in;height:2.11614in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h3 id="percentage-of-absent-staff">Percentage of Absent Staff</h3>
+<p>Description</p>
+<p>This analysis enables users to report the number of staff absent (by
+day) based on a specified threshold.</p>
+<p>Prompts:</p>
+<p>Show Dates Where Percentage of Staff Due to be Absent &gt;=</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Count</td>
+<td></td>
+</tr>
+<tr class="even">
+<td># Absence Occurrences</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% Assignments Absent</td>
+<td>Absence Occurrences / Assignment Count Distinct *100</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image39.png"
+style="width:6.26806in;height:1.70028in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="benchmarking">Benchmarking</h2>
+<p>Description</p>
+<p>This tab returns Absence FTE % benchmarking figures at Trust, Region,
+Country and National levels, which can be compared against figures at
+Manager / Team level.</p>
+<p>Calculations</p>
+<p><strong>Benchmarking Absence FTE %:</strong></p>
+<p>Benchmarking Absence FTE / Benchmarking Total Available FTE * 100</p>
+<p><strong>Non-Benchmarking Absence FTE %:</strong></p>
+<p>Absence FTE / Available FTE * 100</p>
+<p><strong>Note:</strong> The data returned is effective as at the last day of the
+previous month in line with Benchmarking data refresh cycle. For example
+if the report is run in April, the data returned is for between January
+and March.</p>
+<p>Prompts</p>
+<p>Absence Type</p>
+<p>Absence Category</p>
+<p>Absence Reason</p>
+<p>Staff Group</p>
+<p>Area of Work</p>
+<p>Job Role</p>
+<p>Occupation Code (Initial)</p>
+<p>Employee Person Type</p>
+<p>Assignment Category</p>
+<p>Assignment Status</p>
+<p>Organisation Type</p>
+<p>Month Between</p>
+<p>Column Selectors (Detail Views only)</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Area of Work</p>
+<p>Employee Category</p>
+<p>Assignment Category</p>
+<h3 id="summary">Summary</h3>
+<p>Description</p>
+<p>This analysis provides a summary view of Absence FTE % benchmarking
+figures at Trust, Region, Country and National levels, which can be
+compared against figures at Manager / Team level.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Team</td>
+<td>Absence FTE % at Manager / Team level (Supervisor hierarchy
+apply)</td>
+</tr>
+<tr class="odd">
+<td>Trust</td>
+<td>Absence FTE % at Trust level</td>
+</tr>
+<tr class="even">
+<td>Region</td>
+<td>Absence FTE % at Region level</td>
+</tr>
+<tr class="odd">
+<td>Country</td>
+<td>Absence FTE % at Country level</td>
+</tr>
+<tr class="even">
+<td>National</td>
+<td>Absence FTE % at National level</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Graph by Level, Graph by Month or Table (Default Graph by Level)</p>
+<p>Example Screenshot</p>
+<p><img src="../1/media/image40.png"
+style="width:5.10438in;height:2.69696in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<h3 id="benchmarking-detail">Benchmarking Detail</h3>
+<p>Description</p>
+<p>This analysis provides a detail view of Absence FTE % benchmarking
+figures at Trust, Region, Country and National levels, which can be
+compared against figures at Manager / Team level using the
+Non-Benchmarking Detail analysis available within the page.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Trust</td>
+<td>Absence FTE % at Trust level</td>
+</tr>
+<tr class="odd">
+<td>Region</td>
+<td>Absence FTE % at Region level</td>
+</tr>
+<tr class="even">
+<td>Country</td>
+<td>Absence FTE % at Country level</td>
+</tr>
+<tr class="odd">
+<td>National</td>
+<td>Absence FTE % at National level</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image41.png"
+style="width:6.26806in;height:2.05208in"
+alt="Table Description automatically generated" /></p>
+<h3 id="non-benchmarking-detail">Non-Benchmarking Detail</h3>
+<p>Description</p>
+<p>This analysis provides a detail view of Absence FTE % benchmarking
+figures at Manager / Team level, which can be compared against figures
+at Trust, Region, Country and National levels using the Benchmarking
+Detail analysis available within the page.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Team</td>
+<td>Absence FTE % at Manager / Team level (Supervisor hierarchy
+apply)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image42.png"
+style="width:3.88531in;height:2.52629in"
+alt="Table Description automatically generated" /></p>
+<h2 id="absence-set-up">Absence Set Up</h2>
+<p>Description</p>
+<p>This tab returns a number of analyses which can be used to assess how
+absence has been set up at both employee / assignment level in ESR.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Very Senior Manager Roles</p>
+<p>OSP Scheme Effective Date</p>
+<h3 id="osp-scheme-is-not-nhs-osp-bank-nil-scheme">OSP Scheme is not NHS OSP BANK NIL SCHEME</h3>
+<p>Description</p>
+<p>This analysis return bank employees who are not set up on a suggested or
+recommended OSP scheme.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Bank Post Held</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>NHS OSP Scheme</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image43.png"
+style="width:4.05576in;height:2.10427in"
+alt="A picture containing text, screenshot, font, number Description automatically generated" /></p>
+<h3 id="accrual-plan-analyses">Accrual Plan Analyses</h3>
+<p>Description</p>
+<p>This section returns a number of analyses which identify employees who
+are not set up on a suggested or recommended annual leave Accrual Plan
+as per the NHS User Manual
+<a href="https://my.esr.nhs.uk/esrusermanual/HTML/NAVU846.htm">here</a>.</p>
+<p>Prompts</p>
+<p>Accrual Plan Effective Date</p>
+<p>Exclude Local Accrual Plans (Yes: Optional)</p>
+<p><strong>Note:</strong> A detailed example is provided below based on the Very Senior
+Managers analysis and the rest of the analyses are included with minimal
+detail as they are all similar.</p>
+<h4 id="vsm-accrual-plan-is-not-accrual-n-nhs">VSM Accrual Plan is not Accrual n NHS</h4>
+<p>Description</p>
+<p>This analysis returns Very Senior Manager employees who are not set up
+on a suggested or recommended annual leave Accrual Plan.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Accrual Plan Name</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../1/media/image44.png"
+style="width:5.10207in;height:2.25179in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" /></p>
+<h4 id="md-accrual-plan-is-not-accrual-n-nhs">M&amp;D Accrual Plan is not Accrual n NHS</h4>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Assignment Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Accrual Plan Name</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="afc-accrual-plan-is-not-annual-leave-hours-n-nhs">AfC Accrual Plan is not Annual Leave Hours n NHS</h4>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Assignment Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Accrual Plan Name</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="bank-accrual-plan-is-not-bank-al-hours-n-nhs">Bank Accrual Plan is not Bank AL Hours n NHS</h4>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Assignment Category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Accrual Plan Name</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Absence%20Analysis%20Dashboard/index.html" class="btn btn-neutral float-left" title="Absence Analysis Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Appraisal%20Reviews%20Dashboard/index.html" class="btn btn-neutral float-right" title="Appraisal Reviews Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Absence%20Analysis%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Appraisal%20Reviews%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

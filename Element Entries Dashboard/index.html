@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Element Entries Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Element Entries Dashboard";
+        var mkdocs_page_input_path = "Element Entries Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Element Entries Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#entries-by-assignment-tab">Entries by Assignment Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#element-entries-by-assignment">Element Entries by Assignment</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#entry-combinations-tab">Entry Combinations Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#entry-combinations">Entry Combinations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#payments-due-to-expire-tab">Payments Due to Expire Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#payment-due-to-expire">Payment Due to Expire</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#element-entry-updates-tab">Element Entry Updates Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#batch-element-entry-messages-tab">Batch Element Entry Messages Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#in-lieu-of-annual-leave-tab">In Lieu of Annual Leave Tab</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Element Entries Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="element-entries-dashboard">Element Entries Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to provide the user with intelligence around
+Element Entries.</p>
+<p>Definitions</p>
+<p><strong>Element:</strong> These are components in the calculation of employee pay.
+Each element represents a compensation or benefit type, such as salary;
+wages, and pension contributions.</p>
+<p><strong>Element Entry:</strong> This is the record controlling an employee's receipt
+of an element, including the period of time for which the employee
+receives the element and its value.</p>
+<p><strong>Element Classifications:</strong> These control the order in which elements
+are processed and the balances they feed. Oracle Payroll predefines
+primary element classifications and some secondary classifications.
+Users can create other secondary classifications.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administration</p>
+<p>XXX Finance Reporting</p>
+<p>XXX Finance Reporting and Hub Mapping</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Payroll Administration</p>
+<p>XXX Payroll Audit</p>
+<p>XXX Payroll Super Administration</p>
+<h2 id="entries-by-assignment-tab">Entries by Assignment Tab</h2>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Person Type(s) (Multi-select, default: Employee, Employee and Applicant)</p>
+<p>Employee Person Type(s)</p>
+<p>Employee Category</p>
+<p>Assignment Status</p>
+<p>Occupation Code</p>
+<p>Assignment Category(s)</p>
+<p>Pay Scale</p>
+<p>Pay Point</p>
+<p>Effective Date</p>
+<p>Element Name</p>
+<p>Element Entry Value</p>
+<p>Restrict to Employees with an Actual Termination Date (Yes: Optional)</p>
+<h3 id="element-entries-by-assignment">Element Entries by Assignment</h3>
+<p>Description</p>
+<p>This analysis is designed to show all assignments against which the
+selected (user defined) Elements are present.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Position Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Organisation</td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td>Element</td>
+</tr>
+<tr class="odd">
+<td>Pay Grade</td>
+<td>Effective From</td>
+</tr>
+<tr class="even">
+<td>Employee Category</td>
+<td>Effective To</td>
+</tr>
+<tr class="odd">
+<td>Position</td>
+<td>Created By</td>
+</tr>
+<tr class="even">
+<td>Processing Type</td>
+<td>Last Updated By</td>
+</tr>
+<tr class="odd">
+<td>Element Entry Value Name</td>
+<td>Last Updated Date</td>
+</tr>
+<tr class="even">
+<td>Element Entry Value</td>
+<td>Actual Termination Date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>None</p>
+<p>View Selector</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../7/media/image2.png"
+style="width:6.26806in;height:1.6226in" /></p>
+<h2 id="entry-combinations-tab">Entry Combinations Tab</h2>
+<h3 id="entry-combinations">Entry Combinations</h3>
+<p>Description</p>
+<p>This analysis is designed to show all assignments against which the
+combination of selected (user defined) Elements are present.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Pay Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Position Title</td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td>Organisation</td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>None</p>
+<p>View Selector</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../7/media/image3.png"
+style="width:6.26806in;height:1.84091in" /></p>
+<h2 id="payments-due-to-expire-tab">Payments Due to Expire Tab</h2>
+<h3 id="payment-due-to-expire">Payment Due to Expire</h3>
+<p>Description</p>
+<p>This analysis is designed to show expiry of payments to Medical and
+Dental staff over the next 3 months, however other staff and dates can
+be included using the prompts.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Effective Date From</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Effective Date To</td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td>Days to Expiry</td>
+</tr>
+<tr class="odd">
+<td>Element Name</td>
+<td>Units Worked</td>
+</tr>
+<tr class="even">
+<td>Organisation Level (1-13)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Group By (Org Level 1-13)</p>
+<p>View Selector</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../7/media/image4.png"
+style="width:6.26806in;height:1.03195in" /></p>
+<h2 id="element-entry-updates-tab">Element Entry Updates Tab</h2>
+<p>Description</p>
+<p>The report is designed to return entries that have been updated within a
+specific period of time by a specific person. Please note: This report
+does not yet return updates entries of ex-employees. This will be added
+in a future release.</p>
+<p>Prompts:</p>
+<p>* Payroll Name</p>
+<p>* Payroll Period</p>
+<p>Element Name</p>
+<p>Processing Type</p>
+<p>Last Updated By</p>
+<p>Element Set Name</p>
+<p>Last Updated Date Between</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Input Value Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment</td>
+<td>Entry Value</td>
+</tr>
+<tr class="even">
+<td>Paypoint</td>
+<td>Effective From Date</td>
+</tr>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Effective To Date</td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td>Created By</td>
+</tr>
+<tr class="odd">
+<td>Element Name</td>
+<td>Last Updated By</td>
+</tr>
+<tr class="even">
+<td>Processing Type</td>
+<td>Last Updated Date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../7/media/image5.png"
+style="width:6.26806in;height:1.41031in" /></p>
+<h2 id="batch-element-entry-messages-tab">Batch Element Entry Messages Tab</h2>
+<p>Description</p>
+<p>This analysis enables users to highlight problems with the elements
+prior to a payroll being run to avoid an entire payroll being run as a
+validation process. It also allows users to view the validation messages
+returned after Batch Element Entry has been used.</p>
+<p>Prompts:</p>
+<p>Organisation Name</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Name</th>
+<th>Assignment Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Batch Name</td>
+<td>Element Name</td>
+</tr>
+<tr class="even">
+<td>Batch Status</td>
+<td>Batch Line Status</td>
+</tr>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Error Level</td>
+</tr>
+<tr class="even">
+<td>Full Name</td>
+<td>Message</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../7/media/image6.png"
+style="width:6.26806in;height:1.45652in" /></p>
+<h2 id="in-lieu-of-annual-leave-tab">In Lieu of Annual Leave Tab</h2>
+<p>Description</p>
+<p>This analysis return assignments with an Actual Termination Date in the
+future and an annual leave balance not equal to zero, where there are no
+elements relating to annual leave payment/deduction against the
+assignment.</p>
+<p>Please note that this analysis only return current employees.</p>
+<p>Prompts:</p>
+<p>Organization Name</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Employee Category</p>
+<p>Paypoint</p>
+<p>Effective Date</p>
+<p>Actual Termination Date</p>
+<p>* Element(s)</p>
+<p>Effective From Date &gt;=</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Supervisor Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Supervisor Email Address</td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td>Accrual Plan Name</td>
+</tr>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Annual Leave Balance Remaining</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Actual Termination Date</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Final Process Date</td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../7/media/image7.png"
+style="width:6.26806in;height:1.04444in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Education%20and%20Learning%20Dashboard/index.html" class="btn btn-neutral float-left" title="Education and Learning Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Employee%20Relations%20Dashboard/index.html" class="btn btn-neutral float-right" title="Employee Relations Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Education%20and%20Learning%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Employee%20Relations%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

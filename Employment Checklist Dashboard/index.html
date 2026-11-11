@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Employment Checklist Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Employment Checklist Dashboard";
+        var mkdocs_page_input_path = "Employment Checklist Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Employment Checklist Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dbs-tab">DBS Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dbs-employeesapplicants">DBS Employees/Applicants</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prof-reg-qual-illegal-working-tab">Prof Reg, Qual, Illegal Working Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#prof-reg-qual-illegal-working-employeesapplicants">Prof Reg, Qual, Illegal Working Employees/Applicants</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#medical-tab">Medical Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#medical-employeesapplicants">Medical Employees/Applicants</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#eu-status-tab">EU Status Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#employeesapplicants-approaching-expiry">Employees/Applicants Approaching Expiry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#employeesapplicants-without-verification">Employees/Applicants Without Verification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#detail">Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#checklist-summary-tab">Checklist Summary Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#checklist-detail-tab">Checklist Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fit-and-proper-person-checks-tab">Fit and Proper Person Checks Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sponsorship-requirements-tab">Sponsorship Requirements Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#absences-greater-than-x-days">Absences Greater than X Days</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#absence-total-greater-than-4-weeks">Absence Total Greater than 4 Weeks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#terminations">Terminations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#workforce-movements">Workforce Movements</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Employment Checklist Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="employment-checklist-dashboard">Employment Checklist Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to provide information based on the
+Employment Checklist data held by ESR. It replicates the Employment
+Checklist Workbook available through Discoverer reporting and returns
+data for employees and applicants.</p>
+<p>This includes the following Dashboard Pages:</p>
+<ul>
+<li>
+<p>DBS</p>
+</li>
+<li>
+<p>Professional Registrations, Qualifications and Illegal Working
+  Checklist</p>
+</li>
+<li>
+<p>Medical</p>
+</li>
+</ul>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administration</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Recruitment &amp; Applicant Enrolment Administration</p>
+<p>XXX Recruitment &amp; Applicant Enrolment Administration (with RA)</p>
+<p>Prompts</p>
+<p>Staff Group</p>
+<p>Occupation Code</p>
+<p>Pay Grade</p>
+<p>Job Role</p>
+<p>Person type</p>
+<p>Employee person type</p>
+<p>Assignment category</p>
+<p>Assignment status</p>
+<p>Organisation</p>
+<p>Effective Date</p>
+<h2 id="dbs-tab">DBS Tab</h2>
+<p>Prompts</p>
+<p>Restrict to Latest DBS Record Only (default: Yes)</p>
+<p>Employee Latest Start Date (Employees Only)</p>
+<p>* Source Document (Employees Only)</p>
+<p>Applicant Status Start Date (Applicants Only)</p>
+<p>Status (default: Offer Accepted) (Applicants Only)</p>
+<h3 id="dbs-employeesapplicants">DBS Employees/Applicants</h3>
+<p>Description</p>
+<p>These analyses are designed to show a detail view of the DBS information
+entered into ESR for both Applicants and Employees.</p>
+<p>View Selectors</p>
+<p>View Type (Summary or Detail)</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee/Applicant Number</th>
+<th>Last Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Name</td>
+<td>Org Level 1-13</td>
+</tr>
+<tr>
+<td>Organisation</td>
+<td>Cost Centre</td>
+</tr>
+<tr>
+<td>Position Required DBS Disclosure Type</td>
+<td>Staff Group</td>
+</tr>
+<tr>
+<td>Compliant?</td>
+<td>Type of DBS Disclosure</td>
+</tr>
+<tr>
+<td>DBS Website Check Date</td>
+<td>DBS Disclosure Issue Date</td>
+</tr>
+<tr>
+<td>DBS Check Outcome</td>
+<td>DBS Unique Number</td>
+</tr>
+<tr>
+<td>Created Date</td>
+<td>DBS Website Match</td>
+</tr>
+<tr>
+<td>Pay Scale (Emp Only)</td>
+<td>Permission to Check DBS Status</td>
+</tr>
+<tr>
+<td>Job Role</td>
+<td>Created By</td>
+</tr>
+<tr>
+<td>Position Number</td>
+<td>Staff Group</td>
+</tr>
+<tr>
+<td>Position Title</td>
+<td>Date DBS Form Sent to Person</td>
+</tr>
+<tr>
+<td>Occupation Code</td>
+<td>FTE</td>
+</tr>
+<tr>
+<td>Area of Work</td>
+<td>DBS Administrator 1</td>
+</tr>
+<tr>
+<td>DBS Form Ref Number</td>
+<td>CoGS Received From</td>
+</tr>
+<tr>
+<td>DBS Requested By</td>
+<td>ID Documents Verified</td>
+</tr>
+<tr>
+<td>Date DBS Form Returned</td>
+<td>DBS Administrator 2</td>
+</tr>
+<tr>
+<td>DBS Form Correct</td>
+<td>Date DBS/CoGS Received</td>
+</tr>
+<tr>
+<td>Date DBS/CoGS Requested</td>
+<td>Fast Track POCA Requested</td>
+</tr>
+<tr>
+<td>Children’s Barred List Check Required</td>
+<td>Adults Barred List Check Required</td>
+</tr>
+<tr>
+<td>Fast Track POCA Received</td>
+<td>Adults First Received</td>
+</tr>
+<tr>
+<td>Adults First Requested</td>
+<td>Address Line 1</td>
+</tr>
+<tr>
+<td>Assignment Status (Emp Only)</td>
+<td>Address Line 2</td>
+</tr>
+<tr>
+<td>Assignment End Date (Emp Only)</td>
+<td>Address Line 3</td>
+</tr>
+<tr>
+<td>Employee Latest Start Date (Emp Only)</td>
+<td>City</td>
+</tr>
+<tr>
+<td>Assignment Start Date (Emp Only)</td>
+<td>Region</td>
+</tr>
+<tr>
+<td>Assignment Number</td>
+<td>Post Code</td>
+</tr>
+<tr>
+<td>Assignment Category</td>
+<td>Mobile Phone</td>
+</tr>
+<tr>
+<td>Bank Post Held</td>
+<td>Email</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image2.png" style="width:6.26806in;height:1.713in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="prof-reg-qual-illegal-working-tab">Prof Reg, Qual, Illegal Working Tab</h2>
+<p>Prompts</p>
+<p>* Restrict to Latest Employment Checklist Record Only (Employees Only -
+Default: Yes)</p>
+<p>Employee Latest Start Date (Employees only)</p>
+<p>* Source Document (Employees only)</p>
+<p>Applicant Status Start Date (Applicants only)</p>
+<p>Status (Applicants only)</p>
+<h3 id="prof-reg-qual-illegal-working-employeesapplicants">Prof Reg, Qual, Illegal Working Employees/Applicants</h3>
+<p>Description</p>
+<p>These analyses are designed to show a detail view of the Professional
+Registration, Qualifications and Illegal Working Checklist information
+entered into ESR for both Applicants and Employees.</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee/Applicant Number</th>
+<th>Org Level 1-13</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Latest Start Date (Emp Only)</td>
+<td>Date of Prof Reg Check – Recruitment</td>
+</tr>
+<tr>
+<td>Status Start Date (App Only)</td>
+<td>Date of Qualifications Check</td>
+</tr>
+<tr>
+<td>Organisation Name</td>
+<td>Address Line 1</td>
+</tr>
+<tr>
+<td>Date of Prof Reg Check – Hire</td>
+<td>Address Line 2</td>
+</tr>
+<tr>
+<td>Date of Illegal Working Doc Check</td>
+<td>Address Line 3</td>
+</tr>
+<tr>
+<td>Visa Type</td>
+<td>City</td>
+</tr>
+<tr>
+<td>Visa Reference Number</td>
+<td>County</td>
+</tr>
+<tr>
+<td>Visa Issue Date</td>
+<td>Post Code</td>
+</tr>
+<tr>
+<td>Visa Expiry Date</td>
+<td>Mobile Phone</td>
+</tr>
+<tr>
+<td>Sponsorship Required</td>
+<td>Email</td>
+</tr>
+<tr>
+<td>Employee/Applicant Name</td>
+<td>Occupation Code</td>
+</tr>
+<tr>
+<td>Applicant Status (App Only)</td>
+<td>Position Title</td>
+</tr>
+<tr>
+<td>Position Number</td>
+<td>Area of Work</td>
+</tr>
+<tr>
+<td>Assignment Number (Emp Only)</td>
+<td>Assignment Category (Emp Only)</td>
+</tr>
+<tr>
+<td>FTE (Emp Only)</td>
+<td>Assignment End Date (Emp Only)</td>
+</tr>
+<tr>
+<td>Assignment Start Date (Emp Only)</td>
+<td>Nationality (Emp Only)</td>
+</tr>
+<tr>
+<td>Assignment Status (Emp Only)</td>
+<td>Residency Status</td>
+</tr>
+<tr>
+<td>Contract Hours</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image3.png"
+style="width:6.26806in;height:1.47259in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="medical-tab">Medical Tab</h2>
+<p>Prompts</p>
+<p>* Restrict to Latest Employment Checklist Record Only (Employees Only -
+Default: Yes)</p>
+<p>Employee Latest Start Date (Employees only)</p>
+<p>* Source Document (Employees only)</p>
+<p>Applicant Status Start Date (Applicants only)</p>
+<p>Status (Applicants only)</p>
+<h3 id="medical-employeesapplicants">Medical Employees/Applicants</h3>
+<p>Description</p>
+<p>This analysis is designed to show a detail view of the Medical
+information entered into ESR for both Employees and Applicants.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee/Applicant Number</th>
+<th>Employee/Applicant Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Latest Start Date (Emp Only)</td>
+<td>Occupation Code</td>
+</tr>
+<tr>
+<td>Org Level 1-13</td>
+<td>OH Status</td>
+</tr>
+<tr>
+<td>Organisation Name</td>
+<td>Date of Medical</td>
+</tr>
+<tr>
+<td>EPP Clearance</td>
+<td>Address Line 1</td>
+</tr>
+<tr>
+<td>Date of Medical Clearance</td>
+<td>Address Line 2</td>
+</tr>
+<tr>
+<td>Position Number</td>
+<td>Address Line 3</td>
+</tr>
+<tr>
+<td>Position Title</td>
+<td>City</td>
+</tr>
+<tr>
+<td>Area of Work</td>
+<td>County</td>
+</tr>
+<tr>
+<td>FTE (Emp Only)</td>
+<td>Postal Code</td>
+</tr>
+<tr>
+<td>Assignment Number (Emp Only)</td>
+<td>Mobile Phone</td>
+</tr>
+<tr>
+<td>Assignment Category (Emp Only)</td>
+<td>Email</td>
+</tr>
+<tr>
+<td>Application Status (App Only)</td>
+<td>Assignment Status (Emp Only)</td>
+</tr>
+<tr>
+<td>Assignment Start Date (Emp Only)</td>
+<td>Assignment End Date (Emp Only)</td>
+</tr>
+<tr>
+<td>OH Review Date</td>
+<td>OH Record Date</td>
+</tr>
+<tr>
+<td>Assessment Type</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image4.png"
+style="width:6.26806in;height:1.22214in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="eu-status-tab">EU Status Tab</h2>
+<p>Prompts</p>
+<p>Employee Latest Start Date (Employees only)</p>
+<p>Applicant Status Start Date (Applicants only)</p>
+<p>Status (Applicants only)</p>
+<p>Number of Days to Expiry Date</p>
+<p>Restrict to EU, EEA and Swiss Nationals (excl. Irish)</p>
+<h3 id="employeesapplicants-approaching-expiry">Employees/Applicants Approaching Expiry</h3>
+<p>Description</p>
+<p>These analyses are designed to show details of EU settlement scheme
+status approaching expiry for both Employees and Applicants.</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employees/Applicant Name</th>
+<th>Pre-Settled Status Expiry Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employees/Applicant Number</td>
+<td>Granted EU Temp Leave To Remain</td>
+</tr>
+<tr>
+<td>EU Settlement Scheme Status</td>
+<td>EU Leave To Remain Expiry Date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image5.png"
+style="width:6.11822in;height:1.20861in"
+alt="A blue and white box with text Description automatically generated" /></p>
+<h3 id="employeesapplicants-without-verification">Employees/Applicants Without Verification</h3>
+<p>Description</p>
+<p>These analyses are designed to show details of EU settlement scheme
+status verification for both Employees and Applicants.</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employees/Applicant Name</th>
+<th>EU Settlement Scheme Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employees/Applicant Number</td>
+<td>Settlement Status Verified date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image6.png"
+style="width:4.35038in;height:1.54818in"
+alt="A screenshot of a document Description automatically generated" /></p>
+<h3 id="detail">Detail</h3>
+<p>Description</p>
+<p>These analyses are designed to show full EU Status details held in ESR
+for both Employees and Applicants.</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee Number / Applicant Number</th>
+<th>Nationality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee / Applicant Name</td>
+<td>EU, EEA or Swiss National</td>
+</tr>
+<tr>
+<td>Assignment Number (Employees only)</td>
+<td>EU Settlement Scheme Status</td>
+</tr>
+<tr>
+<td>Employee Latest Start Date (Employees only)</td>
+<td>Pre-Settled Status Expiry Date</td>
+</tr>
+<tr>
+<td>Position Number</td>
+<td>Settlement Status Verified Date</td>
+</tr>
+<tr>
+<td>Position Title</td>
+<td>Granted EU Temp Leave To Remain</td>
+</tr>
+<tr>
+<td>Occupation Code</td>
+<td>EU Leave To Remain Expiry Date</td>
+</tr>
+<tr>
+<td>Area Of Work</td>
+<td>Date Settlement Status Issued</td>
+</tr>
+<tr>
+<td>Main Staff Group</td>
+<td>Created By</td>
+</tr>
+<tr>
+<td>Organisation</td>
+<td>Created Date</td>
+</tr>
+<tr>
+<td>Organisation Level 1-13</td>
+<td>Last Updated By</td>
+</tr>
+<tr>
+<td>Cost Centre</td>
+<td>Last Updated Date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Organisation Level 1-13 x 4</p>
+<p>Example Screenshot</p>
+<p><img src="../9/media/image7.png"
+style="width:6.26806in;height:1.24624in"
+alt="A screenshot of a calendar Description automatically generated" /></p>
+<h2 id="checklist-summary-tab">Checklist Summary Tab</h2>
+<p>Description</p>
+<p>This page of the dashboard is designed to show details of the Employment
+Checklist (Employees and Applicants) including dates and statuses of
+References, Right to Work checks and Disclosure and Barring Service
+(DBS).</p>
+<p>Prompts</p>
+<p>* Restrict to Latest Employment Checklist Record Only (Employees Only -
+Default: Yes)</p>
+<p>Employee Latest Start Date (Employees Only)</p>
+<p>* Source Document (Employees only)</p>
+<p>Applicant Status Start Date (Applicants only)</p>
+<p>Status (Applicants Only - Default: Offer Accepted)</p>
+<p>Column Selectors</p>
+<p>Organisation Level 1-13 x 4</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee Number / Applicant Number</th>
+<th>Assignment Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee / Applicant Name</td>
+<td>NI Number</td>
+</tr>
+<tr>
+<td>Vacancy Number (Applicants Only)</td>
+<td>Position Name</td>
+</tr>
+<tr>
+<td>Latest Start Date</td>
+<td>Organisation</td>
+</tr>
+<tr>
+<td>Occupation Code</td>
+<td>Staff Group</td>
+</tr>
+<tr>
+<td>Job Role</td>
+<td>ID Checked Date on Recruitment</td>
+</tr>
+<tr>
+<td>Type of DBS Disclosure</td>
+<td>References Checked Date</td>
+</tr>
+<tr>
+<td>ID Checked Date on Hire</td>
+<td>Employment History Checked Date</td>
+</tr>
+<tr>
+<td>Date of Qualifications Check</td>
+<td>Date DBS Form Sent to Person</td>
+</tr>
+<tr>
+<td>Date of Medical Clearance</td>
+<td>DBS Disclosure Issue Date</td>
+</tr>
+<tr>
+<td>Date Right to Work Checked</td>
+<td>DBS Administrator 1</td>
+</tr>
+<tr>
+<td>DBS Form Ref Number</td>
+<td>CoGS Received From</td>
+</tr>
+<tr>
+<td>DBS Requested By</td>
+<td>ID Documents Verified</td>
+</tr>
+<tr>
+<td>Date DBS Form Returned</td>
+<td>DBS Administrator 2</td>
+</tr>
+<tr>
+<td>DBS Form Correct</td>
+<td>Date DBS/CoGS Received</td>
+</tr>
+<tr>
+<td>Date DBS/CoGS Requested</td>
+<td>Date of Prof Reg Check - Rec</td>
+</tr>
+<tr>
+<td>Registration Membership Body</td>
+<td>DBS Disclosure Issue Date</td>
+</tr>
+<tr>
+<td>Date of Prof Reg Check - Hire</td>
+<td>DBS Website Match</td>
+</tr>
+<tr>
+<td>Permission to Check DBS Status</td>
+<td>DBS Website Check Date</td>
+</tr>
+<tr>
+<td>Pre-employment Checks Complete</td>
+<td>Equality and Diversity Information Updated/Verified</td>
+</tr>
+<tr>
+<td>Personal Information Updated/Verified</td>
+<td>Organisation Level 1-13</td>
+</tr>
+<tr>
+<td>IAT Consent</td>
+<td>Bank Account Details Reviewed</td>
+</tr>
+<tr>
+<td>Latest IAT Consent Update</td>
+<td>Date of Birth Verified</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image8.png"
+style="width:6.26806in;height:2.27351in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="checklist-detail-tab">Checklist Detail Tab</h2>
+<p>Description</p>
+<p>This page of the dashboard provides a detailed report of the Employment
+Checklist (Employees and Applicants) including Reference details, Visa
+details, details of Right to Work checks and The Disclosure and Barring
+Service (DBS).</p>
+<p><em>Prompts</em></p>
+<p>Employee Latest Start Date (Employees Only)</p>
+<p>* Source Document (Employees only)</p>
+<p>Applicant Status Start Date (Applicants only)</p>
+<p>Status (Applicants Only - Default: Offer Accepted)</p>
+<p>Column Selectors</p>
+<p>Organisation Level 1-13 x 4</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Vacancy Name (Applicants Only)</th>
+<th>Aplicant Name (Applicants Only)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applicant Number (Applicants Only)</td>
+<td>ID Checked Date on Hire</td>
+</tr>
+<tr>
+<td>Assignment Number</td>
+<td>ID Documents on Hire Recorded By</td>
+</tr>
+<tr>
+<td>Last Name (Employees Only)</td>
+<td>ID Documents Verified</td>
+</tr>
+<tr>
+<td>Middle Name (Employees Only)</td>
+<td>Date of Qualifications Check</td>
+</tr>
+<tr>
+<td>First Name (Employees Only)</td>
+<td>Date of Medical Clearance</td>
+</tr>
+<tr>
+<td>Title (Employees Only)</td>
+<td>Employment History Checked Date</td>
+</tr>
+<tr>
+<td>Nationality</td>
+<td>References Checked Date</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td>Registration Membership Body</td>
+</tr>
+<tr>
+<td>Telephone</td>
+<td>Professional Registration Num</td>
+</tr>
+<tr>
+<td>NI Number</td>
+<td>Registration Expiry Date</td>
+</tr>
+<tr>
+<td>Latest Start Date</td>
+<td>Revalidation Date</td>
+</tr>
+<tr>
+<td>Position Name</td>
+<td>Date of Prof Reg Check – Rec</td>
+</tr>
+<tr>
+<td>Organisation</td>
+<td>Date of Prof Reg Check – Hire</td>
+</tr>
+<tr>
+<td>Staff Group</td>
+<td>Type of DBS Disclosure</td>
+</tr>
+<tr>
+<td>Occupation Code</td>
+<td>Date DBS Form Sent to Person</td>
+</tr>
+<tr>
+<td>Deanery Post Number</td>
+<td>Date DBS Form Sent to Person</td>
+</tr>
+<tr>
+<td>Person Type</td>
+<td>DBS Administrator 1</td>
+</tr>
+<tr>
+<td>Residency Status</td>
+<td>DBS Disclosure Issue Date</td>
+</tr>
+<tr>
+<td>Visa Type</td>
+<td>DBS Requested by</td>
+</tr>
+<tr>
+<td>Visa Reference Number</td>
+<td>CoGS Received From</td>
+</tr>
+<tr>
+<td>Visa Issue Date</td>
+<td>Date DBS Form Returned</td>
+</tr>
+<tr>
+<td>Visa Expiry Date</td>
+<td>DBS Form Correct</td>
+</tr>
+<tr>
+<td>Job Role</td>
+<td>DBS Administrator 2</td>
+</tr>
+<tr>
+<td>Limited Leave to Enter Date</td>
+<td>Permission to Check DBS Status</td>
+</tr>
+<tr>
+<td>Limited Leave to Remain Expiry Date</td>
+<td>Date DBS/CoGS Requested</td>
+</tr>
+<tr>
+<td>Date Right To Work Checked</td>
+<td>Date DBS/CoGS Received</td>
+</tr>
+<tr>
+<td>Right to Work Source Document</td>
+<td>DBS Unique Number</td>
+</tr>
+<tr>
+<td>Right to Work Reference Number</td>
+<td>DBS Website Check Date</td>
+</tr>
+<tr>
+<td>Right to Work Valid To Date</td>
+<td>DBS Website Match</td>
+</tr>
+<tr>
+<td>Date Sponsorship Requested</td>
+<td>ID Documents on Recruitment Recorded By</td>
+</tr>
+<tr>
+<td>Pre-employment Checks Complete</td>
+<td>Equality and Diversity Information Updated/Verified</td>
+</tr>
+<tr>
+<td>Personal Information Updated/Verified</td>
+<td>Endorsed Passport Photo on Recr (No Photographic ID) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>ID Checked Date on Recruitment</td>
+<td>Non-Photo ID 1 on Recr (No Photographic ID) (Employes Only)</td>
+</tr>
+<tr>
+<td>Endorsed Passport Photo on Hire (No Photographic ID) (Employes
+Only)</td>
+<td>Non-Photo ID 2 on Recr (No Photographic ID) (Employes Only)</td>
+</tr>
+<tr>
+<td>Non-Photo ID 1 on Hire (No Photographic ID) (Employes Only)</td>
+<td>Address Doc 1 on Recr (No Photographic ID) (Employes Only)</td>
+</tr>
+<tr>
+<td>Non-Photo ID 2 on Hire (No Photographic ID) (Employes Only)</td>
+<td>Address Doc 2 on Recr (No Photographic ID) (Employes Only)</td>
+</tr>
+<tr>
+<td>Address Doc 1 on Hire (No Photographic ID) (Employes Only)</td>
+<td>Photo ID 1 on Recr (One Photographic + Two Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Address Doc 2 on Hire (No Photographic ID) (Employes Only)</td>
+<td>Address Doc 1 on Recr (One Photographic + Two Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Photo ID 1 on Hire (One Photographic + Two Address) (Employes
+Only)</td>
+<td>Address Doc 2 on Recr (One Photographic + Two Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Address Doc 1 on Hire (One Photographic + Two Address) (Employes
+Only)</td>
+<td>Photo ID 1 on Recr (Two Photographic + One Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Address Doc 2 on Hire (One Photographic + Two Address) (Employes
+Only)</td>
+<td>Photo ID 2 on Recr (Two Photographic + One Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Photo ID 1 on Hire (Two Photographic + One Address) (Employes
+Only)</td>
+<td>Address Doc 1 on Recr (Two Photographic + One Address) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Photo ID 2 on Hire (Two Photographic + One Address) (Employes
+Only)</td>
+<td>Endorsed Passport Photo on Recr (No Photographic ID) (Employes
+Only)</td>
+</tr>
+<tr>
+<td>Address Doc 1 on Hire (Two Photographic + One Address) (Employes
+Only)</td>
+<td>Organisation Level 1-13</td>
+</tr>
+<tr>
+<td>IAT Consent</td>
+<td>Bank Account Details Reviewed</td>
+</tr>
+<tr>
+<td>Latest IAT Consent Update</td>
+<td>Date of Birth Verified</td>
+</tr>
+<tr>
+<td>Supervisor Assignment Number (Applicants Only)</td>
+<td>Supervisor Name (Applicants Only)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image9.png"
+style="width:6.26806in;height:2.39807in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="fit-and-proper-person-checks-tab">Fit and Proper Person Checks Tab</h2>
+<p>Description</p>
+<p>This page of the dashboard provides a detailed report of the Fit and
+Proper person employment checks for Director and Board members.</p>
+<p><em>Prompts</em></p>
+<p>Staff Group(s)</p>
+<p>Occupation Code(s)</p>
+<p>Pay Grade(s)</p>
+<p>Job Role(s)</p>
+<p>Primary Assignment Only</p>
+<p>Person Type</p>
+<p>Employee Person Type</p>
+<p>Assignment Status</p>
+<p>Assignment Category</p>
+<p>Organisation</p>
+<p>Effective Date</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assignment Number</th>
+<th>Open/Upheld Disciplinary Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Number</td>
+<td>Open/Upheld Grievance Case</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>Social Media Date Checked</td>
+</tr>
+<tr>
+<td>First Name</td>
+<td>Not Disqualified as a Charitable Trustee</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Not Disqualified from Directors Register</td>
+</tr>
+<tr>
+<td>NI Number</td>
+<td>No Employment Tribunal Judgements Found</td>
+</tr>
+<tr>
+<td>Organisation</td>
+<td>DBS Requirements</td>
+</tr>
+<tr>
+<td>Staff Group</td>
+<td>Date of Medical Clearance</td>
+</tr>
+<tr>
+<td>Job Role</td>
+<td>Not Found on Insolvency Register</td>
+</tr>
+<tr>
+<td>Occupation Code</td>
+<td>Date Prof Reg Check</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Self Attestation</td>
+</tr>
+<tr>
+<td>Employment History</td>
+<td>Tests Complete/Chair Sign-off</td>
+</tr>
+<tr>
+<td>Date of Qualifications Check</td>
+<td>FPP Clearance Exceptions</td>
+</tr>
+<tr>
+<td>References Check Date</td>
+<td>Settlement Agreements</td>
+</tr>
+<tr>
+<td>Annual Performance Appraisal Complete</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../9/media/image10.png"
+style="width:6.26806in;height:1.39931in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+<h2 id="sponsorship-requirements-tab">Sponsorship Requirements Tab</h2>
+<p>Description</p>
+<p>This page is designed to help organisations report on the various
+requirements of sponsored employees. The reports are designed to help
+organisations identify where they may need to take action in line with
+the government requirements for sponsor duties and compliance:</p>
+<h3 id="absences-greater-than-x-days">Absences Greater than X Days</h3>
+<p>This report returns continuous absences greater than 10 calendar days.</p>
+<p>Data Items</p>
+<table style="width:50%;">
+<colgroup>
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Name</td>
+</tr>
+<tr>
+<td>Work Permit/Sship Required</td>
+</tr>
+<tr>
+<td>Visa Type</td>
+</tr>
+<tr>
+<td>Absence Start Date</td>
+</tr>
+<tr>
+<td>Absence End Date</td>
+</tr>
+<tr>
+<td>Absence Category</td>
+</tr>
+<tr>
+<td>Absence Type</td>
+</tr>
+<tr>
+<td>Absence Reason</td>
+</tr>
+<tr>
+<td>Absence Days</td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Date is equal to / is in Effective Date (Default: Current Date)</p>
+<p><strong>AND</strong> Absence Date between first day of previous month and current
+date</p>
+<p><strong>AND</strong> Include latest employee record where Work Permit/Sponsorship
+Required is equal to Yes</p>
+<p><strong>AND</strong> Continuous Absence Days difference between Absence Start Date
+and Absence End Date is greater than / equal to 10 in the period</p>
+<h3 id="absence-total-greater-than-4-weeks">Absence Total Greater than 4 Weeks</h3>
+<p>This report returns employees where the total number of calendar days
+absent within a calendar year (from 1 January) exceeds 20 days.</p>
+<p>Data Items</p>
+<table style="width:50%;">
+<colgroup>
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Employee Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Name</td>
+</tr>
+<tr>
+<td>Work Permit/Sship Required</td>
+</tr>
+<tr>
+<td>Visa Type</td>
+</tr>
+<tr>
+<td>Absence Start Date</td>
+</tr>
+<tr>
+<td>Absence End Date</td>
+</tr>
+<tr>
+<td>Absence Category</td>
+</tr>
+<tr>
+<td>Absence Type</td>
+</tr>
+<tr>
+<td>Absence Reason</td>
+</tr>
+<tr>
+<td>Absence Days (Since Absence Start)</td>
+</tr>
+<tr>
+<td>Absence Days (Since 1 January)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Date is equal to / is in Effective Date (Default: Current Date)</p>
+<p><strong>AND</strong> Employee Number is equal to Employee Number returned in
+sub-analysis returning employees with Absence Days greater than / equal
+to 20 in the calenda year</p>
+<p><strong>AND</strong> Include latest employee record where Work Permit/Sponsorship
+Required is equal to Yes</p>
+<p><strong>AND</strong> Primary Assignment Flag is equal to / is in Yes</p>
+<h3 id="terminations">Terminations</h3>
+<p>This report returns terminating employees in the period.</p>
+<p>Data Items</p>
+<table style="width:50%;">
+<colgroup>
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Organisation Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Name</td>
+</tr>
+<tr>
+<td>Employee Number</td>
+</tr>
+<tr>
+<td>Assignment Number</td>
+</tr>
+<tr>
+<td>Position Name</td>
+</tr>
+<tr>
+<td>Assignment Category</td>
+</tr>
+<tr>
+<td>Work Permit/Sship Required</td>
+</tr>
+<tr>
+<td>Visa Type</td>
+</tr>
+<tr>
+<td>Leaving Reason</td>
+</tr>
+<tr>
+<td>Actual Termination Date</td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Date is equal to / is in Effective Date (Default: Current Date)</p>
+<p><strong>AND</strong> Actual Termination Date between current date and last day of the
+third month in the future</p>
+<p><strong>AND</strong> Include latest employee record where Work Permit/Sponsorship
+Required is equal to Yes</p>
+<h3 id="workforce-movements">Workforce Movements</h3>
+<p>This report returns assignment changes in the period.</p>
+<p>Data Items</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr>
+<th>Assignment Number</th>
+<th>Pay Scale From</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Name</td>
+<td>Pay Scale To</td>
+</tr>
+<tr>
+<td>Change Reason</td>
+<td>Job Role From</td>
+</tr>
+<tr>
+<td>Incremental Date</td>
+<td>Job Role To</td>
+</tr>
+<tr>
+<td>Change Date</td>
+<td>Organisation To</td>
+</tr>
+<tr>
+<td>FTE From</td>
+<td>Organisation From</td>
+</tr>
+<tr>
+<td>FTE To</td>
+<td>Location From</td>
+</tr>
+<tr>
+<td>Position From</td>
+<td>Location To</td>
+</tr>
+<tr>
+<td>Position To</td>
+<td>Visa Type</td>
+</tr>
+<tr>
+<td>Staff Group From</td>
+<td>Work Permit/Sship Required</td>
+</tr>
+<tr>
+<td>Staff Group To</td>
+<td>Last Updated By</td>
+</tr>
+<tr>
+<td>Grade Step From</td>
+<td>Last Updated Date</td>
+</tr>
+<tr>
+<td>Grade Step To</td>
+<td></td>
+</tr>
+<tr>
+<td>Assignment Status From</td>
+<td></td>
+</tr>
+<tr>
+<td>Assignment Status To</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Date is less than / is equal to Effective Date / Change Date To
+(Default: Current Date)</p>
+<p><strong>AND</strong> Date is greater than / is equal to Change Date From (Default:
+first day of previous month)</p>
+<p><strong>AND</strong> Assignment Number is equal to Assignment Number returned in
+sub-analysis returning latest employee record where Work
+Permit/Sponsorship Required is equal to Yes</p>
+<p><em>Prompts</em></p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Assignment Status</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Primary Assignments Only</p>
+<p>Occupation Code</p>
+<p>Employee Number(s)</p>
+<p>Change Reason(s)</p>
+<p>Last Updated Date Between</p>
+<p>Last Updated By</p>
+<p>Change Date From</p>
+<p>Change Date To/Effective Date</p>
+<p>Visa Type</p>
+<p>Actual Termination Date Between</p>
+<p>* Absence Type</p>
+<p>Absence Category</p>
+<p>Absence Reason</p>
+<p>Continuous Absence &gt; X Days (Default: 10)</p>
+<p>Show Continuous Absences from X Months (Default: 3)</p>
+<p>Total Absence Days in Calendar Year &gt;= (Default: 20)</p>
+<p><strong>Note:</strong> Both authorised and unauthorised unpaid absences are returned
+by the Absence Type prompt by default however users can amend values in
+line with reporting requirements.</p>
+<p>Example Screenshot</p>
+<p><img src="../9/media/image11.png"
+style="width:6.26806in;height:3.84861in"
+alt="A screenshot of a computer Description automatically generated" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Employee%20Relations%20Dashboard/index.html" class="btn btn-neutral float-left" title="Employee Relations Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Financial%20Cost%20Analysis%20Dashboard/index.html" class="btn btn-neutral float-right" title="Financial Cost Analysis Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Employee%20Relations%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Financial%20Cost%20Analysis%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

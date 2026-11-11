@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>IAT Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "IAT Dashboard";
+        var mkdocs_page_input_path = "IAT Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">IAT Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#iat-by-source-organisation">IAT by Source Organisation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iat-duration-days-by-source-organisation">IAT Duration (Days) by Source Organisation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#iat-progress-days-to-status">IAT Progress (Days to Status)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#detail">Detail</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#progress">Progress</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#iat-progress-dates">IAT Progress Dates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#applicants-without-iat">Applicants without IAT</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>IAT Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="iat-dashboard">IAT Dashboard</h1>
+<p>Description</p>
+<p>This dashboard provides organisations with IAT usage information. This
+includes number of IATs run, length of time to return IAT requests and
+source organisation. For further information please refer to the
+Dashboard Help available within the dashboard.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administration</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Recruitment &amp; Applicant Enrolment Administration</p>
+<p>XXX Recruitment &amp; Applicant Enrolment Administration (With RA)</p>
+<p>XXX Inter Authority Transfer Initiation</p>
+<h2 id="summary">Summary</h2>
+<p>Description</p>
+<p>This tab contains a number of analyses designed to give users high level
+summary information of the organisation’s IAT usage.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Occupation Code</p>
+<p>Person Type</p>
+<p>Assignment Category</p>
+<p>Pay Grade</p>
+<p>IAT Status</p>
+<p>IAT Status Change Date Between</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Organisation Levels 1-13</p>
+<p>Cost Centre Org L1-12</p>
+<h3 id="iat-by-source-organisation">IAT by Source Organisation</h3>
+<p>Description</p>
+<p>This analysis is designed to return an IAT count for any IAT that has
+had a status update within the date period selected (previous 7 days by
+default).</p>
+<p>Data Items</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>IAT Source Organisation</td>
+<td>IAT Count</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image1.png" style="width:4.40833in;height:3.53862in" /></p>
+<h3 id="iat-duration-days-by-source-organisation">IAT Duration (Days) by Source Organisation</h3>
+<p>Description</p>
+<p>This analysis is designed to show how long it took (days banding in
+Graph view or actual days in Table view) for those IATs that have had a
+status update within the date period and has reached the end of the IAT
+Process (PDS Applied).</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>IAT Source Organisation</th>
+<th>IAT Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IAT Duration (Days)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image2.png" style="width:4.30833in;height:3.5813in" /></p>
+<h3 id="iat-progress-days-to-status">IAT Progress (Days to Status)</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of days taken to each IAT
+Status and enables the user to set a target using the prompt available
+to highlight IATs that have taken longer than target.</p>
+<p>Prompts</p>
+<p>Set Target Days</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Last Name</th>
+<th>Date IAT Initiated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Name</td>
+<td>Request Timed Out</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Approved</td>
+</tr>
+<tr class="odd">
+<td>Applicant Number</td>
+<td>PDS Copy Failed</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td>PDS Applied</td>
+</tr>
+<tr class="odd">
+<td>Item Key</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image3.png" style="width:6.26806in;height:2.44896in" /></p>
+<h2 id="detail">Detail</h2>
+<p>Description</p>
+<p>The analysis is designed to show full details of all IATs returned
+within the defined period.</p>
+<p>Please note that an applicant number is only returned where an employee
+has an associated applicant record.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Occupation Code</p>
+<p>Person Type</p>
+<p>Assignment Category</p>
+<p>Pay Grade</p>
+<p>IAT Status</p>
+<p>IAT Status Change Date Between</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Organisation Levels 1-13</p>
+<p>Cost Centre Org L1-12</p>
+<p>Column Selectors</p>
+<p>Organisation Levels 1-13 x 4</p>
+<p>Cost Centre Org L1-12 x 4</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>IAT Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Number</td>
+<td>Item Key</td>
+</tr>
+<tr class="even">
+<td>Name</td>
+<td>OH Notification Received</td>
+</tr>
+<tr class="odd">
+<td>Date IAT Initiated</td>
+<td>PDS Requested Date</td>
+</tr>
+<tr class="even">
+<td>Initiated By</td>
+<td>PDS Copied By</td>
+</tr>
+<tr class="odd">
+<td>IAT Source Organisation</td>
+<td>Std Reference Request Included</td>
+</tr>
+<tr class="even">
+<td>IAT Source Organisation Name</td>
+<td>Std Reference Request Returned Date</td>
+</tr>
+<tr class="odd">
+<td>IAT Target Organisation</td>
+<td>Stat and Mand Competency Notification Received</td>
+</tr>
+<tr class="even">
+<td>URP Initiated IAT</td>
+<td>Stat and Mand Competency Notification Actioned Date</td>
+</tr>
+<tr class="odd">
+<td>Date Status Changed</td>
+<td>Stat and Mand Competency Notification Approved By</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Organisation Levels 1-13</td>
+</tr>
+<tr class="odd">
+<td>Job Role</td>
+<td>Cost Centre Org L1-12</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image4.png" style="width:6.26806in;height:1.62795in" /></p>
+<h2 id="progress">Progress</h2>
+<p>Description</p>
+<p>This tab contains a number of analyses designed to give users details of
+IAT progress dates and those of applicants without an IAT.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Occupation Code</p>
+<p>Person Type</p>
+<p>Assignment Category</p>
+<p>Pay Grade</p>
+<p>IAT Status</p>
+<p>Recruitment Source (Applicant analysis only)</p>
+<p>Date Between</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Organisation Levels 1-13</p>
+<p>Cost Centre Org L1-12</p>
+<h3 id="iat-progress-dates">IAT Progress Dates</h3>
+<p>Description</p>
+<p>The analysis is designed to show how an IAT has progressed across the
+date period defined by a user. Dates are returned for each status change
+along with the Stat and Mand Competency Notification Date and the
+Standard Reference Returned Date.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Assignment Number</th>
+<th>Stat and Mand Competency Notification Actioned Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Number</td>
+<td>Std Reference Request Returned Date</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Request Timed Out</td>
+</tr>
+<tr class="odd">
+<td>Last Name</td>
+<td>Approved</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>PDS Copy Failed</td>
+</tr>
+<tr class="odd">
+<td>Item Key</td>
+<td>PDS Applied</td>
+</tr>
+<tr class="even">
+<td>Date IAT Initiated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image5.png" style="width:6.26806in;height:1.89247in" /></p>
+<h3 id="applicants-without-iat">Applicants without IAT</h3>
+<p>Description</p>
+<p>This analysis is designed to return applicants that have been set to a
+status at which an IAT can be run within the user defined date period,
+but no IAT has been run. A Recruitment Source prompt is available to
+restrict the analysis to NHS Organisation if required.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Applicant Number</th>
+<th>Date Application Recieved</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Name</td>
+<td>Assignment Status</td>
+</tr>
+<tr class="even">
+<td>Vacancy Name</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../20/media/image6.png" style="width:4.925in;height:1.91528in" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../HR%20Forms%20Dashboard/index.html" class="btn btn-neutral float-left" title="HR Forms Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Learning%20Administration%20Dashboard/index.html" class="btn btn-neutral float-right" title="Learning Administration Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../HR%20Forms%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Learning%20Administration%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

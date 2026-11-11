@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Compliance Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Compliance Dashboard";
+        var mkdocs_page_input_path = "Compliance Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Compliance Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#index">Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overview-tab">Overview Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#learning-compliance">Learning Compliance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#induction-compliance">Induction Compliance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-competencies-due-to-expire">Required Competencies due to Expire</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#course-dna-rate">Course DNA Rate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#future-enrolments">Future Enrolments</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dna-detail-tab">DNA Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-matching-by-person-tab">Competency Matching by Person Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-matching-tab">Competency Matching Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#competency-matching">Competency Matching</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#non-required-competencies">Non-Required Competencies</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#induction-compliance-by-person-tab">Induction Compliance by Person Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-profile-tab">Competency Profile Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#selective-competency-matching-tab">Selective Competency Matching Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#selective-competency-matching-summary">Selective Competency Matching Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selective-competency-matching-detail">Selective Competency Matching Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#position-competency-requirements-tab">Position Competency Requirements Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-requirements-matrix-tab">Competency Requirements Matrix Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#positions-without-requirements-tab">Positions Without Requirements Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competence-list-tab">Competence List Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#applicant-competency-profile-tab">Applicant Competency Profile Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#compliance-matrix-tab">Compliance Matrix Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#applicant-competency-matching-tab">Applicant Competency Matching Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#benchmarking">Benchmarking</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#benchmarking-detail">Benchmarking Detail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#non-benchmarking-detail">Non-Benchmarking Detail</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Compliance Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="compliance-dashboard">Compliance Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to provide users with intelligence around
+compliance levels within the organisation.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX Administrator Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Administrator Self Service (Payroll Approvals Required)</p>
+<p>XXX Career Management</p>
+<p>XXX BI Administration</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Learning Administration</p>
+<p>XXX Manager Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Manager Self Service (Payroll Approvals Required)</p>
+<p>XXX Supervisor Self Service</p>
+<p>XXX Supervisor Self Service (Limited Access)</p>
+<h2 id="index">Index</h2>
+<p>Description</p>
+<p>Compliance reports are available in four different categories below:</p>
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Competency Analysis</p>
+</li>
+<li>
+<p>Competency Matching</p>
+</li>
+<li>
+<p>Competency Requirements</p>
+</li>
+</ul>
+<p>From this tab users can click on links provided to navigate to reports.</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image2.png"
+style="width:6.26806in;height:2.63312in" /></p>
+<h2 id="overview-tab">Overview Tab</h2>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Person Type(s) (Default: Employee, Employee and Applicant)</p>
+<p>Employee Person Type</p>
+<p>Assignment Category</p>
+<p>Assignment Number</p>
+<p>Assignment Status</p>
+<p>Staff Group</p>
+<p>Primary Assignment Only</p>
+<p>Organisation Level 1-13</p>
+<p>Employee Location</p>
+<p>Job Role</p>
+<p>Supplementary Role</p>
+<h3 id="learning-compliance">Learning Compliance</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of competencies obtained as
+a percentage of those required grouped by Staff Group, Competency Name
+or Organisation Level 1-13. Please note that this analysis uses complex
+calculations and therefore may take longer to run than other analyses.
+Limiting the analysis to specific frameworks may increase the speed of
+the analysis. Users have the option to exclude Open Ended Sickness
+Absence (Long Term) based on the Absence Start Date.</p>
+<p>Prompts</p>
+<p>Competency Framework(s) (Default: MAND,LOCAL,KSF,LANG)</p>
+<p>Competency (Default All)</p>
+<p>Effective Date</p>
+<p>Exclude Open Sickness Absence - Start Date</p>
+<p>Employee Hire Date</p>
+<p>Essential</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 60%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Staff Group linked to Job in Position</td>
+</tr>
+<tr class="even">
+<td>Assignment Count</td>
+<td>Count of Distinct Assignment Number</td>
+</tr>
+<tr class="odd">
+<td>Competencies Required</td>
+<td>The number of competencies required for each position</td>
+</tr>
+<tr class="even">
+<td>Competencies Achieved</td>
+<td><p>The number of competencies that are:</p>
+<ul>
+<li><p>In date</p></li>
+<li><p>Have a level matching or above that of the requirement</p></li>
+<li><p>Or the achieved level is null</p></li>
+<li><p>Or the required level is null</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Compliance %</td>
+<td>Competencies Achieved / Competencies Required * 100</td>
+</tr>
+<tr class="even">
+<td>Competence Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Competence Name with Essential Flag</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation Level 1-13</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Employee Location</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Include required competencies only.</p>
+<p>Where multiple achievements of the same competency have been recorded,
+retrieve only the latest.</p>
+<p>Include requirements where the required start date is less than or equal
+to the current date.</p>
+<p>Include requirements where the required end date is greater than or
+equal to the current date or is null.</p>
+<ul>
+<li>*</li>
+</ul>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image3.png"
+style="width:4.54167in;height:5.15741in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Navigate to Learning Compliance by Person</p>
+<h3 id="induction-compliance">Induction Compliance</h3>
+<p>Description</p>
+<p>The Induction Compliance analysis enables a user to select a number of
+competencies from a list of competency requirements, the start date the
+analysis should begin from and the number of months an employee should
+have achieved the competency based on their latest start date. The
+analysis provides two percentages:</p>
+<p>•'Req. Compliance %'. This is the number of competencies required out of
+the competencies selected in the list that employees have achieved.</p>
+<p>•'Full Compl %'. This is the number of assignments that have achieved
+all of the competencies selected that they require.</p>
+<p>Prompts</p>
+<p>*Induction Competencies</p>
+<p>Within ‘x’ months (Default: 6)</p>
+<p>Hire Date &gt;= (Default: Today – 12 months)</p>
+<p>*Framework</p>
+<p>*Include Requirements? (Yes/No)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignments</td>
+<td>Number of Assignments</td>
+</tr>
+<tr class="even">
+<td>Full Compliance</td>
+<td>Number of assignments that have achieved all required competencies
+selected</td>
+</tr>
+<tr class="odd">
+<td>Full Compliance %</td>
+<td>100* (Number of assignments that have achieved all required
+competencies selected)/(Number of assignments)</td>
+</tr>
+<tr class="even">
+<td>Required Competencies</td>
+<td>Number of Competencies Required</td>
+</tr>
+<tr class="odd">
+<td>Required Competencies Achieved</td>
+<td>Competencies Achieved</td>
+</tr>
+<tr class="even">
+<td>Compliance %</td>
+<td>100 * (Competencies Achieved)/(Competencies Required)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image4.png"
+style="width:4.9375in;height:4.82847in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Navigate to Induction Compliance by Person</p>
+<h3 id="required-competencies-due-to-expire">Required Competencies due to Expire</h3>
+<p>Description</p>
+<p>This analysis is designed to show users a list of competencies against
+staff that are required and are due to expire within the next month.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Last Name</th>
+<th>Competence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Name</td>
+<td>Expiry Date</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Future Enrolment Date</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Include required competencies only.</p>
+<p>Sort by Expiry Date Ascending, then by Surname, First name.</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image5.png"
+style="width:6.26806in;height:2.10007in" /></p>
+<h3 id="course-dna-rate">Course DNA Rate</h3>
+<p>Description</p>
+<p>This analysis is designed to show the DNA rate of staff in the
+organisation on a number of courses.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Staff group associated with the job role in position</td>
+</tr>
+<tr class="even">
+<td>Course Name</td>
+<td>Name of the course</td>
+</tr>
+<tr class="odd">
+<td>Enrolment Count</td>
+<td>Number of Enrolments excluding Enrolment Status = ‘Withdrawn’</td>
+</tr>
+<tr class="even">
+<td>DNA Count</td>
+<td>Number of enrolments with status of ‘Did Not Attend’</td>
+</tr>
+</tbody>
+</table>
+
+<p>Prompts</p>
+<p>Class Date Between (Default between first day of month 3 months ago, and
+last day of last month)</p>
+<p>DNA Rate Limit % (Default 5)</p>
+<p>Filters</p>
+<p>Include non-“Online e-Learning” only.</p>
+<p>Include enrolments where class start date is between the from and to
+date Prompts.</p>
+<p>Column Selectors</p>
+<p>Group by Course or Staff Group (Default: Staff Group).</p>
+<p>View Selectors</p>
+<p>View as Pie Graph, Bar Graph, Column Graph or Table (Default: Column
+Graph).</p>
+<p>Formatting</p>
+<p>Red flag or change colour to red when DNA rate is above the rate set in
+Prompts.</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image6.png" style="width:4.3034in;height:2.87211in"
+alt="C:\Users\james.haddon\Pictures\Screenpresso\2013-05-15_08h41_15.png" /></p>
+<h3 id="future-enrolments">Future Enrolments</h3>
+<p>Description</p>
+<p>This analysis is designed to show a list of enrolments on future classes
+either for all staff, or for the staff included in the supervisor
+hierarchy if accessed via SSHR.</p>
+<p>Prompts</p>
+<p>Class Start Date Between</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Class Start Date</td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Restrict to classes occurring within the next month (prompt is available
+to update this).</p>
+<h2 id="dna-detail-tab">DNA Detail Tab</h2>
+<p>Description</p>
+<p>This tab is designed to give the details of each enrolment to the user.
+By default the data is restricted to ‘DNA’ enrolments only, however
+users can change this using the prompt provided.</p>
+<p>Prompts</p>
+<p>Starting Organisation</p>
+<p>Class Date Between</p>
+<p>Enrolment Status</p>
+<p>Person Type</p>
+<p>Employee Person Type(s)</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Supplementary Role</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Organisation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Course Name</td>
+<td>Organisation Level 1-13</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Supervisor Name</td>
+</tr>
+<tr class="odd">
+<td>Last Name</td>
+<td>Supervisor Email Address</td>
+</tr>
+<tr class="even">
+<td>Class Start Date</td>
+<td>Employee Email Address</td>
+</tr>
+<tr class="odd">
+<td>Class End Date</td>
+<td>Staff Group</td>
+</tr>
+<tr class="even">
+<td>Enrolment Status</td>
+<td>Position Title</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="competency-matching-by-person-tab">Competency Matching by Person Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to show the number of competency requirements
+that are applicable to each person against the number of competencies
+each person has achieved, with a percentage. Users have the option to
+exclude Open Ended Sickness Absence (Long Term) based on the Absence
+Start Date.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Job Role</p>
+<p>Competency Framework</p>
+<p>Competency</p>
+<p>Effective Date</p>
+<p>Assignment Number</p>
+<p>Effective Date</p>
+<p>Exclude Open Sickness Absence - Start Date</p>
+<p>Employee Hire Date</p>
+<p>Supplementary Role</p>
+<p>Employee Location</p>
+<p>Column Selectors</p>
+<p>Organisation Level 1-13 (X 4)</p>
+<p>Staff Group</p>
+<p>Occupation Code</p>
+<p>Pay Scale</p>
+<p>Position Title</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Required</td>
+<td>Number of competency requirements applicable</td>
+</tr>
+<tr class="odd">
+<td>Achieved</td>
+<td>Number of competencies achieved with the correct level</td>
+</tr>
+<tr class="even">
+<td>Compliance %</td>
+<td>Achieved / Required * 100</td>
+</tr>
+<tr class="odd">
+<td>Organisation Level (1-13)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image7.png"
+style="width:6.26806in;height:3.36171in" /></p>
+<p>Actions</p>
+<p>Click Assignment Number -&gt; Navigate to Competency Matching</p>
+<h2 id="competency-matching-tab">Competency Matching Tab</h2>
+<h3 id="competency-matching">Competency Matching</h3>
+<p>Description</p>
+<p>This analysis is designed to show the detail of matching competency
+requirements against the competencies a person has achieved.</p>
+<p>Prompts</p>
+<p>Organisation</p>
+<p>Job Role</p>
+<p>Competency Framework</p>
+<p>Competency</p>
+<p>Effective Date</p>
+<p>Assignment Number</p>
+<p>Employee Number</p>
+<p>Employee Location</p>
+<p>Display Requirement Source?</p>
+<p>Employee Hire Date</p>
+<p>Area of Work</p>
+<p>Supplementary Role</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Employee Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Supervisor Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Supervisor Email Address</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Organisation Level 1-13</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Position Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Competency Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Level Required</td>
+<td>Low Level Rating on Competency Requirements form</td>
+</tr>
+<tr class="even">
+<td>Competency Match</td>
+<td>If the person has achieved the competency at the correct level (or
+the level is null) then show a green cell with ‘Match’. If the person
+has achieved it but at a lower level, then leave the cell red with
+‘Lower Level’. Otherwise the cell is red.</td>
+</tr>
+<tr class="odd">
+<td>Expiry Date</td>
+<td>Expiry date of the competency if they have it – whether it is
+current or expired.</td>
+</tr>
+<tr class="even">
+<td>Requirement Inherited From</td>
+<td>Where the requirement was inherited from. If this is null, the
+requirement was set against the position.</td>
+</tr>
+<tr class="odd">
+<td>Future Enrolment Date</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Date Last Awarded</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Area of Work</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Employee Location</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selector</p>
+<p>Organisation Level 1-13 (X4)</p>
+<p>Position Title</p>
+<p>Position Name</p>
+<p>Occupation Code</p>
+<p>Job Role</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image8.png"
+style="width:6.26806in;height:1.81613in" /></p>
+<h3 id="non-required-competencies">Non-Required Competencies</h3>
+<p>Description</p>
+<p>This analysis is designed to return all non-required competencies
+against all assignments. Alternatively the Compliance Matrix can be used
+however it is designed to run for specific competencies only as opposed
+to this analysis which return all non-required competencies per
+assignment.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Email</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Supervisor Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Supervisor Email Address</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Competency</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Expiry Date</td>
+<td>Expiry date of the competency if they have it – whether it is
+current or expired.</td>
+</tr>
+<tr class="even">
+<td>Competency Match</td>
+<td>Only Non-Requirement Competency shown</td>
+</tr>
+<tr class="odd">
+<td>Level Achieved</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Date Last Awarded</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Competence Date From</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image9.png"
+style="width:6.26806in;height:1.49871in" /></p>
+<h2 id="induction-compliance-by-person-tab">Induction Compliance by Person Tab</h2>
+<p>Description</p>
+<p>The Induction Compliance analysis enables the user to select a number of
+competencies from a list of competency requirements, the start date the
+analysis should begin from and the number of months an employee should
+have achieved the competency by based on their latest start date.</p>
+<p>Prompts</p>
+<p>*Induction Competencies</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Within ‘x’ months (Default: 6)</p>
+<p>Hire Date &gt;= (Default: Today – 12 months)</p>
+<p>*Framework</p>
+<p>*Include Requirements? (Yes/No)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Competencies Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td>Achieved</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Staff Group</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Hire Date</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>Assignment Number</td>
+</tr>
+<tr class="odd">
+<td>Competencies Achieved</td>
+<td>Compliance %</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image10.png"
+style="width:6.26806in;height:2.79987in" /></p>
+<h2 id="competency-profile-tab">Competency Profile Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to list all competencies that an employee has
+achieved. It includes expired and current competencies.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Occupation Code</p>
+<p>Job Role</p>
+<p>Primary Assignments Only</p>
+<p>Assignment Number</p>
+<p>Supplementary Role</p>
+<p>Employee Location</p>
+<p>Employee Number</p>
+<p>Employee Name</p>
+<p>Competence Framework</p>
+<p>Competency</p>
+<p>* Effective Date (Historical Dates Only)</p>
+<p>Active Competencies Only? (default: No)</p>
+<p>Column Selectors</p>
+<p>Org Level 1-13 x 4</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Awarded By Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Competency</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td>Level Achieved</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Date From</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Date To</td>
+</tr>
+<tr class="odd">
+<td>Position</td>
+<td>Organisation</td>
+</tr>
+<tr class="even">
+<td>Latest Start Date</td>
+<td>Last Updated By</td>
+</tr>
+<tr class="odd">
+<td>Date Last Awarded</td>
+<td>Awarded By</td>
+</tr>
+<tr class="even">
+<td>Org Level 1-13</td>
+<td>Supervisor Name</td>
+</tr>
+<tr class="odd">
+<td>Employee Email Address</td>
+<td>Supervisor Email Address</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image11.png"
+style="width:6.26806in;height:1.88125in" /><img src="../5/media/image12.png"
+style="width:6.26806in;height:1.88125in" /></p>
+<h2 id="selective-competency-matching-tab">Selective Competency Matching Tab</h2>
+<h3 id="selective-competency-matching-summary">Selective Competency Matching Summary</h3>
+<p>Description</p>
+<p>This analysis is designed to allow the user to select a number of
+competencies and return a grouping percentage where each competency has
+been achieved. Where the <em>Based on Requirements</em> prompt has been set to
+‘Yes’, a percentage based on requirements is returned. Where it has been
+set to ‘No’, an Overall Percentage is returned.</p>
+<p>Prompts</p>
+<p>Competencies</p>
+<p>Number of Days to Define Expiring Soon (Days)</p>
+<p>Based on Requirements? (default: Yes)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation Level 1-13</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Competency Percentage</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Supervisor</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image15.png"
+style="width:6.26806in;height:1.75251in" /></p>
+<h3 id="selective-competency-matching-detail">Selective Competency Matching Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to allow the user to select a number of
+competencies and return employee details where each competency is either
+Not Required (grey cell), Required, Expiring Soon (including expiry
+date) or a Match (to competency requirements). A RAG status is assigned
+to the cell colour of the results. The Future Enrolment Date is included
+against each result where populated.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Position Title</p>
+<p>Occupation Code</p>
+<p>Job Role</p>
+<p>Primary Assignments Only</p>
+<p>Assignment Number</p>
+<p>Supplementary Role</p>
+<p>Exclude Open Ended Absence - Start Date &lt;=</p>
+<p>Employee Number</p>
+<p>Employee Name Competencies</p>
+<p>Competency Framework</p>
+<p>Number of Days to Define Expiring Soon (Days)</p>
+<p>Based on Requirements? (default: Yes)</p>
+<p>Effective Date (default: Current Date)</p>
+<p>Employee Hire Date &lt;= (Excludes Employees where Latest Start Date is
+Greater than the date entered)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation Level 1-13</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Supervisor</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Competency Match?</td>
+<td>Title of the Competency selected and match status.</td>
+</tr>
+<tr class="odd">
+<td>Expiry Date</td>
+<td>Included when result is Match or Expiring Soon</td>
+</tr>
+<tr class="even">
+<td>Future Enrolment Date</td>
+<td>Included where populated</td>
+</tr>
+<tr class="odd">
+<td>Position Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Hire Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Status</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Pay Step Date</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Location</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignment Category</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Conditional Formatting</p>
+<p>RAG Status is set against the results cells. The Amber (Expiring Soon)
+results can be set using the Number of Days to Define Expiring Soon
+(Days) Prompt.</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image16.png"
+style="width:6.26806in;height:2.3141in" /></p>
+<h2 id="position-competency-requirements-tab">Position Competency Requirements Tab</h2>
+<p>Description</p>
+<p>The analysis returns a detail view of all positions and the competency
+requirements set against them. It allows users to filter for specific
+positions, competencies and competency frameworks.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Position Number</p>
+<p>Occupation Code</p>
+<p>Area Of Work</p>
+<p>Competence Full Name</p>
+<p>Competence Framework</p>
+<p>Level Inherited From</p>
+<p>Hiring Status</p>
+<p>Role</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Position Name</th>
+<th>Position Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Area of Work</td>
+<td>Occupation Code</td>
+</tr>
+<tr class="even">
+<td>Competence Full Name</td>
+<td>Competence Framework</td>
+</tr>
+<tr class="odd">
+<td>Competence Date From</td>
+<td>Competence Date To</td>
+</tr>
+<tr class="even">
+<td>Low Rating</td>
+<td>High Rating</td>
+</tr>
+<tr class="odd">
+<td>Essential</td>
+<td>Inherited From</td>
+</tr>
+<tr class="even">
+<td>Level Inherited From</td>
+<td>Role</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Organisation</td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td>Organisation Level 1-13</td>
+</tr>
+<tr class="odd">
+<td>Hiring Status</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selector</p>
+<p>View (Requirements by Position/Requirements Only)</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image17.png"
+style="width:6.26806in;height:1.59447in" /></p>
+<h2 id="competency-requirements-matrix-tab">Competency Requirements Matrix Tab</h2>
+<p>Description</p>
+<p>The analysis returns a list of positions showing where each position has
+or does not have the competency set as a requirement.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Position Number</p>
+<p>Occupation Code</p>
+<p>Area Of Work</p>
+<p>* Competence Full Name</p>
+<p>Competence Framework</p>
+<p>Level Inherited From</p>
+<p>Role</p>
+<p>Hiring Status</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Area Of Work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Position Number</td>
+<td>Occupation Code</td>
+</tr>
+<tr class="even">
+<td>Position Name</td>
+<td>Job</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image18.png"
+style="width:6.26806in;height:1.84375in"
+alt="Table Description automatically generated" /></p>
+<h2 id="positions-without-requirements-tab">Positions Without Requirements Tab</h2>
+<p>Description</p>
+<p>This analysis returns all positions that do not have a competency or a
+selection of competencies set as requirements against them (or higher
+levels) or a selection of competencies set as requirements where some
+have additional requirements set but not all. The analysis also allows
+users to filter for specific competencies, organisation, job role or
+staff group.</p>
+<p>Prompts</p>
+<p>Mode</p>
+<p>Competence(s)</p>
+<p>Organisation</p>
+<p>Job Role</p>
+<p>Staff Group</p>
+<p>Effective Date</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Organisation</th>
+<th>Position Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Position Title</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td>Date From</td>
+</tr>
+<tr class="odd">
+<td>Hiring Status</td>
+<td>Organisation Level 1-13</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image19.png"
+style="width:6.26806in;height:2.7992in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Position Number to navigate to Position Competency
+Requirements</p>
+<h2 id="competence-list-tab">Competence List Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to return a list of all available competencies
+whether assigned or not.</p>
+<p>Prompts</p>
+<p>Trust Identifier</p>
+<p>Framework</p>
+<p>Family Group</p>
+<p>Competence Name</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trust Identifier</th>
+<th>Proficiency Rating Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Competence Framework</td>
+<td>Certification Required</td>
+</tr>
+<tr class="even">
+<td>Competence Name</td>
+<td>Primary Evaluation Method</td>
+</tr>
+<tr class="odd">
+<td>Family Group</td>
+<td>Renewal Period</td>
+</tr>
+<tr class="even">
+<td>Competence Description</td>
+<td>Renewal Period Units</td>
+</tr>
+<tr class="odd">
+<td>Valid Date From</td>
+<td>Behavioural Indicator</td>
+</tr>
+<tr class="even">
+<td>Valid Date To</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image20.png"
+style="width:6.26806in;height:2.36324in" /></p>
+<h2 id="applicant-competency-profile-tab">Applicant Competency Profile Tab</h2>
+<p>Description</p>
+<p>This analysis enables users to report on which competencies applicants
+have achieved.</p>
+<p>Prompts</p>
+<p>Applicant Number</p>
+<p>* Application Status</p>
+<p>Staff Group</p>
+<p>Person Type</p>
+<p>Effective Date (Historical Only) (Default: Current Date)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Applicant Number</th>
+<th>Date From</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Name</td>
+<td>Date To</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>Proficiency Level</td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td>Date Last Awarded</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Awarded By</td>
+</tr>
+<tr class="odd">
+<td>Assignment Last Updated Date</td>
+<td>Title</td>
+</tr>
+<tr class="even">
+<td>Competency</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image21.png"
+style="width:6.26806in;height:2.1148in" /></p>
+<h2 id="compliance-matrix-tab">Compliance Matrix Tab</h2>
+<p>Description</p>
+<p>This Compliance Matrix analysis is similar to the Selective Competency
+Matching analysis but allows users to include Non-Requirement
+Competencies (Blue cell) and the ability to see when the person’s
+competency expired, if they are no longer in date. The Compliance Matrix
+also has separate columns for future booking dates and expiry dates.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Occupation Code</p>
+<p>Role</p>
+<p>Primary Assignments Only</p>
+<p>Assignment Number</p>
+<p>Effective Date</p>
+<p>Latest Start Date &gt;=</p>
+<p>* Competencies</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Job Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Occ Code</td>
+</tr>
+<tr class="even">
+<td>Position</td>
+<td>Assignment Status</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td>Competency Full Name</td>
+</tr>
+<tr class="even">
+<td>Organisation Level 1-13</td>
+<td>Matching Status</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Competence Date To</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Future Enrolment Date</td>
+</tr>
+<tr class="odd">
+<td>Employee Latest Start Date</td>
+<td>Supervisor Name</td>
+</tr>
+<tr class="even">
+<td>Employee Email Address</td>
+<td>Supervisor Email Address</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image22.png"
+style="width:6.26806in;height:1.70764in" /></p>
+<h2 id="applicant-competency-matching-tab">Applicant Competency Matching Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to show the detail of matching competency
+requirements against the competencies an applicant has achieved. The
+analysis is similar to the employee compliance matching analysis but
+filters to persons with an ‘Applicant Flag’ only.</p>
+<p>Prompts</p>
+<p>Competencies</p>
+<p>Competency Framework(s)</p>
+<p>Effective Date (Historical Dates Only)</p>
+<p>Display Requirement Source? (Default: Yes)</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Applicant Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Person Type</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Application Status</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Organisation Name</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Competency Name</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Level Required</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Competency Match</td>
+<td>If the applicant has achieved the competency at the correct level
+(or the level is null) then show a green cell with ‘Match’. If the
+applicant has achieved it but at a lower level, then leave the cell red
+with ‘Lower Level’. Otherwise the cell is red.</td>
+</tr>
+<tr class="odd">
+<td>Expiry Date</td>
+<td>Expiry date of the competency if they have it – whether it is
+current or expired.</td>
+</tr>
+<tr class="even">
+<td>Level Achieved</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Date Last Awarded</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Future Enrolment Date</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Requirement Inherited From</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selector</p>
+<p>Organisation Level 1-13</p>
+<p>Area of Work</p>
+<p>Staff Group</p>
+<p>Employee Location</p>
+<p>Pay Grade</p>
+<p>Position Title</p>
+<p>Position Name</p>
+<p>Occupation Code</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image23.png"
+style="width:6.26806in;height:1.98221in" /></p>
+<h2 id="benchmarking">Benchmarking</h2>
+<p>Description</p>
+<p>This tab returns Competency Matching % benchmarking figures at Trust,
+Region, Country and National levels, which can be compared against
+figures at Manager / Team level.</p>
+<p>Calculations</p>
+<p><strong>Benchmarking Competency Matching %:</strong></p>
+<p>Benchmarking Competencies Achieved (All) / Benchmarking Competencies
+Required (All) *100</p>
+<p><strong>Non-Benchmarking Competency Matching %:</strong></p>
+<p>Competencies Achieved (All) / Competencies Required (All) *100</p>
+<p><strong>Note:</strong> The data returned is effective as at the last day of the
+previous month in line with Benchmarking data refresh cycle. For example
+if the report is run in February, the data returned is effective as at
+the end of January.</p>
+<p>Prompts</p>
+<p>Staff Group</p>
+<p>Area of Work</p>
+<p>Job Role</p>
+<p>Occupation Code (Initial)</p>
+<p>Employee Person Type</p>
+<p>Assignment Category</p>
+<p>Assignment Status</p>
+<p>Month</p>
+<p>Column Selectors (Detail Views only)</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Area of Work</p>
+<p>Employee Category</p>
+<p>Assignment Category</p>
+<h3 id="summary">Summary</h3>
+<p>Description</p>
+<p>This analysis provides a summary view of Competency Matching %
+benchmarking figures at Trust, Region, Country and National levels,
+which can be compared against figures at Manager / Team level.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Team</td>
+<td>Competency Matching % at Manager / Team level (Supervisor hierarchy
+apply)</td>
+</tr>
+<tr class="odd">
+<td>Trust</td>
+<td>Competency Matching % at Trust level</td>
+</tr>
+<tr class="even">
+<td>Region</td>
+<td>Competency Matching % at Region level</td>
+</tr>
+<tr class="odd">
+<td>Country</td>
+<td>Competency Matching % at Country level</td>
+</tr>
+<tr class="even">
+<td>National</td>
+<td>Competency Matching % at National level</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Graph by Level, Graph by Month or Table (Default Graph by Level)</p>
+<p>Example Screenshot</p>
+<p><img src="../5/media/image24.png"
+style="width:4.99167in;height:2.65833in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<h3 id="benchmarking-detail">Benchmarking Detail</h3>
+<p>Description</p>
+<p>This analysis provides a detail view of Competency Matching %
+benchmarking figures at Trust, Region, Country and National levels,
+which can be compared against figures at Manager / Team level using the
+Non-Benchmarking Detail analysis available within the page.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Trust</td>
+<td>Competency Matching % at Trust level</td>
+</tr>
+<tr class="odd">
+<td>Region</td>
+<td>Competency Matching % at Region level</td>
+</tr>
+<tr class="even">
+<td>Country</td>
+<td>Competency Matching % at Country level</td>
+</tr>
+<tr class="odd">
+<td>National</td>
+<td>Competency Matching % at National level</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image25.png"
+style="width:3.84167in;height:2.51667in"
+alt="Table Description automatically generated" /></p>
+<h3 id="non-benchmarking-detail">Non-Benchmarking Detail</h3>
+<p>Description</p>
+<p>This analysis provides a detail view of Competency Matching %
+benchmarking figures at Manager / Team level, which can be compared
+against figures at Trust, Region, Country and National levels using the
+Benchmarking Detail analysis available within the page.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Team</td>
+<td>Competency Matching % at Manager / Team level (Supervisor hierarchy
+apply)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../5/media/image26.png" style="width:2.69167in;height:2.5in"
+alt="Graphical user interface, application Description automatically generated" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Change%20Event%20Log%20Dashboard/index.html" class="btn btn-neutral float-left" title="Change Event Log Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Compliance%20Trending%20Dashboard/index.html" class="btn btn-neutral float-right" title="Compliance Trending Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Change%20Event%20Log%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Compliance%20Trending%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Employee Relations Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Employee Relations Dashboard";
+        var mkdocs_page_input_path = "Employee Relations Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Employee Relations Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#index">Index</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#employee-relations-summary">Employee Relations Summary</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cases">Cases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#capability-no-uhr">Capability No UHR</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#capability-uhr">Capability UHR</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#disciplinary">Disciplinary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flexible-working">Flexible Working</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#grievance">Grievance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#harassment">Harassment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#further-er-stages-appeal">Further ER Stages: Appeal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#further-er-stages-dbs">Further ER Stages: DBS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#further-er-stages-refer-to-prof-reg-body">Further ER Stages: Refer to Prof Reg Body</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#further-er-stages-tribunal">Further ER Stages: Tribunal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#employee-relations-list">Employee Relations List</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Employee Relations Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="employee-relations-dashboard">Employee Relations Dashboard</h1>
+<p>Description</p>
+<p>The Employee Relations Dashboard is split into eleven dashboard pages
+and follows the standard design used by all NHS Standard Dashboards. The
+summary page provides an overview grouped by each area of the employee
+relations process. A Date range is used when filtering the Dashboard so
+that leaver details can be included if required. Pages are then provided
+to show a detail view at employee level of each area. Prompts are
+provided for the user to filter each page to show open-ended cases only.</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX Business Intelligence Administration</p>
+<p>XXX Employee Relations Administration</p>
+<p>Prompts</p>
+<p>Date Between (default: first of previous month to current date)</p>
+<p>Group By (default: gender)</p>
+<p>Staff Group</p>
+<p>Restrict to open cases only (default: Yes)</p>
+<p>Organisation Level 1-13</p>
+<p>Assignment Status</p>
+<h2 id="index">Index</h2>
+<p>Description</p>
+<p>Employee Relations reports are available in two different categories
+below:</p>
+<ul>
+<li>
+<p>Summary</p>
+</li>
+<li>
+<p>Employee Relations</p>
+</li>
+</ul>
+<p>From this tab users can click on links provided to navigate to reports.</p>
+<p>Example Screenshot</p>
+<p><img src="../8/media/image2.png"
+style="width:6.26806in;height:2.625in" /></p>
+<h3 id="employee-relations-summary">Employee Relations Summary</h3>
+<p>Description</p>
+<p>A number of analyses are provided on this dashboard tab. At the top
+three views are provided of the number of ER cases. A Table, Bar Graph
+and Pie Graph are able to be grouped by a number of data items using the
+prompt provided and show the total number of employees at each area of
+the employee relations process. Below that a view of Disciplinary cases
+is provided. To the right a view of cases by HR Advisor Contact, and at
+the bottom a view of cases by Organisation.</p>
+<h4 id="summary">Summary</h4>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Group</td>
+<td>Group By: Gender, Ethnic Origin, Age Band, Disability, Religious
+Belief, Sexual Orientation</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Capability UHR</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Disciplinary</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Flexible Working</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Further ER Stages: Appeal</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Further ER Stages: ISA</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Further ER Stages: Refer to Prof Reg Body</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Further ER Stages: Tribunal</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Grievance</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Harassment</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../8/media/image3.png"
+style="width:6.26806in;height:3.06974in" /></p>
+<h3 id="cases">Cases</h3>
+<p>Description</p>
+<p>By default this analysis is designed to show all open Employee Relations
+cases that began within a user input number of days (default to 105 (15
+Weeks)) process. Users are able to define the period using the Date
+Between prompt or Case From and To Date prompts available.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Employee Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Organisation Name</td>
+<td>Organisation Level 1-13</td>
+</tr>
+<tr class="even">
+<td>Type of Case</td>
+<td>Case Reference Number</td>
+</tr>
+<tr class="odd">
+<td>Process Start Date</td>
+<td>Process End Date</td>
+</tr>
+<tr class="even">
+<td>HR Contact</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Job Role</td>
+</tr>
+</tbody>
+</table>
+
+<p>Prompts</p>
+<p>Date Between</p>
+<p>Case From Date</p>
+<p>Case To Date</p>
+<p>Staff Group</p>
+<p>Assignment Status</p>
+<p>Show cases that were opened more than X Days ago where X =</p>
+<p>Example Screenshot</p>
+<p><img src="../8/media/image4.png"
+style="width:6.26806in;height:1.75385in" /></p>
+<h3 id="capability-no-uhr">Capability No UHR</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Capability No
+UHR area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Initial Meeting Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Employee Suspended</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>External Agency Involved</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Medical and Dental Only</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>Stage or Level</td>
+</tr>
+<tr class="odd">
+<td>Case Reference Number</td>
+<td>Review Date</td>
+</tr>
+<tr class="even">
+<td>Position 1</td>
+<td>Represented By</td>
+</tr>
+<tr class="odd">
+<td>Position 2</td>
+<td>Outcome</td>
+</tr>
+<tr class="even">
+<td>Position 3</td>
+<td>Warning Expiry Date 1</td>
+</tr>
+<tr class="odd">
+<td>HR Contact</td>
+<td>Warning Expiry Date 2</td>
+</tr>
+<tr class="even">
+<td>Line Manager Contact</td>
+<td>Further ER Stages</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="capability-uhr">Capability UHR</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Capability UHR
+area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Date of First Referral</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Meeting Date</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Stage or Level</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Represented By</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>Return to Work</td>
+</tr>
+<tr class="odd">
+<td>Case Reference Number</td>
+<td>Job Amendment</td>
+</tr>
+<tr class="even">
+<td>Position 1</td>
+<td>Redeployment</td>
+</tr>
+<tr class="odd">
+<td>Position 2</td>
+<td>Appl for Ill Health Retirement</td>
+</tr>
+<tr class="even">
+<td>Position 3</td>
+<td>Appl for Ill Health Ret Outcome</td>
+</tr>
+<tr class="odd">
+<td>HR Contact</td>
+<td>Outcome</td>
+</tr>
+<tr class="even">
+<td>Line Manager Contact</td>
+<td>Warning Expiry Date 1</td>
+</tr>
+<tr class="odd">
+<td>Employee Medically Suspended</td>
+<td>Warning Expiry Date 2</td>
+</tr>
+<tr class="even">
+<td>Calendar Days Open</td>
+<td>Further ER Stages</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="disciplinary">Disciplinary</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Disciplinary
+area of Employee Relations.</p>
+<p>Prompts</p>
+<p>Display Assignments where Status is 'Suspended' but no Disciplinary Case
+(default: No)</p>
+<p>This prompt enables users to show all assignments with a Status of
+Suspended (Suspend Assignment; Suspend No Pay; Suspend With Pay) but
+with no Disciplinary case associated.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Medical and Dental Only</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Employee Suspended</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>External Agency Involved</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Investigating Officer</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>HR Contact</td>
+</tr>
+<tr class="odd">
+<td>Case Reference Number</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="even">
+<td>Nature of Allegation</td>
+<td>Represented By</td>
+</tr>
+<tr class="odd">
+<td>Specific Allegation</td>
+<td>Investigation End Date</td>
+</tr>
+<tr class="even">
+<td>Position 1</td>
+<td>Investigation Outcome</td>
+</tr>
+<tr class="odd">
+<td>Position 2</td>
+<td>Stage or Level</td>
+</tr>
+<tr class="even">
+<td>Position 3</td>
+<td>Date of Hearing</td>
+</tr>
+<tr class="odd">
+<td>Date of Alleged Incident</td>
+<td>Hearing Outcome 1</td>
+</tr>
+<tr class="even">
+<td>Procedure Used</td>
+<td>Hearing Outcome 2</td>
+</tr>
+<tr class="odd">
+<td>Warning Expiry Date 1</td>
+<td>Hearing Outcome 3</td>
+</tr>
+<tr class="even">
+<td>Warning Expiry Date 2</td>
+<td>Process End Date</td>
+</tr>
+<tr class="odd">
+<td>Calendar Days Open</td>
+<td>Further ER Stages</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="flexible-working">Flexible Working</h3>
+<p>Description</p>
+<p>The Flexible Working page is made up of a number of analyses designed to
+provide a summary and detail view of the Flexible Working area of
+Employee Relations.</p>
+<p><strong>Summary</strong></p>
+<p>Available are two analyses designed to enable users to report the number
+of Flexible Working requests grouped by a number of workforce fields
+such as Organisation Levels, Organisation, Staff Group and various
+protected characteristics. Also returned is the number and percentage of
+those requests that have been accepted. The other summary analysis
+returns employees where more than one Flexible Working request has been
+submitted.</p>
+<p>Column Selectors x 1</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Staff Group</p>
+<p>Flexible Working Type</p>
+<p>Various Protected Characteristics</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Org Levels 1-13</th>
+<th>No. of Requests (Summary 2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Organisation Name</td>
+<td>Employee Number (Summary 2)</td>
+</tr>
+<tr class="even">
+<td>Gender Ethnic</td>
+<td>Employee Name (Summary 2)</td>
+</tr>
+<tr class="odd">
+<td>Disability</td>
+<td>Staff Group (Summary 2)</td>
+</tr>
+<tr class="even">
+<td>Sexual Orientation</td>
+<td>Role (Summary 2)</td>
+</tr>
+<tr class="odd">
+<td>Religious Belief</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Flexible Working Type (Summary 1)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Count of Flexible Working Requests (Summary 1)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Accepted Requests (Summary 1)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Approved Requests (Summary 1)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Detail</strong></p>
+<p>This analysis is designed to provide a detail view of the Flexible
+Working area of Employee Relations</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Other Applications Made</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Meeting 1 Date</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Within 28 Days</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Represented at Meeting 1 By</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Meeting 2 Date</td>
+</tr>
+<tr class="odd">
+<td>Process Start Date</td>
+<td>Represented at Meeting 2 By</td>
+</tr>
+<tr class="even">
+<td>Case Reference Number</td>
+<td>Decision Required By</td>
+</tr>
+<tr class="odd">
+<td>Position 1</td>
+<td>Decision Date</td>
+</tr>
+<tr class="even">
+<td>Position 2</td>
+<td>Outcome</td>
+</tr>
+<tr class="odd">
+<td>Position 3</td>
+<td>Grounds for Rejection</td>
+</tr>
+<tr class="even">
+<td>HR Contact</td>
+<td>Effective Date of Change</td>
+</tr>
+<tr class="odd">
+<td>Line Manager Contact</td>
+<td>Date Decision Letter Sent</td>
+</tr>
+<tr class="even">
+<td>Date Application Received</td>
+<td>Process End Date</td>
+</tr>
+<tr class="odd">
+<td>Application Complete</td>
+<td>Calendar Days Open</td>
+</tr>
+<tr class="even">
+<td>Requested Change</td>
+<td>Meeting 1 Date</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="grievance">Grievance</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Grievance area
+of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Line Manager Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Reason</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Stage</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Meeting Date</td>
+</tr>
+<tr class="even">
+<td>Grievance Type</td>
+<td>Represented By</td>
+</tr>
+<tr class="odd">
+<td>Process Start Date</td>
+<td>Outcome</td>
+</tr>
+<tr class="even">
+<td>Case Reference Number</td>
+<td>Investigating Officer</td>
+</tr>
+<tr class="odd">
+<td>Position 1</td>
+<td>Process End Date</td>
+</tr>
+<tr class="even">
+<td>Position 2</td>
+<td>Further ER Stages</td>
+</tr>
+<tr class="odd">
+<td>Position 3</td>
+<td>HR Contact</td>
+</tr>
+<tr class="even">
+<td>Calendar Days Open</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="harassment">Harassment</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Harassment
+area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Line Manager Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Employee Suspended</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Alleged Perpetrator Category</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Alleged Perpetrator Name 1</td>
+</tr>
+<tr class="even">
+<td>Harassment Type</td>
+<td>Alleged Perpetrator Name 2</td>
+</tr>
+<tr class="odd">
+<td>Process Start Date</td>
+<td>Medical and Dental</td>
+</tr>
+<tr class="even">
+<td>Case Reference Number</td>
+<td>Stage</td>
+</tr>
+<tr class="odd">
+<td>Position 1</td>
+<td>Represented By</td>
+</tr>
+<tr class="even">
+<td>Position 2</td>
+<td>Meeting Date</td>
+</tr>
+<tr class="odd">
+<td>Position 3</td>
+<td>Outcome</td>
+</tr>
+<tr class="even">
+<td>HR Contact</td>
+<td>Process End Date</td>
+</tr>
+<tr class="odd">
+<td>Calendar Days Open</td>
+<td>Further ER Stages</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="further-er-stages-appeal">Further ER Stages: Appeal</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Further ER
+Stages: Appeal area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>End Date of Hearing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Appeal Outcome</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Comments</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>HR Contact</td>
+</tr>
+<tr class="even">
+<td>Case Ref Number</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="odd">
+<td>Process Start Date</td>
+<td>Nature of Appeal</td>
+</tr>
+<tr class="even">
+<td>Calendar Days Open</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="further-er-stages-dbs">Further ER Stages: DBS</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Further ER
+Stages: DBS area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Case Reference Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Date Referred</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>DBS Outcome</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Comments</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>HR Contact</td>
+</tr>
+<tr class="odd">
+<td>Alert Disclosure and Barring Service</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="even">
+<td>Alert Date Sent</td>
+<td>Process End Date</td>
+</tr>
+<tr class="odd">
+<td>Point of Contact for DBS</td>
+<td>Removed From Regulated Activity</td>
+</tr>
+<tr class="even">
+<td>Calendar Days Open</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="further-er-stages-refer-to-prof-reg-body">Further ER Stages: Refer to Prof Reg Body</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Further ER
+Stages: Refer to Prof Reg Body area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Case Reference Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Body</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Date Referred</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>End Date of Hearing</td>
+</tr>
+<tr class="even">
+<td>Reg Body Outcome</td>
+<td>Comments</td>
+</tr>
+<tr class="odd">
+<td>HR Contact</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>Calendar Days Open</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="further-er-stages-tribunal">Further ER Stages: Tribunal</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of the Further ER
+Stages: Tribunal area of Employee Relations.</p>
+<p>Column Selectors x 4</p>
+<p>Organisation Name</p>
+<p>Organisation Level 1-13</p>
+<p>Ethinic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Case Reference Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Tribunal Level</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td>Nature of Claim</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>End Date of Hearing</td>
+</tr>
+<tr class="even">
+<td>Comments</td>
+<td>Process Start Date</td>
+</tr>
+<tr class="odd">
+<td>HR Contact</td>
+<td>Line Manager Contact</td>
+</tr>
+<tr class="even">
+<td>Calendar Days Open</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="employee-relations-list">Employee Relations List</h3>
+<p>Description</p>
+<p>This analysis lists all the details of Employee Relations cases in Real
+Time.</p>
+<p>Prompts</p>
+<p>Person Type</p>
+<p>Staff Group</p>
+<p>Job Role</p>
+<p>Employee Relations Type</p>
+<p>Case Reference No</p>
+<p>HR Contact</p>
+<p>Line Manager Contact</p>
+<p>Effective Date</p>
+<p>Date From</p>
+<p>Date To</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Relations Type</th>
+<th>Disciplinary - Warning Expiry Date 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td>Disciplinary - Further ER Stages</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Grievance - Type</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Grievance - Position 1</td>
+</tr>
+<tr class="even">
+<td>Employee Number</td>
+<td>Grievance - Position 2</td>
+</tr>
+<tr class="odd">
+<td>Person Type</td>
+<td>Grievance - Position 3</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>Grievance - Reason</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Grievance - Stage</td>
+</tr>
+<tr class="even">
+<td>Job Role</td>
+<td>Grievance - Meeting Date</td>
+</tr>
+<tr class="odd">
+<td>Case Reference No</td>
+<td>Grievance - Represented By</td>
+</tr>
+<tr class="even">
+<td>Process Start Date</td>
+<td>Grievance - Outcome</td>
+</tr>
+<tr class="odd">
+<td>Process End Date</td>
+<td>Grievance - Investigating Officer</td>
+</tr>
+<tr class="even">
+<td>HR Contact</td>
+<td>Grievance - Warning Expiry Date</td>
+</tr>
+<tr class="odd">
+<td>HR Contact Current Person Type</td>
+<td>Grievance - Further ER Stages</td>
+</tr>
+<tr class="even">
+<td>HR Contact Current Asg Status</td>
+<td>Harassment - Type</td>
+</tr>
+<tr class="odd">
+<td>Line Manager Contact</td>
+<td>Harassment - Position 1</td>
+</tr>
+<tr class="even">
+<td>Line Manager Contact Current Person Type</td>
+<td>Harassment - Position 2</td>
+</tr>
+<tr class="odd">
+<td>Line Manager Contact Current Asg Status</td>
+<td>Harassment - Position 3</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Capability Type</td>
+<td>Harassment - Employee Suspended</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Position 1</td>
+<td>Harassment - Alleged Perpetrator Category</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Position 2</td>
+<td>Harassment - Alleged Perpetrator Name 1</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Position 3</td>
+<td>Harassment - Alleged Perpetrator Name 2</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Initial Meeting Date</td>
+<td>Harassment - Medical and Dental Only</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Employee Suspended</td>
+<td>Harassment - Stage</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Initial Meeting Outcome</td>
+<td>Harassment - Represented By</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - External Agency Involved</td>
+<td>Harassment - Meeting Date</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Medical and Dental Only</td>
+<td>Harassment - Outcome</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Stage or Level</td>
+<td>Harassment - Assignment Change</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Review Date</td>
+<td>Harassment - Related Case Reference Number</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Represented By</td>
+<td>Harassment - Further ER Stages</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Outcome</td>
+<td>Flexible Working - Type</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Warning Expiry Date 1</td>
+<td>Flexible Working - Position 1</td>
+</tr>
+<tr class="even">
+<td>Capability No UHR - Warning Expiry Date 2</td>
+<td>Flexible Working - Position 2</td>
+</tr>
+<tr class="odd">
+<td>Capability No UHR - Further ER Stages</td>
+<td>Flexible Working - Position 3</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Position 1</td>
+<td>Flexible Working - Date Application Received</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Position 2</td>
+<td>Flexible Working - Application Complete</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Position 3</td>
+<td>Flexible Working - Requested Change</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Employee Medically Suspend</td>
+<td>Flexible Working - Other Applications Made</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Date of First Referral to Occ Health</td>
+<td>Flexible Working - Meeting 1 Date</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Meeting Date</td>
+<td>Flexible Working - Within 28 Days</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Stage or Level</td>
+<td>Flexible Working - Represented at Meeting 1 By</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Represented By</td>
+<td>Flexible Working - Meeting 2 Date</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Return To Work</td>
+<td>Flexible Working - Represented at Meeting 2 By</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Job Amendment</td>
+<td>Flexible Working - Decision Required By</td>
+</tr>
+<tr class="even">
+<td>Capability UHR – Redeployment</td>
+<td>Flexible Working - Decision Date</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Appl for Ill Health Retirement</td>
+<td>Flexible Working - Outcome</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Appl Ill Health Ret Outcome</td>
+<td>Flexible Working - Grounds for Rejection</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Outcome</td>
+<td>Flexible Working - Effective Date of Change</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Warning Expiry Date 1</td>
+<td>Flexible Working - Date Decision Letter Sent</td>
+</tr>
+<tr class="odd">
+<td>Capability UHR - Warning Expiry Date 2</td>
+<td>Further ER Stages (Appeal) - Nature Of Appeal</td>
+</tr>
+<tr class="even">
+<td>Capability UHR - Further ER Stages</td>
+<td>Further ER Stages (Appeal) - End Date Of Hearing</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Nature of Allegation</td>
+<td>Further ER Stages (Appeal) - Represented By</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Specific Allegation</td>
+<td>Further ER Stages (Appeal) - Appeal Outcome</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Position 1</td>
+<td>Further ER Stages (Appeal) - Comments</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Position 2</td>
+<td>Further ER Stages (Refer to ISA) - Date Referred</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Position 3</td>
+<td>Further ER Stages (Refer to ISA) - IAS Outcome</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Date of Alleged Incident</td>
+<td>Further ER Stages (Refer to ISA) - Comments</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Procedure Used</td>
+<td>Further ER Stages (Refer to ISA) - Removed from Regulated
+Activity</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Medical and Dental Only</td>
+<td>Further ER Stages (Refer to ISA) - Alert Disclosure and Barring
+Serv</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Employee Suspended</td>
+<td>Further ER Stages (Refer to ISA) - Alert Date Sent</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - External Agency Involved</td>
+<td>Further ER Stages (Refer to ISA) - Point Contact DBS</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Investigating Officer</td>
+<td>Further ER Stages (Ref to Prof Reg Body - Body</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Represented By</td>
+<td>Further ER Stages (Ref to Prof Reg Body) - Date Referred</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Investigation End Date</td>
+<td>Further ER Stages (Ref to Prof Reg Body) - End Date Hearing</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Investigation Outcome</td>
+<td>Further ER Stages (Ref to Prof Reg Body) - Reg Body Outcome</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Stage or Level</td>
+<td>Further ER Stages (Ref to Prof Reg Body) - Comments</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Date of Hearing</td>
+<td>Further ER Stages (Tribunal) - Tribunal Level</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Hearing Outcome 1</td>
+<td>Further ER Stages (Tribunal) - Nature of Claim</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Hearing Outcome 2</td>
+<td>Further ER Stages (Tribunal) - End Date Of Hearing</td>
+</tr>
+<tr class="odd">
+<td>Disciplinary - Hearing Outcome 3</td>
+<td>Further ER Stages (Tribunal) - Tribunal Outcome</td>
+</tr>
+<tr class="even">
+<td>Disciplinary - Warning Expiry Date 1</td>
+<td>Further ER Stages (Tribunal) - Comments</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Element%20Entries%20Dashboard/index.html" class="btn btn-neutral float-left" title="Element Entries Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Employment%20Checklist%20Dashboard/index.html" class="btn btn-neutral float-right" title="Employment Checklist Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Element%20Entries%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Employment%20Checklist%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

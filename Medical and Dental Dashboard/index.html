@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Medical and Dental Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Medical and Dental Dashboard";
+        var mkdocs_page_input_path = "Medical and Dental Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Medical and Dental Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#medical-and-dental-job-plans">Medical and Dental Job Plans</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#job-plan-detail-tab">Job Plan Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-analysis-tab">Competency Analysis Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#competency-detail-tab">Competency Detail Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#job-plan-by-status-tab">Job Plan By Status Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#trend-analysis-tab">Trend Analysis Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deanery-post-summary-tab">Deanery Post Summary Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deanery-post-detail-tab">Deanery Post Detail Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#nhs-dpn-applicant-detail">NHS DPN Applicant Detail</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nhs-dpn-employee-detail">NHS DPN Employee Detail</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Workforce%20Profile%20Dashboard/index.html">Workforce Profile Dashboard</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Medical and Dental Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="medical-and-dental-dashboard">Medical and Dental Dashboard</h1>
+<p>Description</p>
+<p>This dashboard shows the number of assignments with a specific Job Role
+(specified in the prompts) who have a Medical and Dental Job Plan that
+is either Expired, Unsigned or Current (i.e. within the last 12 months).
+Gauges are provided for each and can either be shown as combined (both
+Consultant and SAS) or Split (a Gauge for each).</p>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administrator</p>
+<p>XXX HR Administrator</p>
+<p>XXX HR Administrator (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Manager Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Manager Self Service (Payroll Approvals Required)</p>
+<p>XXX Administrator Self Service (Payroll Approvals Not Required)</p>
+<p>XXX Administrator Self Service (Payroll Approvals Required)</p>
+<p>XXX Supervisor Self Service</p>
+<p>XXX Supervisor Self Service (Limited Access)</p>
+<p>Prompts</p>
+<p>Job Role (Default: 'Other' Community Health Service</p>
+<p>Clinical Assistant; Clinical Director – Dental; Clinical Director –
+Medical; Clinical Medical Officer</p>
+<p>Consultant; Dental Surgeon acting as Hospital Consultant; Director of
+Public Health; Hospital Practitioner; Medical Director; Professor;
+Senior Clinical Medical Officer; Special Salary Scale in Public Health
+Medicine; Specialty Doctor; Staff Grade (Closed); Trust Grade Doctor -
+Career Grade level)</p>
+<p>Amber From (default: 60%)</p>
+<p>Green From (default: 80%)</p>
+<p>Primary Assignments Only</p>
+<p>Months Plan is Valid For (default: 12 months)</p>
+<p>Org Level 1-13</p>
+<p>Effective Date</p>
+<p>*Required Plan Type (Consultant, SAS or Both) (Default: Both)</p>
+<p>Person Type</p>
+<p>Employee Person Type</p>
+<p>Assignment Category</p>
+<p>Assignment Status</p>
+<p>Location</p>
+<h2 id="medical-and-dental-job-plans">Medical and Dental Job Plans</h2>
+<p>Description</p>
+<p>This analysis is designed to show the percentage of Medical and Dental
+Staff (identified by pay grade) with an Expired Job Plan, an Unsigned
+Job Plan, a Current Job Plan and a Detail View. RAG Status can be set
+using the available prompts. Gauges are provided for each and can either
+be shown as combined (both Consultant and SAS) or Split (a Gauge for
+each).</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Assignments</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Job Role</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Organisation</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignments with an Expired Plan</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% Assignment with an Expired Plan</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignments with an Unsigned Plan</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% Assignment with an Unsigned Plan</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Assignments with a Current Plan</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% Assignments with a Current Plan</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>Group By (default: Job Role)</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image1.png" style="width:6.26806in;height:2.4282in" /></p>
+<p>Actions</p>
+<p>Job Role &gt; Job Plan Detail</p>
+<h2 id="job-plan-detail-tab">Job Plan Detail Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of Medical and Dental
+Job Plan information.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Employee Number</strong></th>
+<th>Org Level (2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Employee Name</strong></td>
+<td>Org Level (3)</td>
+</tr>
+<tr class="even">
+<td><strong>Role</strong></td>
+<td><strong>Research/Education PA Hours</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Occupation Code</strong></td>
+<td><strong>Additional Responsibilities Hours</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Pay Grade</strong></td>
+<td><strong>Additional Responsibilities Sessions</strong></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>SAS In Hours</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>SAS Out of Hours</td>
+</tr>
+<tr class="odd">
+<td>Job Plan Type</td>
+<td>On-Call Rota Arrangements</td>
+</tr>
+<tr class="even">
+<td>Date Last Reviewed</td>
+<td>Management Responsibilities Hours</td>
+</tr>
+<tr class="odd">
+<td>Months Since Review</td>
+<td>Management Responsibilities Sessions</td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td>Travelling Time</td>
+</tr>
+<tr class="odd">
+<td>Signed at Last Review</td>
+<td>Other External Relevant NHS Duty Hours</td>
+</tr>
+<tr class="even">
+<td>Next Review Date</td>
+<td>Additional Fee Paying Work Hours</td>
+</tr>
+<tr class="odd">
+<td>Direct Clinical Care Duties- Hours</td>
+<td>Responsibility Allowance PA Hours</td>
+</tr>
+<tr class="even">
+<td>Direct Clinical Care Duties – Sessions</td>
+<td>Average Weekly Private Practice Hours</td>
+</tr>
+<tr class="odd">
+<td>On-Call Hours</td>
+<td>Total DCC/SPA Hours</td>
+</tr>
+<tr class="even">
+<td>On-Call Sessions</td>
+<td>Total DCC/SPA Sessions</td>
+</tr>
+<tr class="odd">
+<td>Supporting Professional Activities Hours</td>
+<td>Total Hours of Other Duties</td>
+</tr>
+<tr class="even">
+<td>Supporting Professional Activities Sessions</td>
+<td>Total Commitment in Hours</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>Include Entries (Default: Latest Entry Only)</p>
+<p>Group By (Org Level 1-13)</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image2.png" style="width:6.26806in;height:1.5851in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="competency-analysis-tab">Competency Analysis Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to show the number and percentage of
+assignments with Consultant or SAS Job Plans that require and have
+achieved specific Competencies (as defined by the user).</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Assignment Count (Required)</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Assignment Count (Attained)</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Percentage</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Contract Type</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as (Default: Both)</p>
+<p>Prompts</p>
+<p>*Competency</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image3.png" style="width:6.01893in;height:3.71875in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="competency-detail-tab">Competency Detail Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to provide a detail view of assignments with
+Consultant or SAS Job Plans that require and have achieved specific
+Competencies (as defined by the user).</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Employee Number</strong></th>
+<th><strong>Assignment Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Employee Name</strong></td>
+<td><strong>Position Title</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Type</strong></td>
+<td><strong>Competency</strong></td>
+</tr>
+<tr class="odd">
+<td>Attained (Yes/No)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>*Competency</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image4.png" style="width:6.26806in;height:2.65857in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="job-plan-by-status-tab">Job Plan By Status Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to show the number of assignments with a
+Medical and Dental Job plan grouped by Job Plan Status</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Count of Assignments</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Job Plan Type</strong></td>
+<td><strong>Consultant or SAS</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Job Plan Status</strong></td>
+<td><strong>Expired, Unsigned or Current</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image5.png" style="width:6.0769in;height:3.05208in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="trend-analysis-tab">Trend Analysis Tab</h2>
+<p>Description</p>
+<p>This analysis is designed to show trending analysis for assignments with
+a current Consultant and SAS Job Plan.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Assignments</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Assignments with Current Plan</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p><strong>% With Current Plan</strong></p>
+<p><strong>Month</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View As: (Default: % With Current Plan), Table, Pivot Table</p>
+<p>Prompts</p>
+<p>Date Between</p>
+<p>Include Entries (Default: Latest Entry Only)</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image6.png" style="width:6.26806in;height:2.94652in" /></p>
+<p>Actions</p>
+<p>None</p>
+<h2 id="deanery-post-summary-tab">Deanery Post Summary Tab</h2>
+<p>Description</p>
+<p>This tab of the M&amp;D Dashboard is designed to show counts of applicants
+and employees within DPN Positions. Note, this analysis only returns
+populated positions i.e. at least one applicant or employee must be in
+the position for it to be returned.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Position</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Deanery Post Number</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Applicant Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Employee Headcount</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Position Number</p>
+<p>Deanery Post Number</p>
+<p>Manging Deanery Body</p>
+<p>Actions</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image7.png" style="width:6.27415in;height:2.36667in" /></p>
+<h2 id="deanery-post-detail-tab">Deanery Post Detail Tab</h2>
+<p>Description</p>
+<p>This tab of the M&amp;D Dashboard is designed to show a detailed view of all
+applicants and employees within DPN Positions.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Effective Date</p>
+<p>Employee Number</p>
+<p>Applicant Number</p>
+<p>Applicant Employee Number</p>
+<p>Job Role</p>
+<p>Position Number</p>
+<p>Location</p>
+<p>Person Type</p>
+<p>Applicant Status</p>
+<p>Deanery Post Number</p>
+<p>Managing Deanery Board</p>
+<h3 id="nhs-dpn-applicant-detail">NHS DPN Applicant Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detailed view of applicant
+details within DPN positions.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Applicant Number</th>
+<th>Area of Work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Applicant Name</td>
+<td>Deanery Post Number</td>
+</tr>
+<tr class="even">
+<td>Applicant Employee Number</td>
+<td>Managing Deanery Board</td>
+</tr>
+<tr class="odd">
+<td>Position Number</td>
+<td>Host/Lead Employer Status</td>
+</tr>
+<tr class="even">
+<td>Position Name</td>
+<td>Applicant Status</td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td>Projected Hire Date</td>
+</tr>
+<tr class="even">
+<td>Organisation Name</td>
+<td>Role</td>
+</tr>
+<tr class="odd">
+<td>Location</td>
+<td>GMC Number</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image8.png" style="width:6.26806in;height:1.92194in" /></p>
+<h3 id="nhs-dpn-employee-detail">NHS DPN Employee Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to provide a detailed view of employee details
+within DPN positions.</p>
+<p>Data Items</p>
+<table>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Area of Work</td>
+</tr>
+<tr class="even">
+<td>Position Number</td>
+<td>Deanery Post Number</td>
+</tr>
+<tr class="odd">
+<td>Position Name</td>
+<td>Managing Deanery Board</td>
+</tr>
+<tr class="even">
+<td>Occupation Code</td>
+<td>Host/Lead Employer Status</td>
+</tr>
+<tr class="odd">
+<td>Organisation Name</td>
+<td>Employee Latest Start Date</td>
+</tr>
+<tr class="even">
+<td>Location</td>
+<td>Person Type</td>
+</tr>
+<tr class="odd">
+<td>Organisation Level 1-13</td>
+<td>Workplace Org Code</td>
+</tr>
+<tr class="even">
+<td>Cost Centre Organisation Level 1-12</td>
+<td>Workplace Org Code Description</td>
+</tr>
+<tr class="odd">
+<td>GMC Number</td>
+<td>Mobile Phone</td>
+</tr>
+<tr class="even">
+<td>Assignment Status</td>
+<td>Email</td>
+</tr>
+<tr class="odd">
+<td>Employee Category</td>
+<td>Address Line 1</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Address Line 2</td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td>Address Line 3</td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td>County</td>
+</tr>
+<tr class="odd">
+<td>Assignment Start Date</td>
+<td>Postal Code</td>
+</tr>
+<tr class="even">
+<td>Fixed Term End Date</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Org Level 1-13</p>
+<p>cc Org Level 1-12</p>
+<p>View Selectors</p>
+<p>Summary</p>
+<p>Detail</p>
+<p>Example Screenshot</p>
+<p><img src="../23/media/image9.png" style="width:6.28056in;height:2.31319in" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Management%20Overview%20Dashboard/index.html" class="btn btn-neutral float-left" title="Management Overview Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../National%20Returns%20Dashboard/index.html" class="btn btn-neutral float-right" title="National Returns Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Management%20Overview%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../National%20Returns%20Dashboard/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

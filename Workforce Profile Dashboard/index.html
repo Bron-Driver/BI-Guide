@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Workforce Profile Dashboard - Guide to ESR BI Dashboards</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Workforce Profile Dashboard";
+        var mkdocs_page_input_path = "Workforce Profile Dashboard.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../Dashboard%20Index/index.html" class="icon icon-home"> Guide to ESR BI Dashboards
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Analysis%20Dashboard/index.html">Absence Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Absence%20Dashboard/index.html">Absence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Appraisal%20Reviews%20Dashboard/index.html">Appraisal Reviews Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Appraisals%20and%20PMP%20Dashboard/index.html">Appraisals and PMP Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Assignment%20Changes%20Dashboard/index.html">Assignment Changes Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Bank%20and%20Agency%20Administration%20Dashboard/index.html">Bank and Agency Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Care%20Certificate%20Dashboard/index.html">Care Certificate Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Certifications%20Analysis%20Dashboard/index.html">Certifications Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Change%20Event%20Log%20Dashboard/index.html">Change Event Log Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Dashboard/index.html">Compliance Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Compliance%20Trending%20Dashboard/index.html">Compliance Trending Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Dashboard%20Index/index.html">Welcome to the ESRBI Online Dashboard Guide</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Data%20Quality%20Dashboard/index.html">Data Quality Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Driving%20License%20Checks%20Dashboard/index.html">Driving License Checks Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Education%20and%20Learning%20Dashboard/index.html">Education and Learning Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Element%20Entries%20Dashboard/index.html">Element Entries Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employee%20Relations%20Dashboard/index.html">Employee Relations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Employment%20Checklist%20Dashboard/index.html">Employment Checklist Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Financial%20Cost%20Analysis%20Dashboard/index.html">Financial Cost Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../HR%20Forms%20Dashboard/index.html">HR Forms Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../IAT%20Dashboard/index.html">IAT Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Learning%20Administration%20Dashboard/index.html">Learning Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Management%20Overview%20Dashboard/index.html">Management Overview Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Medical%20and%20Dental%20Dashboard/index.html">Medical and Dental Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../National%20Returns%20Dashboard/index.html">National Returns Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pay%20Bill%20Dashboard/index.html">Pay Bill Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Dashboard/index.html">Payroll Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Payroll%20Run%20Analysis%20Dashboard/index.html">Payroll Run Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pensions%20Dashboard/index.html">Pensions Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Position%20Analysis%20Dashboard/index.html">Position Analysis Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Professional%20Registrations%20Dashboard/index.html">Professional Registrations Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Qualifications%20Dashboard/index.html">Qualifications Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Recruitment%20Dashboard/index.html">Recruitment Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Dashboard/index.html">Staff Movements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Movements%20Monitoring%20Dashboard/index.html">Staff Movements Monitoring Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Staff%20Requirements%20Dashboard/index.html">Staff Requirements Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Staff%20in%20Post%20Dashboard/index.html">Staff in Post Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Travel%20And%20Subsistence%20Dashboard/index.html">Travel And Subsistence Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../User%20Administration%20Dashboard/index.html">User Administration Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Vehicle%20Management%20Dashboard/index.html">Vehicle Management Dashboard</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1 unarchived-nav-item"><a class="reference internal" href="../Workforce%20Information%20Verifier%20Dashboard/index.html">Workforce Information Verifier Dashboard</a>
+                </li>
+              </ul>
+              <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Workforce Profile Dashboard</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#index">Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#diversity-summary-tab">Diversity Summary Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#disability">Disability</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#disability-category">Disability Category</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ethnicity">Ethnicity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gender">Gender</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#religion">Religion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sexual-orientation">Sexual Orientation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#age-band">Age Band</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#length-of-service">Length of Service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pay-band-gender">Pay Band / Gender</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#employee-category">Employee Category</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#employee-category-gender">Employee Category / Gender</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#marital-status">Marital Status</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#assignment-category">Assignment Category</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flexible-working-pattern">Flexible Working Pattern</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nationality">Nationality</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#diversity-detail-tab">Diversity Detail Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#diversity-detail">Diversity Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#retirements-tab">Retirements Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#retirements-summary">Retirements Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#retirements-timeline">Retirements Timeline</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#retirements-due-tab">Retirements Due Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#retirements-due-summary">Retirements Due Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#retirements-due-detail">Retirements Due Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fixed-term-contracts-tab">Fixed Term Contracts Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#future-fixed-term-dates-summary">Future Fixed Term Dates Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fixed-term-problems-summary">Fixed Term Problems Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fixed-term-date-detail">Fixed Term Date Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#overseas-employees-tab">Overseas Employees Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#overseas-employee-timeline">Overseas Employee Timeline</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#overseas-employee-summary">Overseas Employee Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#overseas-employee-detail">Overseas Employee Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rehires-tab">Rehires Tab</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#online-esr-access-tab">Online ESR Access Tab</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#detail">Detail</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#working-time-regulation-summary">Working Time Regulation Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#working-time-regulation-detail">Working Time Regulation Detail</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bi-usage-tracking">BI Usage Tracking</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flu-vaccinations">Flu Vaccinations</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#flu-vaccinations-detail">Flu Vaccinations Detail</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#covid-19-vaccinations-summary">Covid-19 Vaccinations Summary</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#covid-19-vaccinations-summary-ongoing-maintenance">Covid-19 Vaccinations Summary (Ongoing Maintenance)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#covid-19-vaccinations-detail">Covid-19 Vaccinations Detail</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#covid-19-vaccinations-detail-ongoing-maintenance">Covid-19 Vaccinations Detail (Ongoing Maintenance)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../Dashboard%20Index/index.html">Guide to ESR BI Dashboards</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../Dashboard%20Index/index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li>Workforce Profile Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+<h1 id="workforce-profile-dashboard">Workforce Profile Dashboard</h1>
+<p>Description</p>
+<p>This dashboard is designed to provide the user with intelligence around
+the profile of an organisation’s workforce (it is only available at an
+organisation level).</p>
+<p>This includes:</p>
+<ul>
+<li>
+<p>Equality and Diversity</p>
+</li>
+<li>
+<p>Workforce Race Equality Standard (WRES)ONS Returns</p>
+</li>
+<li>
+<p>Retirements</p>
+</li>
+<li>
+<p>Fixed Term Contracts</p>
+</li>
+</ul>
+<p>Allocation</p>
+<p>This dashboard is available to the following URPs:</p>
+<p>XXX BI Administration</p>
+<p>XXX HR Administration</p>
+<p>XXX HR Administration (With RA)</p>
+<p>XXX HR Management</p>
+<p>XXX Payroll Administration (Please see access restrictions below)</p>
+<p>XXX Payroll Super Administration (Please see access restrictions below)</p>
+<p><strong>Please note</strong> that Payroll Administration and Payroll Super
+Administration URPs only have acess to the following pages within the
+Workforce Profile Dashboard:</p>
+<ul>
+<li>
+<p>Retirements Due</p>
+</li>
+<li>
+<p>Fixed Term Contracts</p>
+</li>
+<li>
+<p>Overseas Employees</p>
+</li>
+<li>
+<p>Rehires</p>
+</li>
+<li>
+<p>Online ESR Access</p>
+</li>
+<li>
+<p>WTR Summary</p>
+</li>
+<li>
+<p>WTR Detail</p>
+</li>
+</ul>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Exclude Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Occupation Code</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Primary Assignments Only</p>
+<p>Effective Date (Default: Current Date)</p>
+<p>Location</p>
+<p>Organisation Level 1-13</p>
+<h2 id="index">Index</h2>
+<p>Description</p>
+<p>Workforce Profile dashboard reports are available in five different
+categories below:</p>
+<ul>
+<li>
+<p>Diversity</p>
+</li>
+<li>
+<p>Workforce Profile Analysis</p>
+</li>
+<li>
+<p>Gender Pay Gap Reporting</p>
+</li>
+<li>
+<p>Working Time Regulation</p>
+</li>
+<li>
+<p>Online ESR Access and BI Usage Tracking (please note that the BI
+    Usage Tracking analysis is only available to BI Administrators)</p>
+</li>
+</ul>
+<p>From this tab users can click on links provided to navigate to reports.</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image2.png"
+style="width:6.26806in;height:2.63111in" /></p>
+<h2 id="diversity-summary-tab">Diversity Summary Tab</h2>
+<p>Prompts</p>
+<p>Graph Measure (show graphs as either Headcount, % of Headcount or FTE)</p>
+<h3 id="disability">Disability</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Disability Flag.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Disability Flag</td>
+<td>Disability Flag against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image3.png"
+style="width:4.03419in;height:2.61343in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="disability-category">Disability Category</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Disability Category.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Disability Category</td>
+<td>Disability Category against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image4.png"
+style="width:4.35351in;height:2.90606in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="ethnicity">Ethnicity</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Ethnic Group.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ethnic Group</td>
+<td>Ethnic Group against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph, Pie Graph, Table or Table inc. RAG Status (Default
+Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image5.png"
+style="width:4.17274in;height:3.89411in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="gender">Gender</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Gender.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gender</td>
+<td>Gender against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image6.png"
+style="width:4.1223in;height:2.63425in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="religion">Religion</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Religious Belief.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Religious Belief</td>
+<td>Religious Belief against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image7.png"
+style="width:3.95146in;height:2.31148in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="sexual-orientation">Sexual Orientation</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Sexual Orientation.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sexual Orientation</td>
+<td>Sexual Orientation against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image8.png"
+style="width:3.9231in;height:2.51972in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="age-band">Age Band</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Age Band.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Age Band</td>
+<td>Age Band Data Item</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image9.png"
+style="width:3.97939in;height:2.94571in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="length-of-service">Length of Service</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Length of Service Band.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 34%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Length of Service Band</td>
+<td>Calculated from employee latest start date</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image10.png"
+style="width:4.24025in;height:2.70713in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="pay-band-gender">Pay Band / Gender</h3>
+<p>Description</p>
+<p>This analysis is designed to show Pay Bands grouped by Gender.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pay Band</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Measure</td>
+<td>Count of employees split by Gender</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as column graph or table. Default column graph.</p>
+<p>Actions</p>
+<p>Click-&gt;Diversity Detail Tab</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image11.png"
+style="width:4.24673in;height:3.05737in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<h3 id="employee-category">Employee Category</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Employee Category.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Category</td>
+<td>Employee Category Data Item against the Assignment</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image12.png"
+style="width:4.10219in;height:2.63425in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="employee-category-gender">Employee Category / Gender</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Employee Category and Gender.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Category</td>
+<td>Employee Category Data Item against the Assignment</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>Gender against the Employee Record</td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Stacked Column Graph or Table (Default Stacked Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image13.png"
+style="width:4.30274in;height:2.78002in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="marital-status">Marital Status</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Marital Status.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Marital Status</td>
+<td>Marital Status against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph, Table or Table inc. RAG Status (Default
+Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image14.png"
+style="width:4.01747in;height:2.58219in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="assignment-category">Assignment Category</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Assignment Category.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Category</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Pie Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image15.png"
+style="width:5.33368in;height:2.71813in" /></p>
+<p>Actions</p>
+<p>Click -&gt; Diversity Detail Tab</p>
+<h3 id="flexible-working-pattern">Flexible Working Pattern</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Flexible Working Pattern.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flexible Working Pattern</td>
+<td>Flexible Working Pattern Data Item against the Assignment</td>
+</tr>
+<tr class="even">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Pie Graph, Column Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image16.png"
+style="width:4.096in;height:2.91352in" /></p>
+<h3 id="nationality">Nationality</h3>
+<p>Description</p>
+<p>This analysis is designed to show Headcount, % of Headcount and FTE
+grouped by Nationality or Nationality Group.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nationality</td>
+<td>Nationality against the Employee Record</td>
+</tr>
+<tr class="even">
+<td>Nationality Group</td>
+<td>Group where employee Nationality falls under</td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>% of Headcount</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FTE</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph – Nationality Group, Column Graph – Nationality,
+Pie Graph, or Table (Default: Column Graph – Nationality Group)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image17.png"
+style="width:4.00441in;height:2.79309in" /></p>
+<h2 id="diversity-detail-tab">Diversity Detail Tab</h2>
+<p>Prompts</p>
+<p>Length of Service Band</p>
+<p>Age Band</p>
+<p>Ethnic Origin</p>
+<p>Gender</p>
+<p>Disability</p>
+<p>Disablity Category</p>
+<p>Religious Belief</p>
+<p>Marital Status</p>
+<p>Employee Category</p>
+<p>Sexual Orientation</p>
+<p>Nationality</p>
+<p>* Restrict to Latest Disability Category Only (Yes/No)</p>
+<h3 id="diversity-detail">Diversity Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to show a detail view at employee level of a
+range of Assignment and Employee, Equality and Diversity data items.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Occupation Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>FTE</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td>Contract Hours</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Pay Scale</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Gender</td>
+</tr>
+<tr class="odd">
+<td>Employee Category</td>
+<td>Ethnic Origin</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Marital Status</td>
+</tr>
+<tr class="odd">
+<td>Disability</td>
+<td>Disability Category</td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td>Age Band</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Job Sharer</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td>Census Nature of Contract</td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td>Length of Service Band</td>
+</tr>
+<tr class="even">
+<td>Position Number</td>
+<td>Religious Belief</td>
+</tr>
+<tr class="odd">
+<td>Subjective Code</td>
+<td>Start Date in Grade</td>
+</tr>
+<tr class="even">
+<td>Sexual Orientation</td>
+<td>Assignment Status</td>
+</tr>
+<tr class="odd">
+<td>Time in Grade (Yrs)</td>
+<td>Nationality</td>
+</tr>
+<tr class="even">
+<td>Flexible Working Pattern</td>
+<td>Ethnicity Group</td>
+</tr>
+<tr class="odd">
+<td>AfC Pay Band</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Column Selectors</p>
+<p>Organisation Level x 4</p>
+<h2 id="retirements-tab">Retirements Tab</h2>
+<p>This tab provides intelligence around Retirements within a given period
+with data presented in a number of different views.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>* Date Between</p>
+<p>Occupation Code(s)</p>
+<p>Employee Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Category</p>
+<p>Job Role</p>
+<p>Pay Grade(s)</p>
+<p>Assignment Status</p>
+<p>Primary Assignments Only</p>
+<p>Recruitment Source</p>
+<p>Leaving Reason (<strong>Default:</strong> Flexi Retirement, Retirement Age, Voluntary
+Early Retirement - no Actuarial Reduction, Voluntary Early Retirement -
+with Actuarial Reduction)</p>
+<h3 id="retirements-summary">Retirements Summary</h3>
+<p>Description</p>
+<p>The Summary Highlights analysis is designed to show top level Retirement
+figures within a given time period alongside another Summary analysis
+grouping those figures by a range of assignment and employee based
+fields.</p>
+<p>Groupings</p>
+<p>Org Level 1-13</p>
+<p>Staff Group</p>
+<p>Pay Scale</p>
+<p>Gender</p>
+<p>Job Role</p>
+<p>Supervisor Name</p>
+<p>Supervisor Employee Number</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Headcount</td>
+<td>Headcount at the start of the period + Headcount at the end of the
+period / 2</td>
+</tr>
+<tr class="even">
+<td>No. of Retirements</td>
+<td>Count of retired employees in the period</td>
+</tr>
+<tr class="odd">
+<td>Retirement Rate</td>
+<td>Percentage of retired employees in the period</td>
+</tr>
+<tr class="even">
+<td>Retirements Rate (55 and over)</td>
+<td>Percentage of retired employees in the period aged 55 &amp;
+over</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image18.png" style="width:6.26806in;height:2.15in"
+alt="Graphical user interface, application Description automatically generated" /></p>
+<h3 id="retirements-timeline">Retirements Timeline</h3>
+<p>Description</p>
+<p>This analysis is designed to show the Number of Retirements or
+Retirement Rate within a given time period grouped by Month or Age (on
+the X Axis).</p>
+<p>Prompts</p>
+<p>Date Between</p>
+<p>Measures</p>
+<p>Number of Retirements</p>
+<p>Retirements Rate</p>
+<p>Groupings</p>
+<p>Month (Default)</p>
+<p>Age</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Year</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Month</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td>Headcount at the start of the period + Headcount at the end of the
+period / 2</td>
+</tr>
+<tr class="even">
+<td>No. of Retirements</td>
+<td>Count of retired employees in the period</td>
+</tr>
+<tr class="odd">
+<td>Retirement Rate</td>
+<td>Percentage of retired employees in the period</td>
+</tr>
+<tr class="even">
+<td>Retirements Rate (55 and over)</td>
+<td>Percentage of retired employees in the period aged 55 &amp;
+over</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>Line Graph (Default)</p>
+<p>Table</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image19.png"
+style="width:6.26806in;height:2.25764in"
+alt="Chart, line chart Description automatically generated" /></p>
+<h2 id="retirements-due-tab">Retirements Due Tab</h2>
+<p>The Retirements Due tab provides summary and detail intelligence on the
+number and detail of upcoming retirements at an organisation. A prompt
+allows the retirement age to be entered as required and the period of
+time to display up-coming retirements can also be varied within the
+detail analysis.</p>
+<p>Prompts</p>
+<p>Retirement Age (Default to 60)</p>
+<p>Detail Display (Due Now, Within 3, 6, 9, 12 months and 5 years. Default:
+Due Now)</p>
+<h3 id="retirements-due-summary">Retirements Due Summary</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of Retirements up to a
+prompted date range and grouped by Staff Group, Pay Scale, Gender or
+Organisation.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gender</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Retirements Due</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+<tr class="even">
+<td>3 Months</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+<tr class="odd">
+<td>6 Months</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+<tr class="even">
+<td>9 Months</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+<tr class="odd">
+<td>12 Months</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+<tr class="even">
+<td>5 Years</td>
+<td>Custom Formula based on Retirement Age input</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph, Line Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image20.png"
+style="width:4.24632in;height:3.21732in" /></p>
+<h3 id="retirements-due-detail">Retirements Due Detail</h3>
+<p>Description</p>
+<p>This analysis provides a detail view of a range of employee and
+assignment data items for Retirements Due.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Pay Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Pay Scale Description</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Pay Step Date</td>
+</tr>
+<tr class="odd">
+<td>Last Name</td>
+<td>Length of Service</td>
+</tr>
+<tr class="even">
+<td>First Name</td>
+<td>Person Type</td>
+</tr>
+<tr class="odd">
+<td>Date of Birth</td>
+<td>Years</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Months</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Projected Termination Date</td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td>FTE</td>
+</tr>
+<tr class="odd">
+<td>Organisation Level 1-13</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Filters</p>
+<p>Detail Display (Due Now, Within 3, 6, 9, 12 months and 5 years. Default:
+Due Now)</p>
+<h2 id="fixed-term-contracts-tab">Fixed Term Contracts Tab</h2>
+<p>The Fixed Term Contracts Tab provides intelligence on fixed term
+contracts due to end within a given time period as well as showing data
+quality issues with fixed term contracts including historical end dates
+and missing end dates.</p>
+<h3 id="future-fixed-term-dates-summary">Future Fixed Term Dates Summary</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of Fixed Term Contracts due
+to end within the next three, six, nine or twelve months grouped by
+either Fixed Term Reason, Gender, Pay Scale, Staff Group or
+Organisation.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fixed Term Reason</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gender</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3 Months</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+<tr class="odd">
+<td>6 Months</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+<tr class="even">
+<td>9 Months</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+<tr class="odd">
+<td>12 Months</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph, Line Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image21.png"
+style="width:4.266in;height:2.82167in" /></p>
+<h3 id="fixed-term-problems-summary">Fixed Term Problems Summary</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of Fixed Term Contracts
+with either an historical end date, future end date or no end date
+grouped by either Fixed Term Reason, Gender, Pay Scale, Staff Group or
+Organisation.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fixed Term Reason</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gender</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Organisation</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Future End Date</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+<tr class="odd">
+<td>Historical End Date</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+<tr class="even">
+<td>Missing End Date</td>
+<td>Custom Formula based on the ‘Fixed Term Temp Cont End Date’</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>View as Column Graph or Table (Default Column Graph)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image22.png"
+style="width:3.95191in;height:2.76961in" /></p>
+<h3 id="fixed-term-date-detail">Fixed Term Date Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to show the number of Fixed Term Contracts
+with either an historical end date or no end date grouped by either
+Fixed Term Reason, Gender, Pay Scale, Staff Group or Organisation.</p>
+<p>Prompts</p>
+<p>Fixed Term End Date Between</p>
+<p>Filters</p>
+<p>Fixed Term End Date Between: The user has the option to enter a date
+period to view Fixed Term End Dates (Default to future three months).</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Organisation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Pay Scale</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Pay Scale Description</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Pay Step Date</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td>Effective Start Date</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Fixed Term Temp Cont End Date</td>
+</tr>
+<tr class="even">
+<td>Role</td>
+<td>Fixed Term Temp Cont Reason</td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td>Primary Assignment</td>
+</tr>
+<tr class="even">
+<td>FTE</td>
+<td>Supervisor Employee Number</td>
+</tr>
+<tr class="odd">
+<td>Supervisor Name</td>
+<td>Supervisor Email Address</td>
+</tr>
+<tr class="even">
+<td>Organisation Level 1-13</td>
+<td>Assignment Status</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="overseas-employees-tab">Overseas Employees Tab</h2>
+<p>The Overseas Employees Tab is designed to show all employees with a
+recruitment source of ‘Abroad - Non EU Country’ giving users the option
+to highlight (currently) three possible issues with the data:</p>
+<p>- Null NI Number</p>
+<p>- Null Country of Birth</p>
+<p>- Null Nationality</p>
+<p>The dashboard page also includes a number of summary counts based on
+overseas recruitment.</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Exclude organisation(s)</p>
+<p>Staff Group</p>
+<p>Assignment Category</p>
+<p>Person Type</p>
+<p>Employee Person Type</p>
+<p>Assignment Status</p>
+<p>Occupation Code</p>
+<p>Primary Assignments Only</p>
+<p>Employee Location</p>
+<p>Recruitment Source</p>
+<p>Effective Date (default: Current Date)</p>
+<p>Nationality</p>
+<p>Nationality Group</p>
+<h3 id="overseas-employee-timeline">Overseas Employee Timeline</h3>
+<p>Description</p>
+<p>This analysis is designed provide a Headcount of Employees with a
+recruitment source of Abroad - Non EU Country across a user defined
+period.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Month</th>
+<th>Employee Headcount</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>Bar Graph (default)</p>
+<p>Table</p>
+<p>Prompts</p>
+<p>Months Between (default: previous full 12 months)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image23.png"
+style="width:5.63084in;height:3.51927in" /></p>
+<h3 id="overseas-employee-summary">Overseas Employee Summary</h3>
+<p>Description</p>
+<p>This analysis is designed provide a Headcount of Employees with a
+recruitment source of Abroad - Non EU Country as at the dashboard
+effective date and grouped by a range of data items.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Staff Group</th>
+<th>Employee Headcount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Age Band</td>
+<td>Pay Grade</td>
+</tr>
+<tr class="even">
+<td>Assignment Status</td>
+<td>Occupation Code</td>
+</tr>
+<tr class="odd">
+<td>Organisation Level (1-4)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>Bar Graph (default)</p>
+<p>Table</p>
+<p>Prompts</p>
+<p>None</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image24.png"
+style="width:5.71904in;height:3.32144in" /></p>
+<h3 id="overseas-employee-detail">Overseas Employee Detail</h3>
+<p>Description</p>
+<p>This analysis is designed provide a detail view of overseas employees
+with users having the option to highlight certain missing data items
+related to overseas employees.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Last Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Name</td>
+<td>Title</td>
+</tr>
+<tr class="even">
+<td>NI Number</td>
+<td>FTE</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td>Staff Group</td>
+</tr>
+<tr class="even">
+<td>Recruitment Source</td>
+<td>Country of Birth</td>
+</tr>
+<tr class="odd">
+<td>Nationality</td>
+<td>Position</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>Highlight Null NI Numbers</p>
+<p>Highlight Null Country of Birth</p>
+<p>Highlight Null Nationality</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image25.png"
+style="width:6.26806in;height:1.30317in" /></p>
+<h2 id="rehires-tab">Rehires Tab</h2>
+<p>Description</p>
+<p>The Rehires tab is designed to show employees that have left and
+returned within a user defined period. The analysis is based on
+differing employee numbers but matching National Insurance Numbers, both
+of which are shown in the analysis.</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>National Insurance Number</th>
+<th>Employee Number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Latest Start Date</td>
+</tr>
+<tr class="even">
+<td>Actual Termination Date</td>
+<td>Leaving Reason</td>
+</tr>
+<tr class="odd">
+<td>IAT Date</td>
+<td>IAT Source VPD</td>
+</tr>
+<tr class="even">
+<td>IAT Destination VPD</td>
+<td>IAT Operation</td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selectors</p>
+<p>None</p>
+<p>Prompts</p>
+<p>None</p>
+<p>Example Screenshot<img src="../24/media/image26.png"
+style="width:6.26806in;height:0.97168in" /></p>
+<h2 id="online-esr-access-tab">Online ESR Access Tab</h2>
+<p>The Online ESR Access Tab provides intelligence on who has a user
+account, registered for internet access and step up access, and the last
+dates they logged into ESR (either via W3 or N3).</p>
+<p>Prompts</p>
+<p>Organisation(s)</p>
+<p>Staff Group(s)</p>
+<p>Assignment Category</p>
+<p>Person Type(s)</p>
+<p>Employee Person Type(s)</p>
+<p>Assignment Status</p>
+<p>Occupation Code</p>
+<p>Job Role(s)</p>
+<p>Pay Grade(s)</p>
+<p>Subjective Code(s)</p>
+<p>Primary Assignments Only</p>
+<p>Effective Date</p>
+<h3 id="summary">Summary</h3>
+<p>Description</p>
+<p>This analysis is designed to show the numbers of employees who have a
+user account, are registered for internet access, and the last dates
+they logged into ESR. It also includes the number of employees receiving
+printed paper Payslip/P60 against the number of employees receiving
+their Payslip/P60 online.</p>
+<p>View Selectors</p>
+<p>Pie Graph x 4 (default)</p>
+<p>Pivot Table x 4</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image27.png"
+style="width:6.26806in;height:1.1478in" /></p>
+<h3 id="detail">Detail</h3>
+<p>Description</p>
+<p>This analysis is designed to show whether employees have a user account
+and if so, whether they have registered for internet access and step up
+access.</p>
+<p>Column Selectors</p>
+<p>Organisation Level 1-13</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>FTE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Assignment Number</td>
+<td>Staff Group</td>
+</tr>
+<tr class="even">
+<td>Last Name</td>
+<td>Occupation Code</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Person Type</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Pay Grade</td>
+</tr>
+<tr class="odd">
+<td>Employee Name</td>
+<td>Contract Hours</td>
+</tr>
+<tr class="even">
+<td>Email</td>
+<td>Frequency</td>
+</tr>
+<tr class="odd">
+<td>Supervisor</td>
+<td>Fixed Term End Date</td>
+</tr>
+<tr class="even">
+<td>Org L1-13</td>
+<td>Latest Start Date</td>
+</tr>
+<tr class="odd">
+<td>Location</td>
+<td>Primary Assignment (Y/N)</td>
+</tr>
+<tr class="even">
+<td>Payroll Name</td>
+<td>Has User Account (Y/N)</td>
+</tr>
+<tr class="odd">
+<td>Position Number</td>
+<td>Registered for Employee Internet Access (Y/N)</td>
+</tr>
+<tr class="even">
+<td>Position Title</td>
+<td>Internet Access Status</td>
+</tr>
+<tr class="odd">
+<td>Employee Category</td>
+<td>Last Logon Date</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Registered for Manager Internet Access</td>
+</tr>
+<tr class="odd">
+<td>Assignment Status</td>
+<td>Recieve Printed Payslip/P60</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image28.png"
+style="width:5.83631in;height:1.90931in" /></p>
+<h2 id="working-time-regulation-summary">Working Time Regulation Summary</h2>
+<p>Description</p>
+<p>This WTR Summary analysis is employee based and enables users to report
+on either a 17 or 26 week period and highlights employees exceeding the
+average hours worked value defined by the user. It also enables users to
+set an Amber/Red cell colour depending on user defined threshold values.</p>
+<p>Please note that the analysis is based on Payroll Periods with either 4
+monthly payrolls or 17 weekly payrolls used inline with the 17 week
+average defined in the guidance. By default the date period will be the
+last day of the previous month looking back 17 weeks however users can
+use the 26 week check box available on the dashboard when analysing
+Junior Doctors.</p>
+<p>Prompts</p>
+<p>Period End Date</p>
+<p>Employee Number</p>
+<p>Payroll</p>
+<p>Staff Group</p>
+<p>Role</p>
+<p>Occupation Code</p>
+<p>Person Type</p>
+<p>Employee Person Type</p>
+<p>Assignment Status</p>
+<p>* Session Multiplier</p>
+<p>Included Elements</p>
+<p>Included Allowance Types</p>
+<p>Use 26 Week Period (for Junior Doctors)</p>
+<p>Restrict to an average of greater than 48 hours</p>
+<p>Set Avg Hours Worked Amber From</p>
+<p>Red From</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Avg Hours Worked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>WTR Opt Out</td>
+</tr>
+<tr class="even">
+<td>Units Worked</td>
+<td>WTR Opt Out Date</td>
+</tr>
+<tr class="odd">
+<td>Hours Worked</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image29.png"
+style="width:6.26806in;height:2.29829in" /></p>
+<h2 id="working-time-regulation-detail">Working Time Regulation Detail</h2>
+<p>Description</p>
+<p>The WTR detail analysis is assignment based and enables users to report
+on either a 17 or 26 week period and highlights employees exceeding the
+average hours worked value defined by the user. The analysis also
+enables users to set an Amber/Red cell colour depending on user defined
+threshold values.</p>
+<p>Please note that the analysis is based on Payroll Periods with either 4
+monthly payrolls or 17 weekly payrolls used inline with the 17 week
+average defined in the guidance. By default the date period will be the
+last day of the previous month looking back 17 weeks however users can
+use the 26 week check box available on the dashboard when analysing
+Junior Doctors.</p>
+<p>Prompts</p>
+<p>Period End Date</p>
+<p>Employee Number</p>
+<p>Payroll</p>
+<p>Staff Group</p>
+<p>Role</p>
+<p>Occupation Code</p>
+<p>Person Type</p>
+<p>Employee Person Type</p>
+<p>Assignment Status</p>
+<p>* Session Multiplier</p>
+<p>Included Elements</p>
+<p>Included Allowance Types</p>
+<p>Use 26 Week Period (for Junior Doctors)</p>
+<p>Restrict to an average of greater than 48 hours</p>
+<p>Set Avg Hours Worked Amber From</p>
+<p>Red From</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Name</th>
+<th>Avg Hours Worked</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Employee Number</td>
+<td>Org Level 1-13</td>
+</tr>
+<tr class="even">
+<td>Assignment Number</td>
+<td>WTR Opt Out</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>WTR Opt Out Date</td>
+</tr>
+<tr class="even">
+<td>Organisation Name</td>
+<td>Frequency</td>
+</tr>
+<tr class="odd">
+<td>Position Title</td>
+<td>Period End Date</td>
+</tr>
+<tr class="even">
+<td>Pay Scale</td>
+<td>AfC Pay Grade</td>
+</tr>
+<tr class="odd">
+<td>Units Worked</td>
+<td>Element Name</td>
+</tr>
+<tr class="even">
+<td>Hours Worked</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>View Selector</p>
+<p>Table</p>
+<p>Table (including Element Name)</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image30.png"
+style="width:6.26806in;height:2.37061in" /></p>
+<h2 id="bi-usage-tracking">BI Usage Tracking</h2>
+<p>Description</p>
+<p>The BI Usage Tracking analysis enables users to view usage of BI across
+the organisation. Please note that this analysis is only available to BI
+Aministrators.</p>
+<p>Prompts</p>
+<p>Year Month</p>
+<p>User Name</p>
+<p>Dashboard</p>
+<p>Run Time (minutes) &gt;</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year Month</th>
+<th>Query Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Date</td>
+<td>Average Time In Seconds</td>
+</tr>
+<tr class="even">
+<td>User Name</td>
+<td>Average Time In Minutes</td>
+</tr>
+<tr class="odd">
+<td>Dashboard</td>
+<td>User Count</td>
+</tr>
+<tr class="even">
+<td>Analysis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image31.png"
+style="width:6.26806in;height:1.70497in" /></p>
+<h2 id="flu-vaccinations">Flu Vaccinations</h2>
+<p>This analysis is designed to provide the user with summary flu
+vaccination figures grouped by various data items such as Staff Group or
+Occupation Code.</p>
+<p>Please note that this tab is only available to Occupational Health and
+BI Administrator Users.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Influenza Date Between</p>
+<p>Influenza Vaccination Type</p>
+<p>Exclude Open Ended Absence - Start Date &lt;=</p>
+<p>View Selectors</p>
+<p>Bar Graph (default)</p>
+<p>Table</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Staff Group</th>
+<th>Declined Vaccination Headcount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Occupation Code</td>
+<td>Declined Vaccination Headcount %</td>
+</tr>
+<tr class="even">
+<td>Job Role</td>
+<td>Referred to GP Headcount</td>
+</tr>
+<tr class="odd">
+<td>Headcount</td>
+<td>Referred to GP Headcount %</td>
+</tr>
+<tr class="even">
+<td>Influenza Vaccination Headcount</td>
+<td>Unspecified Status Headcount</td>
+</tr>
+<tr class="odd">
+<td>Influenza Vaccination Headcount %</td>
+<td>Unspecified Status Headcount %</td>
+</tr>
+<tr class="even">
+<td>Received Vaccination Headcount</td>
+<td>Organisation Level 1-13 x 4 (Table View only)</td>
+</tr>
+<tr class="odd">
+<td>Received Vaccination Headcount %</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image32.png"
+style="width:6.26806in;height:4.02401in" /></p>
+<h2 id="flu-vaccinations-detail">Flu Vaccinations Detail</h2>
+<p>Description</p>
+<p>This analysis returns all employees and any flu data recorded against
+the employee record.</p>
+<p>Please note that this report is only available to Occupational Health
+and BI Administrator Users.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Influenza Vaccination Type</p>
+<p>Influenza Vaccination StatusInfluenza Date Between</p>
+<p>Only Emps Without/12 Months+ Vaccination Details (Yes)</p>
+<p>Highlight Vaccinations greater than X Months</p>
+<p>Exclude Open Ended Absence - Start Date &lt;=</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Age Band</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td>Gender</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Pay Grade</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Length of Service Band</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Supervisor Name</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Supervisor Employee Number</td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td>Supervisor Email Address</td>
+</tr>
+<tr class="odd">
+<td>Assignment Category</td>
+<td>Influenza Vaccination Type</td>
+</tr>
+<tr class="even">
+<td>Org L1-13</td>
+<td>Influenza Vaccination Status</td>
+</tr>
+<tr class="odd">
+<td>Position Description</td>
+<td>Influenza Date</td>
+</tr>
+<tr class="even">
+<td>Area Of Work</td>
+<td>Status</td>
+</tr>
+<tr class="odd">
+<td>Employee Location Name</td>
+<td>Occupation Code</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image33.png"
+style="width:6.26806in;height:1.36076in" /></p>
+<h2 id="covid-19-vaccinations-summary">Covid-19 Vaccinations Summary</h2>
+<p>Description</p>
+<p>This analysis is designed to provide the user with summary Covid-19
+vaccination figures grouped by various data items such as Staff Group,
+Occupation Code and protected characteristics.</p>
+<p>Please note that this tab is only available to Occupational Health and
+BI Administrator Users.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Vaccine 1 Given</p>
+<p>Vaccination 1 Date Administered Between</p>
+<p>Vaccine 2 Given</p>
+<p>Vaccination 2 Date Administered Between</p>
+<p>Exclude Open Ended Absence - Start Date &lt;=</p>
+<p>Excl. New Starters from Vaccinations (Months)</p>
+<p>Column Selectors (Table View only)</p>
+<p>Staff Group</p>
+<p>Role</p>
+<p>Occupation Code</p>
+<p>Age Band</p>
+<p>Nationality</p>
+<p>Religious Belief</p>
+<p>Sexual Orientation</p>
+<p>Disability</p>
+<p>Gender</p>
+<p>Ethnic Origin</p>
+<p>Org Levels 1-13</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Headcount</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Covid-19 Vaccination 1 Given</td>
+<td>Occupation Code</td>
+</tr>
+<tr class="even">
+<td>Covid-19 Vaccination 1 Given %</td>
+<td>Age Band</td>
+</tr>
+<tr class="odd">
+<td>Covid-19 Vaccination 1 Not Given</td>
+<td>Nationality</td>
+</tr>
+<tr class="even">
+<td>Covid-19 Vaccination 1 Not Given %</td>
+<td>Religious Belief</td>
+</tr>
+<tr class="odd">
+<td>Covid-19 Vaccination 2 Given</td>
+<td>Sexual Orientation</td>
+</tr>
+<tr class="even">
+<td>Covid-19 Vaccination 2 Given %</td>
+<td>Disability</td>
+</tr>
+<tr class="odd">
+<td>Vaccination 2 Not Given</td>
+<td>Gender</td>
+</tr>
+<tr class="even">
+<td>Covid-19 Vaccination 2 Not Given %</td>
+<td>Ethnic Origin</td>
+</tr>
+<tr class="odd">
+<td>Staff Group</td>
+<td>Org Levels 1-13</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image34.png"
+style="width:6.26806in;height:3.40833in" /></p>
+<h3 id="covid-19-vaccinations-summary-ongoing-maintenance">Covid-19 Vaccinations Summary (Ongoing Maintenance)</h3>
+<p>Description</p>
+<p>This analysis is designed to provide the user with summary Covid-19
+vaccination (Ongoing Maintainance) figures grouped by various data items
+such as Staff Group, Occupation Code and protected characteristics.</p>
+<p>Column Selectors (Table View only)</p>
+<p>Staff Group</p>
+<p>Role</p>
+<p>Occupation Code</p>
+<p>Age Band</p>
+<p>Nationality</p>
+<p>Religious Belief</p>
+<p>Sexual Orientation</p>
+<p>Disability</p>
+<p>Gender</p>
+<p>Ethnic Origin</p>
+<p>Org Levels 1-13</p>
+<p>Prompts</p>
+<p>Vaccine (OM) Given</p>
+<p>Vaccination (OM) Date Administered Between</p>
+<p>Example Screenshot</p>
+<p><img src="../24/media/image35.png"
+style="width:6.26806in;height:3.62014in"
+alt="Chart, bar chart Description automatically generated" /></p>
+<h2 id="covid-19-vaccinations-detail">Covid-19 Vaccinations Detail</h2>
+<p>Description</p>
+<p>This analysis returns all employees and any Covid-19 vaccination data
+recorded against the employee record.</p>
+<p>Please note that this tab is only available to Occupational Health and
+BI Administrator Users.</p>
+<p>Prompts</p>
+<p>Effective Date</p>
+<p>Vaccine 1 Given</p>
+<p>Vaccination 1 Date Administered Between</p>
+<p>Vaccine 2 Given</p>
+<p>Vaccination 2 Date Administered Between</p>
+<p>Exclude Open Ended Absence - Start Date &lt;=</p>
+<p>Excl. New Starters from Vaccinations (Months)</p>
+<p>Column Selectors</p>
+<p>Org Levels 1-13</p>
+<p>Religious Belief</p>
+<p>Sexual Orientation</p>
+<p>Disability</p>
+<p>Ethnic Origin</p>
+<p>Please note that the above protected characteristics are not available
+to Occupation Health users</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Vaccine 1 Not Given</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td>Vaccine 1 Reason Not Given</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Vaccination 1 Date Administered</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Vaccination 1 Recorded</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Vaccination 1 Product</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Vaccination 1 Manufacturer</td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td>Vaccination 1 Batch Number</td>
+</tr>
+<tr class="odd">
+<td>Assignment Status</td>
+<td>Vaccination 1 Expiry Date</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Vaccination 1 Site</td>
+</tr>
+<tr class="odd">
+<td>Position Description</td>
+<td>Vaccination 1 Method</td>
+</tr>
+<tr class="even">
+<td>Area Of Work</td>
+<td>Vaccination 1 Dose</td>
+</tr>
+<tr class="odd">
+<td>Occupation Code</td>
+<td>Vaccine 2 Given</td>
+</tr>
+<tr class="even">
+<td>Employee Location Name</td>
+<td>Vaccine 2 Not Given</td>
+</tr>
+<tr class="odd">
+<td>Age Band</td>
+<td>Vaccination 2 Date Administered</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>Vaccination 2 Recorded</td>
+</tr>
+<tr class="odd">
+<td>Ethnicity Group</td>
+<td>Vaccination 2 Product</td>
+</tr>
+<tr class="even">
+<td>Religious Belief (not available to Occupation Health users)</td>
+<td>Vaccination 2 Manufacturer</td>
+</tr>
+<tr class="odd">
+<td>Sexual Orientation (not available to Occupation Health users)</td>
+<td>Vaccination 2 Batch Number</td>
+</tr>
+<tr class="even">
+<td>Disability (not available to Occupation Health users)</td>
+<td>Vaccination 2 Expiry Date</td>
+</tr>
+<tr class="odd">
+<td>Ethnic Origin (not available to Occupation Health users)</td>
+<td>Vaccination 2 Site</td>
+</tr>
+<tr class="even">
+<td>Pay Grade</td>
+<td>Vaccination 2 Method</td>
+</tr>
+<tr class="odd">
+<td>Length of Service Band</td>
+<td>Vaccination 2 Dose</td>
+</tr>
+<tr class="even">
+<td>Employee Latest Start Date</td>
+<td>Vaccine 2 Reason Not Given</td>
+</tr>
+<tr class="odd">
+<td>Supervisor Name</td>
+<td>Created By</td>
+</tr>
+<tr class="even">
+<td>Supervisor Employee Number</td>
+<td>Created Date</td>
+</tr>
+<tr class="odd">
+<td>Supervisor Email Address</td>
+<td>Last Updated By</td>
+</tr>
+<tr class="even">
+<td>Org Levels 1-13</td>
+<td>Last Updated Date</td>
+</tr>
+<tr class="odd">
+<td>Vaccine 1 Given</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Example Screenshot</p>
+<p><img src="../24/media/image36.png"
+style="width:6.26806in;height:1.71875in" /></p>
+<h3 id="covid-19-vaccinations-detail-ongoing-maintenance">Covid-19 Vaccinations Detail (Ongoing Maintenance)</h3>
+<p>Description</p>
+<p>This analysis returns all employees and any Covid-19 vaccination
+(Ongoing Maintanance) data recorded against the employee record.</p>
+<p>Prompts</p>
+<p>Vaccine (OM) Given</p>
+<p>Vaccination (OM) Date Administered Between</p>
+<p>Column Selectors</p>
+<p>Org Levels 1-13</p>
+<p>Religious Belief</p>
+<p>Sexual Orientation</p>
+<p>Disability</p>
+<p>Ethnic Origin</p>
+<p>Data Items</p>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Employee Number</th>
+<th>Supervisor Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Last Name</td>
+<td>Supervisor Employee Number</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Supervisor Email Address</td>
+</tr>
+<tr class="odd">
+<td>First Name</td>
+<td>Vaccine Given</td>
+</tr>
+<tr class="even">
+<td>Staff Group</td>
+<td>Vaccine Not Given</td>
+</tr>
+<tr class="odd">
+<td>Role</td>
+<td>Vaccine Reason Not Given</td>
+</tr>
+<tr class="even">
+<td>Email Address</td>
+<td>Vaccination Date Administered</td>
+</tr>
+<tr class="odd">
+<td>Assignment Status</td>
+<td>Vaccination Date Recorded</td>
+</tr>
+<tr class="even">
+<td>Assignment Category</td>
+<td>Vaccination Product</td>
+</tr>
+<tr class="odd">
+<td>Org Level 1-13</td>
+<td>Vaccination Manufacturer</td>
+</tr>
+<tr class="even">
+<td>Position Description</td>
+<td>Vaccination Batch Number</td>
+</tr>
+<tr class="odd">
+<td>Area Of Work</td>
+<td>Vaccination Expiry Date</td>
+</tr>
+<tr class="even">
+<td>Occupation Code</td>
+<td>Vaccination Site</td>
+</tr>
+<tr class="odd">
+<td>Employee Location Name</td>
+<td>Vaccination Method</td>
+</tr>
+<tr class="even">
+<td>Age Band</td>
+<td>Vaccination Dose</td>
+</tr>
+<tr class="odd">
+<td>Gender</td>
+<td>Created By</td>
+</tr>
+<tr class="even">
+<td>Ethnicity Group</td>
+<td>Last Updated By</td>
+</tr>
+<tr class="odd">
+<td>Pay Grade</td>
+<td>Last Updated Date</td>
+</tr>
+<tr class="even">
+<td>Length of Service Band</td>
+<td>Created Date</td>
+</tr>
+<tr class="odd">
+<td>Employee Latest Start Date</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Workforce%20Information%20Verifier%20Dashboard/index.html" class="btn btn-neutral float-left" title="Workforce Information Verifier Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Workforce%20Information%20Verifier%20Dashboard/index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
